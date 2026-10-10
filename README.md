@@ -1,6 +1,6 @@
 # UIT-Together Research Group
 
-Website giới thiệu nhóm nghiên cứu, công bố khoa học, thành viên theo khóa, datasets và tutorials. Website tĩnh dùng **Python 3.10 + Jinja2**, HTML/CSS/JavaScript và Bootstrap có sẵn. Hiện ưu tiên phát triển local; chưa deploy public.
+Website giới thiệu nhóm nghiên cứu, công bố khoa học, thành viên theo khóa, datasets và tutorials. Website tĩnh dùng **Python 3.10 + Jinja2**, HTML/CSS/JavaScript và Bootstrap 5.0.2 nội bộ. Hiện ưu tiên phát triển local; chưa deploy public.
 
 ## Chạy local
 
@@ -49,9 +49,11 @@ dist/         Website sinh tự động; không chỉnh sửa tại đây
 
 - Thông tin nhóm/menu: `src/data/site.json`.
 - Hồ sơ thành viên: `src/data/members.json`; danh sách khóa: `src/data/cohorts.json`.
-- Công bố trên Papers và PapersByYear: `src/data/publications.json`; vị trí hiển thị được tham chiếu trong các template trang.
+- Công bố (PapersByYear chuyển tiếp về Papers): `src/data/publications.json`; trang tự gom theo venue và hỗ trợ lọc năm/loại/venue.
 - Nội dung trang chủ/tin tức/hướng nghiên cứu/datasets: `src/partials/*-content.html`; bài tutorial và trang chi tiết: `src/pages/`.
-- Giao diện: `src/assets/css/site.css`; tương tác: `src/assets/js/site.js`.
+- Cover/logo venue: `src/assets/images/venues/`; nguồn tải trong [hướng dẫn ảnh](docs/venue-image-sources.md).
+- Liên hệ: `src/data/contacts.json`, trang `/contact/`.
+- Giao diện nền: `src/assets/css/site.css`; giao diện theo template Bootstrap: `src/assets/css/portfolio.css`; tương tác: `src/assets/js/site.js`.
 - Thêm trang phải khai báo trong `src/data/pages.json`.
 
 Xem [hướng dẫn nội dung](docs/content-guide.md) và [kiến trúc](docs/architecture.md) để thêm dữ liệu/route đúng cách.
@@ -68,6 +70,7 @@ Build không cần Node; lệnh Node chỉ kiểm tra cú pháp JS. `check_site`
 
 ## Tài liệu và phục hồi
 
+- [Kế hoạch giao diện theo template Bootstrap](docs/bootstrap-template-redesign-plan.md)
 - [Kế hoạch clean/UI/UX](docs/restructure-ui-ux-plan.md)
 - [Design system](docs/design-system.md)
 - [Migration map](docs/migration-map.md)
@@ -79,3 +82,12 @@ Bản sao trước migration: `/home/uit2023/LuuTru/Thanhld/UIT-Together-backups
 ## License
 
 [MIT](http://opensource.org/licenses/MIT). Giữ thông tin giấy phép riêng của thư viện, font và các skill đi kèm. Chưa xác minh quyền phân phối lại toàn bộ ảnh/PDF; không tự gán giấy phép mới cho dữ liệu nghiên cứu.
+
+Trang chủ chung tại `/`: UIT Together, Computer Vision và Machine Learning. `/homes/` chuyển tiếp về `/`; menu chỉ còn Home.
+
+## English / Tiếng Việt
+
+- Tiếng Anh mặc định: `http://localhost:8080/`.
+- Tiếng Việt: `http://localhost:8080/vi/`.
+- Chọn EN / VI trên header để đổi ngôn ngữ và giữ trang đang xem.
+- Bản dịch: `src/data/translations.json` và `src/data/tutorial-translations.json`. Tên bài báo, tác giả, venue, DOI và code giữ nguyên. Build sinh 290 trang từ 145 template, dùng chung ảnh/CSS/JS.

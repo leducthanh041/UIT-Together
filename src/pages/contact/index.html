@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container contact-content">
+  <div class="contact-intro"><p>For research collaboration, student supervision or questions about the group, contact our team.</p></div>
+  <div class="contact-grid">
+  {% for contact in contacts %}
+    <article class="contact-card">
+      {% if contact.image %}<img src="{{ contact.image }}" alt="{{ contact.name }}" loading="lazy" decoding="async" class="contact-portrait">{% else %}<div class="contact-avatar" aria-hidden="true">Khánh</div>{% endif %}
+      <div><p class="eyebrow">Contact</p><h2>{{ contact.name }}</h2>{% if contact.role %}<p class="contact-role">{{ contact.role }}</p>{% endif %}{% if contact.affiliation %}<p>{{ contact.affiliation }}</p>{% endif %}
+      {% if contact.email %}<a class="contact-email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>{% else %}<p class="metadata-pending">Contact details will be added once confirmed.</p>{% endif %}</div>
+    </article>
+  {% endfor %}
+  </div>
+  <section class="contact-affiliation"><h2>Visit the group</h2><p>University of Information Technology · VNU-HCM</p><p>Room A108, Block A · Quarter 6, Linh Trung, Thu Duc, Ho Chi Minh City</p></section>
+</div>
+{% endblock %}

@@ -1,8 +1,39 @@
-dist/
-__pycache__/
-*.pyc
-.env
-deploy/.env
-.DS_Store
+# Generated site and interrupted build output
+/dist/
+/.uit-build-*/
+
+# Reference repositories and local development skills
 /core-source/
+/core-lab-source/
+/ANOTHER_REPO/
 /tools/
+
+# Python, test and package caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Local environments and JavaScript dependencies
+.venv/
+venv/
+node_modules/
+
+# Secrets; retain example configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Editor, OS and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.log

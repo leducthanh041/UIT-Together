@@ -1,0 +1,254 @@
+{
+  "pattern-recognition-letters": {
+    "name": "Pattern Recognition Letters",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://www.sciencedirect.com/journal/pattern-recognition-letters"
+  },
+  "ijdar": {
+    "name": "International Journal on Document Analysis and Recognition (IJDAR)",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://link.springer.com/journal/10032"
+  },
+  "journal-of-imaging": {
+    "name": "Journal of Imaging",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://www.mdpi.com/journal/jimaging"
+  },
+  "ieee-access": {
+    "name": "IEEE Access",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://ieeeaccess.ieee.org/"
+  },
+  "acm-computing-surveys": {
+    "name": "ACM Computing Surveys",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://dl.acm.org/journal/csur"
+  },
+  "ijacsa": {
+    "name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "electronics": {
+    "name": "Electronics",
+    "type": "journal",
+    "image": "",
+    "source_url": "https://www.mdpi.com/journal/electronics"
+  },
+  "journal-of-computer-science-and-cybernetics": {
+    "name": "Journal of Computer Science and Cybernetics",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "vietnam-journal-of-science-and-technology": {
+    "name": "Vietnam Journal of Science and Technology",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "can-tho-university-journal-of-science": {
+    "name": "Can Tho University Journal of Science",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "tnu-journal-of-science-and-technology": {
+    "name": "TNU Journal of Science and Technology",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "jstic": {
+    "name": "Journal of Science and Technology on Information and Communications",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "journal-of-science-unresolved": {
+    "name": "Journal of Science",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "journal-of-technical-education-science": {
+    "name": "Journal of Technical Education Science",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "saigon-university-journal": {
+    "name": "Tạp chí Đại Học Sài Gòn",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "ieee-jstars": {
+    "name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "journal-of-visual-communication-and-image-representation": {
+    "name": "Journal of Visual Communication and Image Representation",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "multimedia-tools-and-applications": {
+    "name": "Multimedia Tools and Applications",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "vietnam-journal-of-computer-science": {
+    "name": "Vietnam Journal of Computer Science",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "international-journal-on-computer-science-and-engineering": {
+    "name": "International Journal on Computer Science and Engineering",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "international-journal-of-computer-science-issues": {
+    "name": "International Journal of Computer Science Issues",
+    "type": "journal",
+    "image": "",
+    "source_url": ""
+  },
+  "rev-ecit": {
+    "name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "type": "conference",
+    "image": "",
+    "source_url": "https://2023.rev-ecit.vn/"
+  },
+  "soict": {
+    "name": "International Symposium on Information and Communication Technology (SOICT)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "mapr": {
+    "name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "fair": {
+    "name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "type": "conference",
+    "image": "",
+    "source_url": "https://fair.conf.vn/2023/"
+  },
+  "icsip": {
+    "name": "International Conference on Signal and Image Processing (ICSIP)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "rivf": {
+    "name": "RIVF International Conference on Computing and Communication Technologies",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "nics": {
+    "name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "icce": {
+    "name": "International Conference on Communications and Electronics (ICCE)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "mmm": {
+    "name": "International Conference on Multimedia Modeling (MMM)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "caip": {
+    "name": "International Conference on Computer Analysis of Images and Patterns (CAIP)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "kicss": {
+    "name": "International Conference on Knowledge, Information and Creativity Support Systems (KICSS)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "selected-ict-problems": {
+    "name": "National Symposium of Selected ICT Problems",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "mita": {
+    "name": "International Conference on Multimedia Information Technology and Applications (MITA)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "cita": {
+    "name": "Conference on Information Technology and its Applications (CITA)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "imcom": {
+    "name": "International Conference on Ubiquitous Information Management and Communication (IMCOM)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "kse": {
+    "name": "International Conference on Knowledge and Systems Engineering (KSE)",
+    "type": "conference",
+    "image": "",
+    "source_url": "https://kse2023.kse-conferences.org/"
+  },
+  "icarcv": {
+    "name": "International Conference on Control, Automation, Robotics and Vision (ICARCV)",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "socpar": {
+    "name": "International Conference of Soft Computing and Pattern Recognition",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "icinar": {
+    "name": "International Asia Conference on Informatics in Control, Automation and Robotics",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "csae": {
+    "name": "Computer Science and Automation Engineering",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  },
+  "iccci": {
+    "name": "International Conference on Computer and Computational Intelligence",
+    "type": "conference",
+    "image": "",
+    "source_url": ""
+  }
+}

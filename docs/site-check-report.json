@@ -1,5 +1,10 @@
 {
-  "pages": 144,
+  "pages": 290,
+  "source_pages": 145,
+  "languages": [
+    "en",
+    "vi"
+  ],
   "members": 9,
   "students": 124,
   "publication_records": 150,
@@ -9,7 +14,15 @@
       "url": "/assets/images/team/khang-tran.png"
     },
     {
+      "page": "vi/team/khang-tran.html",
+      "url": "/assets/images/team/khang-tran.png"
+    },
+    {
       "page": "papers/paper/stiff-GPU-integrators.html",
+      "url": "/assets/images/papers/integrator-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/stiff-GPU-integrators.html",
       "url": "/assets/images/papers/integrator-abstract.png"
     },
     {
@@ -17,7 +30,15 @@
       "url": "/assets/images/papers/software-citation-principles-abstract.svg"
     },
     {
+      "page": "vi/papers/paper/software-citation-principles.html",
+      "url": "/assets/images/papers/software-citation-principles-abstract.svg"
+    },
+    {
       "page": "papers/paper/FTIR-LTC.html",
+      "url": "/assets/images/papers/fuel-cover.jpg"
+    },
+    {
+      "page": "vi/papers/paper/FTIR-LTC.html",
       "url": "/assets/images/papers/fuel-cover.jpg"
     },
     {
@@ -25,7 +46,15 @@
       "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
     },
     {
+      "page": "vi/papers/paper/FACE-surrogates.html",
+      "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
+    },
+    {
       "page": "papers/paper/wssspe3-report.html",
+      "url": "/assets/images/papers/wssspe3-report-abstract.svg"
+    },
+    {
+      "page": "vi/papers/paper/wssspe3-report.html",
       "url": "/assets/images/papers/wssspe3-report-abstract.svg"
     },
     {
@@ -33,7 +62,15 @@
       "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
     },
     {
+      "page": "vi/papers/paper/kerosene-model-reduction.html",
+      "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
+    },
+    {
       "page": "papers/paper/butanol-skeletal-models.html",
+      "url": "/assets/images/papers/butanol-structure.png"
+    },
+    {
+      "page": "vi/papers/paper/butanol-skeletal-models.html",
       "url": "/assets/images/papers/butanol-structure.png"
     },
     {
@@ -41,7 +78,15 @@
       "url": "/assets/images/papers/jmse-aps-analysis.png"
     },
     {
+      "page": "vi/papers/paper/jmse-aps-analysis.html",
+      "url": "/assets/images/papers/jmse-aps-analysis.png"
+    },
+    {
       "page": "papers/paper/multicomponent-diffusion-flame.html",
+      "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
+    },
+    {
+      "page": "vi/papers/paper/multicomponent-diffusion-flame.html",
       "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
     },
     {
@@ -49,7 +94,15 @@
       "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
     },
     {
+      "page": "vi/papers/paper/graph-search.html",
+      "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
+    },
+    {
       "page": "papers/paper/douglas-fir-reduced-model.html",
+      "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
+    },
+    {
+      "page": "vi/papers/paper/douglas-fir-reduced-model.html",
       "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
     },
     {
@@ -57,7 +110,15 @@
       "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
     },
     {
+      "page": "vi/papers/paper/bone-imaging.html",
+      "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
+    },
+    {
       "page": "papers/paper/software-citation-challenge.html",
+      "url": "/assets/images/papers/software-citation-challenge.png"
+    },
+    {
+      "page": "vi/papers/paper/software-citation-challenge.html",
       "url": "/assets/images/papers/software-citation-challenge.png"
     },
     {
@@ -65,7 +126,15 @@
       "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
     },
     {
+      "page": "vi/papers/paper/langmuir-carbonate-chemistry.html",
+      "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
+    },
+    {
       "page": "papers/paper/smoldering-mixtures-poci.html",
+      "url": "/assets/images/papers/smoldering-mixtures-poci.png"
+    },
+    {
+      "page": "vi/papers/paper/smoldering-mixtures-poci.html",
       "url": "/assets/images/papers/smoldering-mixtures-poci.png"
     },
     {
@@ -73,7 +142,15 @@
       "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
     },
     {
+      "page": "vi/papers/paper/review-GPU-CFD.html",
+      "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
+    },
+    {
       "page": "papers/paper/tomorrows-university.html",
+      "url": "/assets/images/papers/tomorrows-university.png"
+    },
+    {
+      "page": "vi/papers/paper/tomorrows-university.html",
       "url": "/assets/images/papers/tomorrows-university.png"
     },
     {
@@ -81,7 +158,15 @@
       "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
     },
     {
+      "page": "vi/papers/paper/multicomponent-diffusion-method.html",
+      "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
+    },
+    {
       "page": "papers/paper/moderately-stiff-GPU.html",
+      "url": "/assets/images/papers/integrator-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/moderately-stiff-GPU.html",
       "url": "/assets/images/papers/integrator-abstract.png"
     },
     {
@@ -89,7 +174,15 @@
       "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
     },
     {
+      "page": "vi/papers/paper/reduced-gasoline-surrogate.html",
+      "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
+    },
+    {
       "page": "papers/paper/smoldering-exp-comp-poci.html",
+      "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
+    },
+    {
+      "page": "vi/papers/paper/smoldering-exp-comp-poci.html",
       "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
     },
     {
@@ -97,7 +190,15 @@
       "url": "/assets/images/papers/LTC-index-abstract.png"
     },
     {
+      "page": "vi/papers/paper/LTC-index.html",
+      "url": "/assets/images/papers/LTC-index-abstract.png"
+    },
+    {
       "page": "papers/paper/model-parameter-discrepancy.html",
+      "url": "/assets/images/papers/model-parameter-discrepancy.png"
+    },
+    {
+      "page": "vi/papers/paper/model-parameter-discrepancy.html",
       "url": "/assets/images/papers/model-parameter-discrepancy.png"
     },
     {
@@ -105,7 +206,15 @@
       "url": "/assets/images/papers/wssspe4-jors.svg"
     },
     {
+      "page": "vi/papers/paper/wssspe4-jors.html",
+      "url": "/assets/images/papers/wssspe4-jors.svg"
+    },
+    {
       "page": "papers/paper/simd-simt-pyjac2.html",
+      "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+    },
+    {
+      "page": "vi/papers/paper/simd-simt-pyjac2.html",
       "url": "/assets/images/papers/pyjac-paper-abstract.svg"
     },
     {
@@ -113,7 +222,15 @@
       "url": "/assets/images/papers/pymars-logo.png"
     },
     {
+      "page": "vi/papers/paper/pymars-joss.html",
+      "url": "/assets/images/papers/pymars-logo.png"
+    },
+    {
       "page": "papers/paper/skeletal-reduction.html",
+      "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
+    },
+    {
+      "page": "vi/papers/paper/skeletal-reduction.html",
       "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
     },
     {
@@ -121,7 +238,15 @@
       "url": "/assets/images/papers/GPU-swept-rule-1D.png"
     },
     {
+      "page": "vi/papers/paper/GPU-swept-rule-1D.html",
+      "url": "/assets/images/papers/GPU-swept-rule-1D.png"
+    },
+    {
       "page": "papers/paper/pyjac-paper.html",
+      "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+    },
+    {
+      "page": "vi/papers/paper/pyjac-paper.html",
       "url": "/assets/images/papers/pyjac-paper-abstract.svg"
     },
     {
@@ -129,7 +254,15 @@
       "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
     },
     {
+      "page": "vi/papers/paper/cpc-chemistry-vectorization.html",
+      "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
+    },
+    {
       "page": "papers/paper/nbutanol-counterflow.html",
+      "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/nbutanol-counterflow.html",
       "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
     },
     {
@@ -137,7 +270,15 @@
       "url": "/assets/images/papers/open-engineering.png"
     },
     {
+      "page": "vi/papers/paper/openness-engineering.html",
+      "url": "/assets/images/papers/open-engineering.png"
+    },
+    {
       "page": "papers/paper/CAABA-MECCA.html",
+      "url": "/assets/images/papers/caaba-mecca.png"
+    },
+    {
+      "page": "vi/papers/paper/CAABA-MECCA.html",
       "url": "/assets/images/papers/caaba-mecca.png"
     },
     {
@@ -145,7 +286,15 @@
       "url": "/assets/images/papers/peer-review-abstract.png"
     },
     {
+      "page": "vi/papers/paper/peer-review.html",
+      "url": "/assets/images/papers/peer-review-abstract.png"
+    },
+    {
       "page": "papers/paper/LTC-index-oxygenated.html",
+      "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/LTC-index-oxygenated.html",
       "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
     },
     {
@@ -153,7 +302,15 @@
       "url": "/assets/images/papers/joss-peerjcs.png"
     },
     {
+      "page": "vi/papers/paper/joss-peerjcs.html",
+      "url": "/assets/images/papers/joss-peerjcs.png"
+    },
+    {
       "page": "papers/paper/multicomponent-reduction.html",
+      "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/multicomponent-reduction.html",
       "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
     },
     {
@@ -161,7 +318,15 @@
       "url": "/assets/images/papers/chemked-ijck.png"
     },
     {
+      "page": "vi/papers/paper/chemked-ijck.html",
+      "url": "/assets/images/papers/chemked-ijck.png"
+    },
+    {
       "page": "papers/paper/RON-FTIR.html",
+      "url": "/assets/images/papers/RON-FTIR-abstract.svg"
+    },
+    {
+      "page": "vi/papers/paper/RON-FTIR.html",
       "url": "/assets/images/papers/RON-FTIR-abstract.svg"
     },
     {
@@ -169,7 +334,15 @@
       "url": "/assets/images/papers/target-species-selection-abstract.svg"
     },
     {
+      "page": "vi/papers/paper/target-species-selection.html",
+      "url": "/assets/images/papers/target-species-selection-abstract.svg"
+    },
+    {
       "page": "papers/paper/oil-water-natural-gas-engine.html",
+      "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
+    },
+    {
+      "page": "vi/papers/paper/oil-water-natural-gas-engine.html",
       "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
     },
     {
@@ -177,7 +350,15 @@
       "url": "/assets/images/papers/swept-heterogeneous.png"
     },
     {
+      "page": "vi/papers/paper/swept-heterogeneous.html",
+      "url": "/assets/images/papers/swept-heterogeneous.png"
+    },
+    {
       "page": "PapersByYear/paper/stiff-GPU-integrators.html",
+      "url": "/assets/images/papers/integrator-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/stiff-GPU-integrators.html",
       "url": "/assets/images/papers/integrator-abstract.png"
     },
     {
@@ -185,7 +366,15 @@
       "url": "/assets/images/papers/software-citation-principles-abstract.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/software-citation-principles.html",
+      "url": "/assets/images/papers/software-citation-principles-abstract.svg"
+    },
+    {
       "page": "PapersByYear/paper/FTIR-LTC.html",
+      "url": "/assets/images/papers/fuel-cover.jpg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/FTIR-LTC.html",
       "url": "/assets/images/papers/fuel-cover.jpg"
     },
     {
@@ -193,7 +382,15 @@
       "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
     },
     {
+      "page": "vi/PapersByYear/paper/FACE-surrogates.html",
+      "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
+    },
+    {
       "page": "PapersByYear/paper/wssspe3-report.html",
+      "url": "/assets/images/papers/wssspe3-report-abstract.svg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/wssspe3-report.html",
       "url": "/assets/images/papers/wssspe3-report-abstract.svg"
     },
     {
@@ -201,7 +398,15 @@
       "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/kerosene-model-reduction.html",
+      "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
+    },
+    {
       "page": "PapersByYear/paper/butanol-skeletal-models.html",
+      "url": "/assets/images/papers/butanol-structure.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/butanol-skeletal-models.html",
       "url": "/assets/images/papers/butanol-structure.png"
     },
     {
@@ -209,7 +414,15 @@
       "url": "/assets/images/papers/jmse-aps-analysis.png"
     },
     {
+      "page": "vi/PapersByYear/paper/jmse-aps-analysis.html",
+      "url": "/assets/images/papers/jmse-aps-analysis.png"
+    },
+    {
       "page": "PapersByYear/paper/multicomponent-diffusion-flame.html",
+      "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/multicomponent-diffusion-flame.html",
       "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
     },
     {
@@ -217,7 +430,15 @@
       "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/graph-search.html",
+      "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
+    },
+    {
       "page": "PapersByYear/paper/douglas-fir-reduced-model.html",
+      "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/douglas-fir-reduced-model.html",
       "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
     },
     {
@@ -225,7 +446,15 @@
       "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
     },
     {
+      "page": "vi/PapersByYear/paper/bone-imaging.html",
+      "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
+    },
+    {
       "page": "PapersByYear/paper/software-citation-challenge.html",
+      "url": "/assets/images/papers/software-citation-challenge.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/software-citation-challenge.html",
       "url": "/assets/images/papers/software-citation-challenge.png"
     },
     {
@@ -233,7 +462,15 @@
       "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
     },
     {
+      "page": "vi/PapersByYear/paper/langmuir-carbonate-chemistry.html",
+      "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
+    },
+    {
       "page": "PapersByYear/paper/smoldering-mixtures-poci.html",
+      "url": "/assets/images/papers/smoldering-mixtures-poci.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/smoldering-mixtures-poci.html",
       "url": "/assets/images/papers/smoldering-mixtures-poci.png"
     },
     {
@@ -241,7 +478,15 @@
       "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
     },
     {
+      "page": "vi/PapersByYear/paper/review-GPU-CFD.html",
+      "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
+    },
+    {
       "page": "PapersByYear/paper/tomorrows-university.html",
+      "url": "/assets/images/papers/tomorrows-university.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/tomorrows-university.html",
       "url": "/assets/images/papers/tomorrows-university.png"
     },
     {
@@ -249,7 +494,15 @@
       "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
     },
     {
+      "page": "vi/PapersByYear/paper/multicomponent-diffusion-method.html",
+      "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
+    },
+    {
       "page": "PapersByYear/paper/moderately-stiff-GPU.html",
+      "url": "/assets/images/papers/integrator-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/moderately-stiff-GPU.html",
       "url": "/assets/images/papers/integrator-abstract.png"
     },
     {
@@ -257,7 +510,15 @@
       "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/reduced-gasoline-surrogate.html",
+      "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
+    },
+    {
       "page": "PapersByYear/paper/smoldering-exp-comp-poci.html",
+      "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/smoldering-exp-comp-poci.html",
       "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
     },
     {
@@ -265,7 +526,15 @@
       "url": "/assets/images/papers/LTC-index-abstract.png"
     },
     {
+      "page": "vi/PapersByYear/paper/LTC-index.html",
+      "url": "/assets/images/papers/LTC-index-abstract.png"
+    },
+    {
       "page": "PapersByYear/paper/model-parameter-discrepancy.html",
+      "url": "/assets/images/papers/model-parameter-discrepancy.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/model-parameter-discrepancy.html",
       "url": "/assets/images/papers/model-parameter-discrepancy.png"
     },
     {
@@ -273,7 +542,15 @@
       "url": "/assets/images/papers/wssspe4-jors.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/wssspe4-jors.html",
+      "url": "/assets/images/papers/wssspe4-jors.svg"
+    },
+    {
       "page": "PapersByYear/paper/simd-simt-pyjac2.html",
+      "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/simd-simt-pyjac2.html",
       "url": "/assets/images/papers/pyjac-paper-abstract.svg"
     },
     {
@@ -281,7 +558,15 @@
       "url": "/assets/images/papers/pymars-logo.png"
     },
     {
+      "page": "vi/PapersByYear/paper/pymars-joss.html",
+      "url": "/assets/images/papers/pymars-logo.png"
+    },
+    {
       "page": "PapersByYear/paper/skeletal-reduction.html",
+      "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/skeletal-reduction.html",
       "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
     },
     {
@@ -289,7 +574,15 @@
       "url": "/assets/images/papers/GPU-swept-rule-1D.png"
     },
     {
+      "page": "vi/PapersByYear/paper/GPU-swept-rule-1D.html",
+      "url": "/assets/images/papers/GPU-swept-rule-1D.png"
+    },
+    {
       "page": "PapersByYear/paper/pyjac-paper.html",
+      "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/pyjac-paper.html",
       "url": "/assets/images/papers/pyjac-paper-abstract.svg"
     },
     {
@@ -297,7 +590,15 @@
       "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
     },
     {
+      "page": "vi/PapersByYear/paper/cpc-chemistry-vectorization.html",
+      "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
+    },
+    {
       "page": "PapersByYear/paper/nbutanol-counterflow.html",
+      "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/nbutanol-counterflow.html",
       "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
     },
     {
@@ -305,7 +606,15 @@
       "url": "/assets/images/papers/open-engineering.png"
     },
     {
+      "page": "vi/PapersByYear/paper/openness-engineering.html",
+      "url": "/assets/images/papers/open-engineering.png"
+    },
+    {
       "page": "PapersByYear/paper/CAABA-MECCA.html",
+      "url": "/assets/images/papers/caaba-mecca.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/CAABA-MECCA.html",
       "url": "/assets/images/papers/caaba-mecca.png"
     },
     {
@@ -313,7 +622,15 @@
       "url": "/assets/images/papers/peer-review-abstract.png"
     },
     {
+      "page": "vi/PapersByYear/paper/peer-review.html",
+      "url": "/assets/images/papers/peer-review-abstract.png"
+    },
+    {
       "page": "PapersByYear/paper/LTC-index-oxygenated.html",
+      "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/LTC-index-oxygenated.html",
       "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
     },
     {
@@ -321,7 +638,15 @@
       "url": "/assets/images/papers/joss-peerjcs.png"
     },
     {
+      "page": "vi/PapersByYear/paper/joss-peerjcs.html",
+      "url": "/assets/images/papers/joss-peerjcs.png"
+    },
+    {
       "page": "PapersByYear/paper/multicomponent-reduction.html",
+      "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/multicomponent-reduction.html",
       "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
     },
     {
@@ -329,7 +654,15 @@
       "url": "/assets/images/papers/chemked-ijck.png"
     },
     {
+      "page": "vi/PapersByYear/paper/chemked-ijck.html",
+      "url": "/assets/images/papers/chemked-ijck.png"
+    },
+    {
       "page": "PapersByYear/paper/RON-FTIR.html",
+      "url": "/assets/images/papers/RON-FTIR-abstract.svg"
+    },
+    {
+      "page": "vi/PapersByYear/paper/RON-FTIR.html",
       "url": "/assets/images/papers/RON-FTIR-abstract.svg"
     },
     {
@@ -337,7 +670,15 @@
       "url": "/assets/images/papers/target-species-selection-abstract.svg"
     },
     {
+      "page": "vi/PapersByYear/paper/target-species-selection.html",
+      "url": "/assets/images/papers/target-species-selection-abstract.svg"
+    },
+    {
       "page": "PapersByYear/paper/oil-water-natural-gas-engine.html",
+      "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
+    },
+    {
+      "page": "vi/PapersByYear/paper/oil-water-natural-gas-engine.html",
       "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
     },
     {
@@ -345,15 +686,31 @@
       "url": "/assets/images/papers/swept-heterogeneous.png"
     },
     {
+      "page": "vi/PapersByYear/paper/swept-heterogeneous.html",
+      "url": "/assets/images/papers/swept-heterogeneous.png"
+    },
+    {
       "page": "news/kyle-faculty-spotlight.html",
       "url": "/team/kyle-niemeyer"
     },
     {
+      "page": "vi/news/kyle-faculty-spotlight.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
       "page": "news/tenure-emily.html",
       "url": "/team/kyle-niemeyer"
     },
     {
       "page": "news/tenure-emily.html",
+      "url": "/team/emily-klee"
+    },
+    {
+      "page": "vi/news/tenure-emily.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/tenure-emily.html",
       "url": "/team/emily-klee"
     },
     {
@@ -361,6 +718,10 @@
       "url": "/team/aj-fillo"
     },
     {
+      "page": "vi/news/liblab-local-news.html",
+      "url": "/team/aj-fillo"
+    },
+    {
       "page": "news/dan-andrew-luz-defended.html",
       "url": "/team/dan-magee"
     },
@@ -373,7 +734,23 @@
       "url": "/team/luz-pacheco"
     },
     {
+      "page": "vi/news/dan-andrew-luz-defended.html",
+      "url": "/team/dan-magee"
+    },
+    {
+      "page": "vi/news/dan-andrew-luz-defended.html",
+      "url": "/team/andrew-alferman"
+    },
+    {
+      "page": "vi/news/dan-andrew-luz-defended.html",
+      "url": "/team/luz-pacheco"
+    },
+    {
       "page": "news/af-defended.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/af-defended.html",
       "url": "/team/aj-fillo"
     },
     {
@@ -409,11 +786,51 @@
       "url": "/team/kyle-niemeyer"
     },
     {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/miguel-soler"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/matt-zaiger"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/tejas-mulky"
+    },
+    {
+      "page": "vi/news/NRG-featured-news.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
       "page": "news/phil-featured.html",
       "url": "/team/phillip-mestas"
     },
     {
+      "page": "vi/news/phil-featured.html",
+      "url": "/team/phillip-mestas"
+    },
+    {
       "page": "news/pilot-liblab-video.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/pilot-liblab-video.html",
       "url": "/team/aj-fillo"
     },
     {
@@ -493,7 +910,87 @@
       "url": "/team/kyle-niemeyer"
     },
     {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/emily-klee"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/phillip-mestas"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/dan-magee"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/andrew-alferman"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/luz-pacheco"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/miguel-soler"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/matt-zaiger"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/tejas-mulky"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/index.html",
+      "url": "/team/kyle-niemeyer"
+    },
+    {
       "page": "news/aj-featured-newspaper.html",
+      "url": "/team/aj-fillo"
+    },
+    {
+      "page": "vi/news/aj-featured-newspaper.html",
       "url": "/team/aj-fillo"
     }
   ],

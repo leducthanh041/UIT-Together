@@ -1,17 +1,25 @@
 <div class="container">
-<section class="group-introduction"><p class="eyebrow">Who we are</p><p>
-                We are <strong>UIT-Together</strong>. Here our goal is to build a strong affiliated research group 
-				in <strong>Computer vision</strong> and <strong>Machine learning</strong>. Besides key persons who are leaders in 
-				these field, the young enthusiastic and energetic force in research are trained 
-				and supported for the development orientation of group in the long-term and strengthening 
-				international links, improving the ability of scientific publishing.
-				
-            </p></section>
+<section class="research-overview" aria-labelledby="research-overview-title">
+<div class="template-section-heading"><p class="eyebrow">Our research</p><h2 id="research-overview-title">Seeing further. Learning together.</h2><span class="heading-line" aria-hidden="true"></span><p>Computer vision and machine learning are at the heart of our work.</p></div>
+<div class="research-feature" data-reveal><div><p class="eyebrow">01 / Computer Vision</p><h3>Understanding the visual world.</h3><p>We study visual understanding through object detection, document analysis and aerial imagery.</p><a class="template-button secondary-button" href="/research/">Explore our research <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/vision.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
+<div class="research-feature research-feature-reverse" data-reveal><div><p class="eyebrow">02 / Machine Learning</p><h3>Turning data into understanding.</h3><p>Our publications explore learning methods and their applications to challenging visual data.</p><a class="template-button secondary-button" href="/papers/">Discover publications <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/learning.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
+</section>
+<section class="group-introduction group-story" data-reveal><img src="/assets/images/team/team0.jpg" alt="UIT Together researchers, collaborators and students at a group meeting" width="800" height="600" loading="lazy" decoding="async"><div><p class="eyebrow">Together at UIT</p><h2>Research grows through collaboration.</h2><p>We bring researchers and students together through shared projects, mentorship and international collaboration.</p><a href="/team/">Meet our people →</a></div></section>
+<nav class="homes-directory home-directory" aria-label="Explore UIT Together">
+{% for label, description, url, icon in [
+ ('Research', 'Explore our research directions and projects.', '/research/', 'microscope'),
+ ('Datasets', 'Discover resources shared with the research community.', '/datasets/', 'database'),
+ ('Tutorials', 'Learn through practical guides and materials.', '/tutorials/', 'book-open'),
+ ('Contact', 'Connect with our research group.', '/contact/', 'envelope')
+] %}
+<a class="homes-directory-link" href="{{ url }}"><span class="directory-icon" aria-hidden="true"><i class="fas fa-{{ icon }}"></i></span><div class="directory-copy"><h3>{{ label }}</h3><p>{{ description }}</p></div><span class="homes-arrow" aria-hidden="true">↗</span></a>
+{% endfor %}
+</nav>
 <div class="home-columns">
 <section><div class="section-heading"><h2 id="group-updates-title">Group updates</h2><a href="/datasets/">Explore datasets →</a></div>
 <div class="content-scroll home-feed-scroll" role="region" aria-labelledby="group-updates-title" tabindex="0">
 {% for item in news %}<article class="news-entry"><p class="note">{{ item.date_label }}</p><h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.description }}</p>{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a> {% endfor %}</article>{% endfor %}</div></section>
 <section><div class="section-heading"><h2 id="publication-highlights-title">Publication highlights</h2><a href="/papers/">All publications →</a></div>
 <div class="content-scroll home-feed-scroll" role="region" aria-labelledby="publication-highlights-title" tabindex="0">
-{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry"><p class="note">{{ item.homepage_date_label }}</p><h3>{% if item.links %}<a href="{{ item.links[0] }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.homepage_reference }}</p></article>{% endfor %}</div></section>
+{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry"><p class="note">{{ item.homepage_date_label }}</p><h3 translate="no">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.display_title }}</a>{% elif item.links %}<a href="{{ item.links[0] }}">{{ item.display_title }}</a>{% else %}{{ item.display_title }}{% endif %}</h3><p>{{ item.venue_name }}</p>{% if item.doi %}<a class="doi-link" href="https://doi.org/{{ item.doi }}">DOI: {{ item.doi }}</a>{% endif %}</article>{% endfor %}</div></section>
 </div></div>

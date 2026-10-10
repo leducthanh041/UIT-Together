@@ -7,3 +7,5 @@
 `dist` được tạo mới để loại file stale. Lỗi render giữ bản cũ; dev watcher báo lỗi và chờ lần sửa tiếp theo. Dev server phục vụ dist, không directory listing; hỗ trợ URL bỏ `.html` tương tự nginx try_files. Watcher không tự reload browser.
 
 Không có backend, database, upload hay CMS. Header/footer và hồ sơ thành viên/công bố dùng template chung. Cập nhật trang chủ dùng news.json; datasets, nghiên cứu và trang tin lịch sử vẫn là HTML nội dung được tách riêng để bảo toàn dữ liệu lịch sử chưa xác minh.
+
+Build render mỗi template hai lần (en/vi), rồi scripts/i18n.py xử lý text-node có dictionary và đường dẫn nội bộ. Kết quả có 290 trang và một bộ assets chung. Header có lựa chọn ngôn ngữ không phụ thuộc JavaScript; layout có hreflang en/vi/x-default. check_site kiểm tra cả hai cây URL, so baseline cũ theo route gốc.

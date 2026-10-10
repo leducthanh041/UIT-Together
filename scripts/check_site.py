@@ -24,7 +24,8 @@ def check():
     pages = json.loads((data / 'pages.json').read_text())
     baseline = {(p['page'], urlsplit(p['url']).path) for p in json.loads((ROOT / 'docs/baseline-missing-links.json').read_text())}
     missing, new = [], []
-    for page in pages:
+    generated_pages = [dict(page, source=('vi/' if language == 'vi' else '') + page['source'], original_source=page['source'], language=language) for page in pages for language in ['en', 'vi']]
+    for page in generated_pages:
         path = output / page['source']
         if not path.is_file():
             new.append({'page':page['source'], 'url':'MISSING PAGE'})
@@ -41,7 +42,8 @@ def check():
                 continue
             issue = {'page':page['source'], 'url':url}
             missing.append(issue)
-            if (page['source'], parts.path) not in baseline:
+            original_path = parts.path[3:] if page['language'] == 'vi' and parts.path.startswith('/vi/') else parts.path
+            if (page['original_source'], original_path) not in baseline:
                 new.append(issue)
     members = json.loads((data/'members.json').read_text())
     assert len({m['id'] for m in members}) == len(members)
@@ -49,9 +51,9 @@ def check():
     assert all(k == v['id'] and v['citation'] for k,v in publications.items())
     private = [str(p.relative_to(output)) for p in output.rglob('*') if p.is_file() and (p.suffix in ['.enc','.py'] or p.name in ['.env','Gemfile','SKILL.md'])]
     assert not private, private
-    report = {'pages':len(pages),'members':len(members),'students':sum(len(c['names']) for c in json.loads((data/'cohorts.json').read_text())),'publication_records':len(publications),'existing_missing_links':missing,'new_missing_links':new,'private_files':private}
+    report = {'pages':len(generated_pages),'source_pages':len(pages),'languages':['en','vi'],'members':len(members),'students':sum(len(c['names']) for c in json.loads((data/'cohorts.json').read_text())),'publication_records':len(publications),'existing_missing_links':missing,'new_missing_links':new,'private_files':private}
     (ROOT/'docs/site-check-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-    print(f"Checked {len(pages)} pages, {len(publications)} publication records. Missing links: {len(missing)}; new: {len(new)}")
+    print(f"Checked {len(generated_pages)} pages, {len(publications)} publication records. Missing links: {len(missing)}; new: {len(new)}")
     return 1 if new else 0
 if __name__ == '__main__':
     sys.exit(check())

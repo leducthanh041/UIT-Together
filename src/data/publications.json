@@ -14,7 +14,15 @@
     "venue": "Pattern Recognition Letters 175, 38-43, (2023)",
     "image": "/assets/images/papers/prlt.jpg",
     "homepage_reference": "Khang Nguyen, TV Le, HNN Van, DC Bui,  Pattern Recognition Letters (SCIE, Q1, IF:5.1).",
-    "homepage_date_label": "Sep 2023"
+    "homepage_date_label": "Sep 2023",
+    "display_title": "Improving human–object interaction with auxiliary semantic information and enhanced instance representation",
+    "metadata_source": "existing_title",
+    "venue_id": "pattern-recognition-letters",
+    "venue_name": "Pattern Recognition Letters",
+    "publication_type": "journal",
+    "doi": "10.1016/j.patrec.2023.09.013",
+    "doi_source": "https://doi.org/10.1016/j.patrec.2023.09.013",
+    "needs_metadata_review": false
   },
   "ef2d655d2da6": {
     "id": "ef2d655d2da6",
@@ -31,7 +39,15 @@
     "venue": "International Journal on Document Analysis and Recognition (IJDAR) (2023)",
     "image": "/assets/images/papers/ijdar.jpg",
     "homepage_reference": "Trong Thuan Nguyen, Hai Le, Truong Nguyen, Nguyen D. Vo, Khang Nguyen, International Journal on Document Analysis and Recognition (IJDAR) (2023) (SCIE, Q2).",
-    "homepage_date_label": "April 2023"
+    "homepage_date_label": "April 2023",
+    "display_title": "A brief review of state-of-the-art object detectors on benchmark document images datasets",
+    "metadata_source": "existing_title",
+    "venue_id": "ijdar",
+    "venue_name": "International Journal on Document Analysis and Recognition (IJDAR)",
+    "publication_type": "journal",
+    "doi": "10.1007/s10032-023-00431-0",
+    "doi_source": "https://link.springer.com/article/10.1007/s10032-023-00431-0",
+    "needs_metadata_review": false
   },
   "8bb6cc1ec45d": {
     "id": "8bb6cc1ec45d",
@@ -46,7 +62,15 @@
     "title": "Disease Recognition in X-ray Images with Doctor Consultation-Inspired Model",
     "authors": "Phung, K.A.; Nguyen, T.T.; Wangad, N.; Baraheem, S.; Nguyen D. Vo; Khang Nguyen",
     "venue": "J. Imaging 2022, 8, 323.",
-    "image": "/assets/images/papers/mdpi.jpg"
+    "image": "/assets/images/papers/mdpi.jpg",
+    "display_title": "Disease Recognition in X-ray Images with Doctor Consultation-Inspired Model",
+    "metadata_source": "existing_title",
+    "venue_id": "journal-of-imaging",
+    "venue_name": "Journal of Imaging",
+    "publication_type": "journal",
+    "doi": "10.3390/jimaging8120323",
+    "doi_source": "https://doi.org/10.3390/jimaging8120323",
+    "needs_metadata_review": false
   },
   "e7409917205a": {
     "id": "e7409917205a",
@@ -61,7 +85,15 @@
     "title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
     "authors": "Khang Nguyen, An Nguyen, Nguyen D. Vo, Tam V. Nguyen",
     "venue": "IEEE Access 2022",
-    "image": "/assets/images/papers/vdn.jpg"
+    "image": "/assets/images/papers/vdn.jpg",
+    "display_title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3211069",
+    "doi_source": "https://ecommons.udayton.edu/cps_fac_pub/193/",
+    "needs_metadata_review": false
   },
   "cc012cb4edbd": {
     "id": "cc012cb4edbd",
@@ -76,7 +108,16 @@
     "title": "A Benchmark of Parsing Vietnamese Publications",
     "authors": "Khang Nguyen, Thuan Trong Nguyen, Thuan Q Nguyen, An Nguyen, Nguyen D Vo, Tam V Nguyen",
     "venue": "IEEE Access 10, 65284-65299, 2022",
-    "image": "/assets/images/papers/A Benchmark of Parsing Vietnamese Publications.png"
+    "image": "/assets/images/papers/A Benchmark of Parsing Vietnamese Publications.png",
+    "display_title": "A Benchmark of Parsing Vietnamese Publications",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3183193",
+    "doi_source": "https://doi.org/10.1109/ACCESS.2022.3183193",
+    "needs_metadata_review": false,
+    "doi_verification_note": "Official DOI resolver redirects to IEEE document 9796543, matching preserved publisher link; title/authors also cited by Springer IJDAR review 10.1007/s10032-023-00431-0."
   },
   "70d617f3b7c3": {
     "id": "70d617f3b7c3",
@@ -88,10 +129,18 @@
     "layouts": [
       "card"
     ],
-    "title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning.",
+    "title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
     "authors": "Khang Nguyen, Doanh C Bui, Truc Trinh, Nguyen D. Vo",
     "venue": "IEEE Access 10, 32443-32452, 2022",
-    "image": "/assets/images/papers/EAES.png"
+    "image": "/assets/images/papers/EAES.png",
+    "display_title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3158763",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "942541ef0769": {
     "id": "942541ef0769",
@@ -106,7 +155,15 @@
     "title": "Anomaly Analysis in Images and Videos: A Comprehensive Review",
     "authors": "Tung Minh Tran, Tu N Vu, Nguyen D. Vo, Tam V Nguyen, Khang Nguyen",
     "venue": "ACM Computing Surveys (CSUR) 2022, IF (2021): 14.324",
-    "image": "/assets/images/papers/csur.png"
+    "image": "/assets/images/papers/csur.png",
+    "display_title": "Anomaly Analysis in Images and Videos: A Comprehensive Review",
+    "metadata_source": "existing_title",
+    "venue_id": "acm-computing-surveys",
+    "venue_name": "ACM Computing Surveys",
+    "publication_type": "journal",
+    "doi": "10.1145/3544014",
+    "doi_source": "https://dl.acm.org/doi/abs/10.1145/3544014",
+    "needs_metadata_review": false
   },
   "368959f1e465": {
     "id": "368959f1e465",
@@ -121,7 +178,15 @@
     "title": "Analysis of the Influence of De-hazing Methods on Vehicle Detection in Aerial Images",
     "authors": "Khang Nguyen, Phuc Nguyen, DC Bui, MT Tran, Nguyen D. Vo",
     "venue": "International Journal of Advanced Computer Science and Applications (IJACSA), 2022, ESCI, Q3",
-    "image": "/assets/images/papers/drone_analysis.jpg"
+    "image": "/assets/images/papers/drone_analysis.jpg",
+    "display_title": "Analysis of the Influence of De-hazing Methods on Vehicle Detection in Aerial Images",
+    "metadata_source": "existing_title",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2022.01306100",
+    "doi_source": "https://dx.doi.org/10.14569/IJACSA.2022.01306100",
+    "needs_metadata_review": false
   },
   "74ce48e28285": {
     "id": "74ce48e28285",
@@ -136,7 +201,15 @@
     "title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
     "authors": "Phuc Nguyen,Thang Truong, Nguyen D. Vo, Khang Nguyen",
     "venue": "International Journal of Advanced Computer Science and Applications (IJACSA), 2022, ESCI, Q3",
-    "image": "/assets/images/papers/rethinking.jpg"
+    "image": "/assets/images/papers/rethinking.jpg",
+    "display_title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
+    "metadata_source": "existing_title",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2022.0130987",
+    "doi_source": "https://dx.doi.org/10.14569/IJACSA.2022.0130987",
+    "needs_metadata_review": false
   },
   "fd59a3d1f818": {
     "id": "fd59a3d1f818",
@@ -148,10 +221,18 @@
     "layouts": [
       "card"
     ],
-    "title": "Detecting Objects from Space: An Evaluation of Deep-Learning Modern Approaches.",
+    "title": "Detecting Objects from Space: An Evaluation of Deep-Learning Modern Approaches",
     "authors": "Khang Nguyen, Nhut T. Huynh, Phat C. Nguyen, Khanh-Duy Nguyen, Nguyen D. Vo, Tam V. Nguyen.",
     "venue": "Electronics 9, 583 (2020), SCIE, Q2, IF: 1.764",
-    "image": "/assets/images/papers/Detecting_Objects_from_Space.png"
+    "image": "/assets/images/papers/Detecting_Objects_from_Space.png",
+    "display_title": "Detecting Objects from Space: An Evaluation of Deep-Learning Modern Approaches",
+    "metadata_source": "existing_title",
+    "venue_id": "electronics",
+    "venue_name": "Electronics",
+    "publication_type": "journal",
+    "doi": "10.3390/electronics9040583",
+    "doi_source": "https://www.mdpi.com/2079-9292/9/4/583",
+    "needs_metadata_review": false
   },
   "d9c80f267bb4": {
     "id": "d9c80f267bb4",
@@ -161,10 +242,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "DATA AUGMENTATION ANALYSIS OF VEHICLE DETECTION IN AERIAL IMAGES",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "DATA AUGMENTATION ANALYSIS OF VEHICLE DETECTION IN AERIAL IMAGES",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "journal-of-computer-science-and-cybernetics",
+    "venue_name": "Journal of Computer Science and Cybernetics",
+    "publication_type": "journal",
+    "doi": "10.15625/1813-9663/18259",
+    "doi_source": "https://vjs.ac.vn/jcc/article/view/18259",
+    "needs_metadata_review": false
   },
   "7b82e9ac9c45": {
     "id": "7b82e9ac9c45",
@@ -174,10 +263,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Evaluating the influence of backbone network architectures for object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Evaluating the influence of backbone network architectures for object detection in aerial images",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "vietnam-journal-of-science-and-technology",
+    "venue_name": "Vietnam Journal of Science and Technology",
+    "publication_type": "journal",
+    "doi": "10.15625/2525-2518/17595",
+    "doi_source": "https://vjs.ac.vn/jst/article/view/17595",
+    "needs_metadata_review": false
   },
   "a7742fa29862": {
     "id": "a7742fa29862",
@@ -187,10 +284,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study Of Feature Extraction Approaches For Image Captioning In Vietnamese",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study Of Feature Extraction Approaches For Image Captioning In Vietnamese",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "journal-of-computer-science-and-cybernetics",
+    "venue_name": "Journal of Computer Science and Cybernetics",
+    "publication_type": "journal",
+    "doi": "10.15625/1813-9663/38/4/17548",
+    "doi_source": "https://vjs.ac.vn/jcc/article/view/17548",
+    "needs_metadata_review": false
   },
   "937a0e940065": {
     "id": "937a0e940065",
@@ -200,10 +305,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "The Object Detection By The Combination Of Generic Roi Extractor And Dynamic R-CNN With Side-Aware Boundary Localization In Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "The Object Detection By The Combination Of Generic Roi Extractor And Dynamic R-CNN With Side-Aware Boundary Localization In Aerial Images",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jen.2023.006",
+    "doi_source": "https://ctujs.ctu.edu.vn/index.php/ctujs/article/view/477",
+    "needs_metadata_review": true,
+    "metadata_note": "Publisher identifies 2023; legacy accepted record has no year. Original year preserved."
   },
   "d6ea3ed53089": {
     "id": "d6ea3ed53089",
@@ -213,10 +327,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát Hiện Bất Thường: Dự Đoán Khung Hình Tương Lai Kết Hợp SOTA Optical-Flow Model Và Cải Tiến Hàm Lỗi Dự Trên Fencegan",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát Hiện Bất Thường: Dự Đoán Khung Hình Tương Lai Kết Hợp SOTA Optical-Flow Model Và Cải Tiến Hàm Lỗi Dự Trên Fencegan",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jvn.2022.230",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/download/4557/4297/11008",
+    "needs_metadata_review": true,
+    "metadata_note": "Publisher identifies 2022; legacy accepted record has no year. Original year preserved."
   },
   "19996c5e48d5": {
     "id": "19996c5e48d5",
@@ -226,10 +349,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Thực nghiệm đánh giá Double-Head cho bài toán phát hiện phương tiện giao thông từ không ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Thực nghiệm đánh giá Double-Head cho bài toán phát hiện phương tiện giao thông từ không ảnh",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jvn.2022.159",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/download/4300/4219",
+    "needs_metadata_review": false
   },
   "5aefbcfffcfc": {
     "id": "5aefbcfffcfc",
@@ -239,10 +370,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Thực nghiệm đánh giá YOLOX cho bài toán phát hiện đối tượng tài liệu",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Thực nghiệm đánh giá YOLOX cho bài toán phát hiện đối tượng tài liệu",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jvn.2022.087",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/download/4172/4157/9177",
+    "needs_metadata_review": false
   },
   "5a7f87553a51": {
     "id": "5a7f87553a51",
@@ -252,10 +391,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "DLAFS Cascade R-CNN: An Object Detector Based On Dynamic Label Assignment",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "DLAFS Cascade R-CNN: An Object Detector Based On Dynamic Label Assignment",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "journal-of-computer-science-and-cybernetics",
+    "venue_name": "Journal of Computer Science and Cybernetics",
+    "publication_type": "journal",
+    "doi": "10.15625/1813-9663/38/2/16252",
+    "doi_source": "https://vjs.ac.vn/index.php/jcc/article/view/16252",
+    "needs_metadata_review": false
   },
   "638a445169e9": {
     "id": "638a445169e9",
@@ -265,10 +412,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A Vietnamese Benchmark for Vehicle Detection and Realtime Empirical Evaluation",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A Vietnamese Benchmark for Vehicle Detection and Realtime Empirical Evaluation",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jen.2022.042",
+    "doi_source": "https://ctujs.ctu.edu.vn/index.php/ctujs/article/view/461",
+    "needs_metadata_review": false
   },
   "c18838e0c387": {
     "id": "c18838e0c387",
@@ -278,10 +433,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "An object detection method for aerial hazy images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "An object detection method for aerial hazy images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "can-tho-university-journal-of-science",
+    "venue_name": "Can Tho University Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.22144/ctu.jen.2022.010",
+    "doi_source": "https://ctujs.ctu.edu.vn/index.php/ctujs/article/view/418",
+    "needs_metadata_review": false
   },
   "b5ed01ee7b11": {
     "id": "b5ed01ee7b11",
@@ -291,10 +454,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Extract Features And Classification Of Chest X-Ray Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Extract Features And Classification Of Chest X-Ray Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "tnu-journal-of-science-and-technology",
+    "venue_name": "TNU Journal of Science and Technology",
+    "publication_type": "journal",
+    "doi": "10.34238/tnu-jst.3974",
+    "doi_source": "https://jst.tnu.edu.vn/jst/article/download/3974/pdf",
+    "needs_metadata_review": false
   },
   "26a10a64f246": {
     "id": "26a10a64f246",
@@ -304,10 +475,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phân loại phương tiện giao thông trong không ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phân loại phương tiện giao thông trong không ảnh",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "jstic",
+    "venue_name": "Journal of Science and Technology on Information and Communications",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://jstic.ptit.edu.vn/jstic-ptit/files/journals/1/articles/419/submission/419-1-1528-1-2-20210618.pdf"
   },
   "37c48273648a": {
     "id": "37c48273648a",
@@ -317,10 +497,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "An Empirical Evaluation of Feature Extraction of Vietnamese Fruit Classification",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "An Empirical Evaluation of Feature Extraction of Vietnamese Fruit Classification",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "vietnam-journal-of-science-and-technology",
+    "venue_name": "Vietnam Journal of Science and Technology",
+    "publication_type": "journal",
+    "doi": "10.15625/2525-2518/16299",
+    "doi_source": "https://vjs.ac.vn/index.php/jst/article/download/16299/2543254591/2543257176",
+    "needs_metadata_review": true,
+    "metadata_note": "Publisher identifies 2022 and title uses \"for Vietnamese fruit classification\"; legacy 2021/title preserved."
   },
   "7a55e6bd14af": {
     "id": "7a55e6bd14af",
@@ -330,10 +519,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Đánh giá một số phương pháp biểu diễn đặc trưng cho bài toán tái nhận dạng nhân vật",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Đánh giá một số phương pháp biểu diễn đặc trưng cho bài toán tái nhận dạng nhân vật",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "journal-of-science-unresolved",
+    "venue_name": "Journal of Science",
+    "publication_type": "journal",
+    "doi": "10.54607/hcmue.js.15.6.2285(2018)",
+    "doi_source": "https://journal.hcmue.edu.vn/index.php/hcmuejos/issue/view/21?lang=en_US",
+    "needs_metadata_review": true
   },
   "a9c070162095": {
     "id": "a9c070162095",
@@ -343,10 +540,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Automated Systems for Educational Timetabling Problems",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Automated Systems for Educational Timetabling Problems",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "journal-of-technical-education-science",
+    "venue_name": "Journal of Technical Education Science",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://jte.edu.vn/index.php/jte/article/view/868"
   },
   "f71af08892be": {
     "id": "f71af08892be",
@@ -356,10 +562,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Khảo sát các thuật giải Tabu search cho bài toán xếp thời khoá biểu Đại Học",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Khảo sát các thuật giải Tabu search cho bài toán xếp thời khoá biểu Đại Học",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "saigon-university-journal",
+    "venue_name": "Tạp chí Đại Học Sài Gòn",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "163a1ad48777": {
     "id": "163a1ad48777",
@@ -369,10 +583,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Improving human–object interaction with auxiliary semantic information and enhanced instance representation",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Improving human–object interaction with auxiliary semantic information and enhanced instance representation",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "pattern-recognition-letters",
+    "venue_name": "Pattern Recognition Letters",
+    "publication_type": "journal",
+    "doi": "10.1016/j.patrec.2023.09.013",
+    "doi_source": "https://doi.org/10.1016/j.patrec.2023.09.013",
+    "needs_metadata_review": false
   },
   "1d5c5c30782a": {
     "id": "1d5c5c30782a",
@@ -382,10 +604,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-jstars",
+    "venue_name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "publication_type": "journal",
+    "doi": "10.1109/JSTARS.2023.3285905",
+    "doi_source": "https://ieeexplore.ieee.org/document/10158513/",
+    "needs_metadata_review": false
   },
   "1b76591a4ded": {
     "id": "1b76591a4ded",
@@ -395,10 +625,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A brief review of state-of-the-art object detectors on benchmark document images datasets",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A brief review of state-of-the-art object detectors on benchmark document images datasets",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ijdar",
+    "venue_name": "International Journal on Document Analysis and Recognition (IJDAR)",
+    "publication_type": "journal",
+    "doi": "10.1007/s10032-023-00431-0",
+    "doi_source": "https://link.springer.com/article/10.1007/s10032-023-00431-0",
+    "needs_metadata_review": false
   },
   "5d37461b341e": {
     "id": "5d37461b341e",
@@ -408,10 +646,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3211069",
+    "doi_source": "https://ecommons.udayton.edu/cps_fac_pub/193/",
+    "needs_metadata_review": false
   },
   "d395ca3402ae": {
     "id": "d395ca3402ae",
@@ -421,10 +667,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2022.0130987",
+    "doi_source": "https://dx.doi.org/10.14569/IJACSA.2022.0130987",
+    "needs_metadata_review": false
   },
   "a67eac1843c8": {
     "id": "a67eac1843c8",
@@ -434,10 +688,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Analysis of the Influence of De-hazing Methods on Vehicle Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Analysis of the Influence of De-hazing Methods on Vehicle Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2022.01306100",
+    "doi_source": "https://dx.doi.org/10.14569/IJACSA.2022.01306100",
+    "needs_metadata_review": false
   },
   "a522db7fe35b": {
     "id": "a522db7fe35b",
@@ -447,10 +709,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Anomaly Analysis in Images and Videos: A Comprehensive Review",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Anomaly Analysis in Images and Videos: A Comprehensive Review",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "acm-computing-surveys",
+    "venue_name": "ACM Computing Surveys",
+    "publication_type": "journal",
+    "doi": "10.1145/3544014",
+    "doi_source": "https://dl.acm.org/doi/abs/10.1145/3544014",
+    "needs_metadata_review": false
   },
   "e7544da84290": {
     "id": "e7544da84290",
@@ -460,10 +730,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A Benchmark of Parsing Vietnamese Publications",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A Benchmark of Parsing Vietnamese Publications",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3183193",
+    "doi_source": "https://doi.org/10.1109/ACCESS.2022.3183193",
+    "needs_metadata_review": false,
+    "doi_verification_note": "Official DOI resolver redirects to IEEE document 9796543, matching preserved publisher link; title/authors also cited by Springer IJDAR review 10.1007/s10032-023-00431-0."
   },
   "13491e0bc016": {
     "id": "13491e0bc016",
@@ -473,10 +752,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3158763",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "cb0f41c2b341": {
     "id": "cb0f41c2b341",
@@ -486,10 +773,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Detecting Objects from Space: An Evaluation of Deep-Learning Modern Approaches",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Detecting Objects from Space: An Evaluation of Deep-Learning Modern Approaches",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "electronics",
+    "venue_name": "Electronics",
+    "publication_type": "journal",
+    "doi": "10.3390/electronics9040583",
+    "doi_source": "https://www.mdpi.com/2079-9292/9/4/583",
+    "needs_metadata_review": false
   },
   "79242ca186b0": {
     "id": "79242ca186b0",
@@ -499,10 +794,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "You always look again: Learning to detect the unseen objects",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "You always look again: Learning to detect the unseen objects",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "journal-of-visual-communication-and-image-representation",
+    "venue_name": "Journal of Visual Communication and Image Representation",
+    "publication_type": "journal",
+    "doi": "10.1016/j.jvcir.2019.02.020",
+    "doi_source": "https://khcn.uit.edu.vn/cbkhcn/loaibai/baibao/2/99?page=5",
+    "needs_metadata_review": false
   },
   "4f483ebc0ee3": {
     "id": "4f483ebc0ee3",
@@ -512,10 +815,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "YADA: You Always Dream Again for Better Object Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "YADA: You Always Dream Again for Better Object Detection",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "multimedia-tools-and-applications",
+    "venue_name": "Multimedia Tools and Applications",
+    "publication_type": "journal",
+    "doi": "10.1007/s11042-019-07888-4",
+    "doi_source": "https://link.springer.com/article/10.1007/s11042-019-07888-4",
+    "needs_metadata_review": false
   },
   "79685d65f988": {
     "id": "79685d65f988",
@@ -525,10 +836,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Person re-identification with mutual re-ranking",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Person re-identification with mutual re-ranking",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "vietnam-journal-of-computer-science",
+    "venue_name": "Vietnam Journal of Computer Science",
+    "publication_type": "journal",
+    "doi": "10.1007/s40595-016-0093-x",
+    "doi_source": "https://link.springer.com/article/10.1007/s40595-016-0093-x",
+    "needs_metadata_review": false
   },
   "70682c7744af": {
     "id": "70682c7744af",
@@ -538,10 +857,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Integer Formulation and Data Analysis of a Real-World Course Timetabling Problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Integer Formulation and Data Analysis of a Real-World Course Timetabling Problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "international-journal-on-computer-science-and-engineering",
+    "venue_name": "International Journal on Computer Science and Engineering",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "491940a0d789": {
     "id": "491940a0d789",
@@ -551,10 +878,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "An hybrid algorithm of harmony search and bees algorithm for a university course timetabling problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "An hybrid algorithm of harmony search and bees algorithm for a university course timetabling problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "international-journal-of-computer-science-issues",
+    "venue_name": "International Journal of Computer Science Issues",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "638aa10fc03c": {
     "id": "638aa10fc03c",
@@ -564,10 +899,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát Hiện Tàu Thuyền Trong Không Ảnh Bằng Phương Pháp RTMDET-ROTATED",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát Hiện Tàu Thuyền Trong Không Ảnh Bằng Phương Pháp RTMDET-ROTATED",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://drive.google.com/file/d/1tq60Dj2A9eYTDZgJchOvbMcs8xGJMMPW/view"
   },
   "429e884e957f": {
     "id": "429e884e957f",
@@ -577,10 +921,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát Hiện Đối Tượng Trong Không Ảnh Sử Dụng Phương Pháp DINO",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát Hiện Đối Tượng Trong Không Ảnh Sử Dụng Phương Pháp DINO",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "00929e406efc": {
     "id": "00929e406efc",
@@ -590,10 +942,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Transformer-based End-to-End Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Transformer-based End-to-End Object Detection in Aerial Images",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2023.01410113",
+    "doi_source": "https://thesai.org/Publications/ViewPaper?Code=IJACSA&Issue=10&SerialNo=113&Volume=14",
+    "needs_metadata_review": false
   },
   "c0c4853e5861": {
     "id": "c0c4853e5861",
@@ -603,10 +963,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Optimizing Results in Aerial Images through Post-Processing Techniques on YOLOv7",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Optimizing Results in Aerial Images through Post-Processing Techniques on YOLOv7",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "soict",
+    "venue_name": "International Symposium on Information and Communication Technology (SOICT)",
+    "publication_type": "conference",
+    "doi": "10.1145/3628797.3628980",
+    "doi_source": "https://en.uit.edu.vn/congratulations-two-sophomore-students-faculty-computer-science-their-accepted-scientific-paper-soict-2023-conference",
+    "needs_metadata_review": false
   },
   "3b721bf00331": {
     "id": "3b721bf00331",
@@ -616,10 +984,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "CASQ: Enhancing Human-Object Interaction Detection via Supplementary Semantic Information for Interaction Queries",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "CASQ: Enhancing Human-Object Interaction Detection via Supplementary Semantic Information for Interaction Queries",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "d88a6d97f85f": {
     "id": "d88a6d97f85f",
@@ -629,10 +1005,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "FoveaBox with Consistent Label Assignment Distillation for Page Object Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "FoveaBox with Consistent Label Assignment Distillation for Page Object Detection",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "399a4bb582fc": {
     "id": "399a4bb582fc",
@@ -642,10 +1026,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát Hiện Phương Tiện Giao Thông Trong Không Ảnh Bằng Mô Hình Yolo V5 Nhỏ Gọn",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát Hiện Phương Tiện Giao Thông Trong Không Ảnh Bằng Mô Hình Yolo V5 Nhỏ Gọn",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2023.0068",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2024/2/21/64e13532907845ed9f5a2547dfec276f/55BB_FAIR2023_paper_6659.pdf",
+    "needs_metadata_review": false
   },
   "a165c0002163": {
     "id": "a165c0002163",
@@ -655,10 +1047,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát Hiện Đối Tượng Nhỏ Trong Không Ảnh Sử Dụng Phương Pháp Oriented Reppoints",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát Hiện Đối Tượng Nhỏ Trong Không Ảnh Sử Dụng Phương Pháp Oriented Reppoints",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2023.0067",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2024/2/21/64e13532907845ed9f5a2547dfec276f/54BB_FAIR2023_paper_4406.pdf",
+    "needs_metadata_review": false
   },
   "9e4a5a384c1d": {
     "id": "9e4a5a384c1d",
@@ -668,10 +1068,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Nghiên Cứu Sử Dụng Mô Hình DeTr Với Bài Toán Phát Hiện Đối Tượng Trong Không Ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Nghiên Cứu Sử Dụng Mô Hình DeTr Với Bài Toán Phát Hiện Đối Tượng Trong Không Ảnh",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2023.0065",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2024/2/21/64e13532907845ed9f5a2547dfec276f/52BB_FAIR2023_paper_7470.pdf",
+    "needs_metadata_review": false
   },
   "7bf60b237559": {
     "id": "7bf60b237559",
@@ -681,10 +1089,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Comparison of machine learning methods for image classification of companies in Vietnam",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Comparison of machine learning methods for image classification of companies in Vietnam",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "icsip",
+    "venue_name": "International Conference on Signal and Image Processing (ICSIP)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "f2f964a24dd2": {
     "id": "f2f964a24dd2",
@@ -694,10 +1110,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Analysis of Fog density on oriented object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Analysis of Fog density on oriented object detection in aerial images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "d259bcf89f90": {
     "id": "d259bcf89f90",
@@ -709,10 +1133,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study of Real-time One-Stage Object Detection Methods on Recyclable Waste Dataset",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study of Real-time One-Stage Object Detection Methods on Recyclable Waste Dataset",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "b43c5664f6a8": {
     "id": "b43c5664f6a8",
@@ -722,10 +1154,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Foggy-DOTA: An Adverse Weather Dataset for Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Foggy-DOTA: An Adverse Weather Dataset for Object Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS56915.2022.10013441",
+    "doi_source": "https://ieeexplore.ieee.org/document/10013441/",
+    "needs_metadata_review": false
   },
   "b9af7de526b8": {
     "id": "b9af7de526b8",
@@ -735,10 +1175,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study One-Stage Object Detection Methods for RoboCup Small Size League",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study One-Stage Object Detection Methods for RoboCup Small Size League",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS56915.2022.10013320",
+    "doi_source": "https://www.scitepress.org/Papers/2025/138763/138763.pdf",
+    "needs_metadata_review": false
   },
   "1a0c93b9b78b": {
     "id": "1a0c93b9b78b",
@@ -748,10 +1196,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A Multi-Scale Approach for Vietnamese Image Captioning in Healthcare Domain",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A Multi-Scale Approach for Vietnamese Image Captioning in Healthcare Domain",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "a88f0dd03610": {
     "id": "a88f0dd03610",
@@ -761,10 +1217,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Page Object Detection in Vietnamese Document Images with Novel Approach",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Page Object Detection in Vietnamese Document Images with Novel Approach",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "74ddc0e74e4e": {
     "id": "74ddc0e74e4e",
@@ -774,10 +1238,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Vi-DRSNet: A Novel Hybrid Model for Vietnamese Image Captioning in Healthcare Domain",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Vi-DRSNet: A Novel Hybrid Model for Vietnamese Image Captioning in Healthcare Domain",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "10.1109/MAPR56351.2022.9924781",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "c179edafea27": {
     "id": "c179edafea27",
@@ -787,10 +1259,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Performance Evaluation of Optimizers for Deformable-DETR in Natural Disaster Damage Assessment",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Performance Evaluation of Optimizers for Deformable-DETR in Natural Disaster Damage Assessment",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "8d9ec9482676": {
     "id": "8d9ec9482676",
@@ -800,10 +1280,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "GaDocNet: Rethinking the Anchoring Scheme and Loss Function in Vietnamese Document Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "GaDocNet: Rethinking the Anchoring Scheme and Loss Function in Vietnamese Document Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "4abdeb743a75": {
     "id": "4abdeb743a75",
@@ -813,10 +1301,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study of RepPoints Representation for Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study of RepPoints Representation for Object Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "icce",
+    "venue_name": "International Conference on Communications and Electronics (ICCE)",
+    "publication_type": "conference",
+    "doi": "10.1109/ICCE55644.2022.9852099",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "7e57d0f0d717": {
     "id": "7e57d0f0d717",
@@ -826,10 +1322,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "CDeRSNet: Towards High Performance Object Detection in Vietnamese Document Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "CDeRSNet: Towards High Performance Object Detection in Vietnamese Document Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mmm",
+    "venue_name": "International Conference on Multimedia Modeling (MMM)",
+    "publication_type": "conference",
+    "doi": "10.1007/978-3-030-98355-0_36",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/view/4172",
+    "needs_metadata_review": false
   },
   "9ca4a622c0e4": {
     "id": "9ca4a622c0e4",
@@ -839,10 +1343,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Page Object Detection with YOLOF",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Page Object Detection with YOLOF",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701449",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/view/4172",
+    "needs_metadata_review": false
   },
   "5b0f1992316d": {
     "id": "5b0f1992316d",
@@ -852,10 +1364,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "VNAnomaly: A Novel Vietnam Surveillance Video Dataset for Anomaly Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "VNAnomaly: A Novel Vietnam Surveillance Video Dataset for Anomaly Detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://drive.google.com/file/d/175i4cQhaP_2HUpkz3jQ7Skz2D4kzF8-e/view"
   },
   "5ed5bed7ae6b": {
     "id": "5ed5bed7ae6b",
@@ -865,10 +1386,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "UIT-DroneFog: Toward High-Performance Object Detection via High-Quality Aerial Foggy Dataset",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "UIT-DroneFog: Toward High-Performance Object Detection via High-Quality Aerial Foggy Dataset",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://drive.google.com/file/d/1pUaxGfmKxXGEypcwyzYUNoliwxiYLOmJ/view"
   },
   "62a9ad7c5fbd": {
     "id": "62a9ad7c5fbd",
@@ -878,10 +1408,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Guided Anchoring Cascade R-CNN: An Intensive Improvement of R-CNN in Vietnamese Document Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Guided Anchoring Cascade R-CNN: An Intensive Improvement of R-CNN in Vietnamese Document Detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701510",
+    "doi_source": "https://cjss.ac.cn/en/article/doi/10.11728/cjss2025.04.2024-0103",
+    "needs_metadata_review": false
   },
   "c528f0d08b52": {
     "id": "c528f0d08b52",
@@ -891,10 +1429,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "An Augmented Embedding Spaces Approach for Text-Based Image Captioning",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "An Augmented Embedding Spaces Approach for Text-Based Image Captioning",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "c81af86066f7": {
     "id": "c81af86066f7",
@@ -904,10 +1450,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "UIT-Anomaly: A Modern Vietnamese Video Dataset for Anomaly Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "UIT-Anomaly: A Modern Vietnamese Video Dataset for Anomaly Detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701556",
+    "doi_source": "https://ieeexplore.ieee.org/document/9701556/",
+    "needs_metadata_review": false
   },
   "98ec1ca6c7e3": {
     "id": "98ec1ca6c7e3",
@@ -917,10 +1471,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện phương tiện giao thông trong không ảnh với nhiều tình huống khác nhau",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện phương tiện giao thông trong không ảnh với nhiều tình huống khác nhau",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "bed020851e59": {
     "id": "bed020851e59",
@@ -930,10 +1492,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Một hàm lỗi cho phát hiện bất thường trên video giám sát",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Một hàm lỗi cho phát hiện bất thường trên video giám sát",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "34c0dcbf759b": {
     "id": "34c0dcbf759b",
@@ -943,10 +1513,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện phương tiện giao thông ở môi trường đô thị việt nam trong ảnh chụp từ drone",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện phương tiện giao thông ở môi trường đô thị việt nam trong ảnh chụp từ drone",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "8a766b1f6c91": {
     "id": "8a766b1f6c91",
@@ -956,10 +1534,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Thử nghiệm hệ thống nhận diện khuôn mặt trên video được stream từ Drone",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Thử nghiệm hệ thống nhận diện khuôn mặt trên video được stream từ Drone",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "99e02b87d352": {
     "id": "99e02b87d352",
@@ -969,10 +1555,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Khai phá hàm chi phí cho phát hiện phương tiện giao thông trong không ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Khai phá hàm chi phí cho phát hiện phương tiện giao thông trong không ảnh",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2021.0051",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2021/12/22/1ecec417207345d595e011cb434f7fe8/16_FAIR2021_paper_98.pdf",
+    "needs_metadata_review": false
   },
   "8f66a6dbb183": {
     "id": "8f66a6dbb183",
@@ -984,10 +1578,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Parsing Digitized Vietnamese Paper Documents",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Parsing Digitized Vietnamese Paper Documents",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "caip",
+    "venue_name": "International Conference on Computer Analysis of Images and Patterns (CAIP)",
+    "publication_type": "conference",
+    "doi": "10.1007/978-3-030-89128-2_37",
+    "doi_source": "https://link.springer.com/chapter/10.1007/978-3-030-89128-2_37?fbclid=IwAR2KRhLDSbQsLgI2K1-HLgBsqWRZDyHpa855B8bjeyWSxe8RB-Kgei6kt2w",
+    "needs_metadata_review": false
   },
   "3b6cf6a332a4": {
     "id": "3b6cf6a332a4",
@@ -1000,10 +1602,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "VinaFood21: A Novel Dataset for Evaluating Vietnamese Food Recognition",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "VinaFood21: A Novel Dataset for Evaluating Vietnamese Food Recognition",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "10.1109/RIVF51545.2021.9642151",
+    "doi_source": "https://scholar.dlu.edu.vn/thuvienso/bitstream/DLU123456789/256906/1/ToanVan_052.pdf",
+    "needs_metadata_review": false
   },
   "56d63c553b6b": {
     "id": "56d63c553b6b",
@@ -1015,10 +1625,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "MC-OCR Challenge 2021: Deep Learning Approach for Vietnamese Receipts OCR",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "MC-OCR Challenge 2021: Deep Learning Approach for Vietnamese Receipts OCR",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "10.1109/RIVF51545.2021.9642128",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "9cc85e79ba34": {
     "id": "9cc85e79ba34",
@@ -1030,10 +1648,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "The effects of super-resolution on object detection performance in an aerial image",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "The effects of super-resolution on object detection performance in an aerial image",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/9335859"
   },
   "5bedd557c209": {
     "id": "5bedd557c209",
@@ -1045,10 +1672,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Vehicle Detection at Night Time",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Vehicle Detection at Night Time",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/9335870"
   },
   "303293a5f701": {
     "id": "303293a5f701",
@@ -1060,10 +1696,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Data augmentation analysis in vehicle detection from aerial videos",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Data augmentation analysis in vehicle detection from aerial videos",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "10.1109/RIVF48685.2020.9140740",
+    "doi_source": "https://joiv.org/index.php/joiv/article/viewFile/2313/846",
+    "needs_metadata_review": false
   },
   "0b39337ce707": {
     "id": "0b39337ce707",
@@ -1073,10 +1717,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Human-Object Grouping Discovery for Human Action Recognition in Still Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Human-Object Grouping Discovery for Human Action Recognition in Still Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "kicss",
+    "venue_name": "International Conference on Knowledge, Information and Creativity Support Systems (KICSS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "5832ac9bd683": {
     "id": "5832ac9bd683",
@@ -1086,10 +1738,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện bảng trong tài liệu dạng ảnh sử dụng phương pháp định vị góc CornerNet",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện bảng trong tài liệu dạng ảnh sử dụng phương pháp định vị góc CornerNet",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2020.00201",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2021/6/18/db78b606b7cc49b6873265977492fa99/59_FAIR2020_paper_16.pdf",
+    "needs_metadata_review": false
   },
   "88469f9aeec7": {
     "id": "88469f9aeec7",
@@ -1099,10 +1759,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện đối tượng trong ảnh bị hạn chế tầm nhìn bởi sương mù",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện đối tượng trong ảnh bị hạn chế tầm nhìn bởi sương mù",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "dbc8ed70bfa9": {
     "id": "dbc8ed70bfa9",
@@ -1112,10 +1780,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Tái nhận dạng nhân vật sử dụng phương pháp học sâu",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Tái nhận dạng nhân vật sử dụng phương pháp học sâu",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "3b8f4cd04779": {
     "id": "3b8f4cd04779",
@@ -1125,10 +1801,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện phương tiện giao thông tại các trung tâm thành phố lớn với phương pháp YOLOv4",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện phương tiện giao thông tại các trung tâm thành phố lớn với phương pháp YOLOv4",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "c2381352978f": {
     "id": "c2381352978f",
@@ -1138,10 +1822,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Khảo sát các phương pháp máy học cho bài toán phân loại COVID-19 trên ảnh X-quang",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Khảo sát các phương pháp máy học cho bài toán phân loại COVID-19 trên ảnh X-quang",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "617e40106876": {
     "id": "617e40106876",
@@ -1151,10 +1843,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Một phương pháp học sâu phát hiện cảm xúc gương mặt",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Một phương pháp học sâu phát hiện cảm xúc gương mặt",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "eff7e5d6e1e5": {
     "id": "eff7e5d6e1e5",
@@ -1164,10 +1864,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện đối tượng trong môi trường tầm nhìn hạn chế",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện đối tượng trong môi trường tầm nhìn hạn chế",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "bfb4be54039f": {
     "id": "bfb4be54039f",
@@ -1177,10 +1885,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Detecting human from space: an evaluation of deep learning modern approaches",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Detecting human from space: an evaluation of deep learning modern approaches",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mita",
+    "venue_name": "International Conference on Multimedia Information Technology and Applications (MITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "998412c9d2ca": {
     "id": "998412c9d2ca",
@@ -1190,10 +1906,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Deep feature extractors for small object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Deep feature extractors for small object detection in aerial images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "cita",
+    "venue_name": "Conference on Information Technology and its Applications (CITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "65513f813a37": {
     "id": "65513f813a37",
@@ -1203,10 +1927,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện xe hai-ba bánh theo thời gian thực sử dụng phương pháp học sâu YOLOv3",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện xe hai-ba bánh theo thời gian thực sử dụng phương pháp học sâu YOLOv3",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "be2064a565d7": {
     "id": "be2064a565d7",
@@ -1216,10 +1948,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện đối tượng từ không ảnh sử dụng phương pháp Faster R-CNN",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện đối tượng từ không ảnh sử dụng phương pháp Faster R-CNN",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "24e22358aaee": {
     "id": "24e22358aaee",
@@ -1229,10 +1969,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "SSD For Object Detection In Aerial Videos",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "SSD For Object Detection In Aerial Videos",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "3f0ff5dca047": {
     "id": "3f0ff5dca047",
@@ -1242,10 +1990,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Tái nhận dạng nhân vật ở cấp độ điểm ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Tái nhận dạng nhân vật ở cấp độ điểm ảnh",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "cita",
+    "venue_name": "Conference on Information Technology and its Applications (CITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://elib.vku.udn.vn/bitstream/123456789/972/1/B18.2019-147-154.pdf"
   },
   "90357629fde0": {
     "id": "90357629fde0",
@@ -1255,10 +2012,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện phương tiện giao thông trong không ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện phương tiện giao thông trong không ảnh",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "cita",
+    "venue_name": "Conference on Information Technology and its Applications (CITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "9ded078931b9": {
     "id": "9ded078931b9",
@@ -1268,10 +2033,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện xe hai-ba bánh theo thời gian thực sử dụng phương pháp học sâu YOLOv3",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện xe hai-ba bánh theo thời gian thực sử dụng phương pháp học sâu YOLOv3",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "8f7401e25a67": {
     "id": "8f7401e25a67",
@@ -1281,10 +2054,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện đối tượng từ không ảnh sử dụng phương pháp Faster R-CNN",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện đối tượng từ không ảnh sử dụng phương pháp Faster R-CNN",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "5bcb1b41b09c": {
     "id": "5bcb1b41b09c",
@@ -1294,10 +2075,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "SSD For Object Detection In Aerial Videos",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "SSD For Object Detection In Aerial Videos",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "selected-ict-problems",
+    "venue_name": "National Symposium of Selected ICT Problems",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "07f427bba714": {
     "id": "07f427bba714",
@@ -1307,10 +2096,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Deep feature extractors for tiny object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Deep feature extractors for tiny object detection in aerial images",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "cita",
+    "venue_name": "Conference on Information Technology and its Applications (CITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "4a63783fda85": {
     "id": "4a63783fda85",
@@ -1320,10 +2117,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Phát hiện phương tiện giao thông trong không ảnh",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Phát hiện phương tiện giao thông trong không ảnh",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "cita",
+    "venue_name": "Conference on Information Technology and its Applications (CITA)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "237bf2d12ee4": {
     "id": "237bf2d12ee4",
@@ -1333,10 +2138,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Khảo sát thực nghiệm đặc trưng học sâu trên bộ dữ liệu lớn cho bài toán tái nhận dạng nhân vật",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Khảo sát thực nghiệm đặc trưng học sâu trên bộ dữ liệu lớn cho bài toán tái nhận dạng nhân vật",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2018.00031",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2020/4/13/990a1ba09ff2459fa91ecdab01b94942/31_86.pdf",
+    "needs_metadata_review": true,
+    "metadata_note": "Publisher PDF identifies FAIR 2018; legacy year 2019 preserved."
   },
   "24a91c6f9cbd": {
     "id": "24a91c6f9cbd",
@@ -1348,10 +2162,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Ensemble of deep object detectors for page object detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Ensemble of deep object detectors for page object detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "imcom",
+    "venue_name": "International Conference on Ubiquitous Information Management and Communication (IMCOM)",
+    "publication_type": "conference",
+    "doi": "10.1145/3164541.3164644",
+    "doi_source": "https://dl.acm.org/doi/abs/10.1145/3164541.3164644",
+    "needs_metadata_review": false
   },
   "5480a4fb277d": {
     "id": "5480a4fb277d",
@@ -1361,10 +2183,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Denser Trajectories of Anchor Points for Action Recognition",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Denser Trajectories of Anchor Points for Action Recognition",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "imcom",
+    "venue_name": "International Conference on Ubiquitous Information Management and Communication (IMCOM)",
+    "publication_type": "conference",
+    "doi": "10.1145/3164541.3164611",
+    "doi_source": "https://arxiv.org/pdf/2601.03667",
+    "needs_metadata_review": false
   },
   "57f0ab3c13fc": {
     "id": "57f0ab3c13fc",
@@ -1374,10 +2204,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Evaluation Of State-Of-The-Art Object Detection Methods For Document Image Understanding",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Evaluation Of State-Of-The-Art Object Detection Methods For Document Image Understanding",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2017.00022",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2021/6/18/db78b606b7cc49b6873265977492fa99/59_FAIR2020_paper_16.pdf",
+    "needs_metadata_review": false
   },
   "4746b68cdb9d": {
     "id": "4746b68cdb9d",
@@ -1387,10 +2225,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Graph-based visual instance mining with geometric matching and nearest candidates selection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Graph-based visual instance mining with geometric matching and nearest candidates selection",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "kse",
+    "venue_name": "International Conference on Knowledge and Systems Engineering (KSE)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "0f4041ae59c1": {
     "id": "0f4041ae59c1",
@@ -1400,10 +2246,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Exploiting Generic Multi-Level Convolutional Neural Networks for Scene Understanding",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Exploiting Generic Multi-Level Convolutional Neural Networks for Scene Understanding",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "icarcv",
+    "venue_name": "International Conference on Control, Automation, Robotics and Vision (ICARCV)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "a59a5005cd0a": {
     "id": "a59a5005cd0a",
@@ -1413,10 +2267,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Re-Ranking for Person Re-Identification",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Re-Ranking for Person Re-Identification",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "socpar",
+    "venue_name": "International Conference of Soft Computing and Pattern Recognition",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "a3b4fbb34013": {
     "id": "a3b4fbb34013",
@@ -1426,10 +2288,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Memetic algorithm for a University Course Timetabling Problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Memetic algorithm for a University Course Timetabling Problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "icinar",
+    "venue_name": "International Asia Conference on Informatics in Control, Automation and Robotics",
+    "publication_type": "conference",
+    "doi": "10.1007/978-3-642-25899-2_10",
+    "doi_source": "https://link.springer.com/chapter/10.1007/978-3-642-25899-2_10",
+    "needs_metadata_review": false
   },
   "5531ff1354a9": {
     "id": "5531ff1354a9",
@@ -1439,10 +2309,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "The Bees Algorithm for a Practical University Timetabling Problem in Vietnam",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "The Bees Algorithm for a Practical University Timetabling Problem in Vietnam",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "csae",
+    "venue_name": "Computer Science and Automation Engineering",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "ad2cb5e30278": {
     "id": "ad2cb5e30278",
@@ -1452,10 +2330,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Applications of Particle Swarm Optimization Algorithm to a Practical University Timetabling Problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Applications of Particle Swarm Optimization Algorithm to a Practical University Timetabling Problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "iccci",
+    "venue_name": "International Conference on Computer and Computational Intelligence",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "6a4f34bb86c9": {
     "id": "6a4f34bb86c9",
@@ -1465,10 +2351,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Variable Neighborhood Search for a Real-World Curriculum-based University Timetabling Problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Variable Neighborhood Search for a Real-World Curriculum-based University Timetabling Problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "kse",
+    "venue_name": "International Conference on Knowledge and Systems Engineering (KSE)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "e3bd56427c7d": {
     "id": "e3bd56427c7d",
@@ -1478,10 +2372,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Automating a Real-World University Timetabling Problem with Tabu Search Algorithm",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Automating a Real-World University Timetabling Problem with Tabu Search Algorithm",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "8d0231163c5e": {
     "id": "8d0231163c5e",
@@ -1491,10 +2393,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Simulated Annealing-Based Algorithm for a Real-World High School Timetabling Problem",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Simulated Annealing-Based Algorithm for a Real-World High School Timetabling Problem",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "kse",
+    "venue_name": "International Conference on Knowledge and Systems Engineering (KSE)",
+    "publication_type": "conference",
+    "doi": "10.1109/KSE.2010.31",
+    "doi_source": "https://ojs.revistagesec.org.br/secretariado/article/view/4004",
+    "needs_metadata_review": false
   },
   "bb5b84f5950e": {
     "id": "bb5b84f5950e",
@@ -1509,7 +2419,15 @@
     "title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
     "authors": "Khang Nguyen, An Nguyen, Nguyen D. Vo, Tam V. Nguyen",
     "venue": "IEEE Access, 10, 108046-108066. 2022",
-    "image": "/assets/images/papers/vdn.jpg"
+    "image": "/assets/images/papers/vdn.jpg",
+    "display_title": "Vietnamese Document Analysis: Dataset, Method and Benchmark Suite",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3211069",
+    "doi_source": "https://ecommons.udayton.edu/cps_fac_pub/193/",
+    "needs_metadata_review": false
   },
   "b7886b0d89a6": {
     "id": "b7886b0d89a6",
@@ -1519,10 +2437,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Improving human–object interaction with auxiliary semantic information and enhanced instance representation",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Improving human–object interaction with auxiliary semantic information and enhanced instance representation",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "pattern-recognition-letters",
+    "venue_name": "Pattern Recognition Letters",
+    "publication_type": "journal",
+    "doi": "10.1016/j.patrec.2023.09.013",
+    "doi_source": "https://doi.org/10.1016/j.patrec.2023.09.013",
+    "needs_metadata_review": false
   },
   "ed9a07bf7c50": {
     "id": "ed9a07bf7c50",
@@ -1532,10 +2458,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-jstars",
+    "venue_name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "publication_type": "journal",
+    "doi": "10.1109/JSTARS.2023.3285905",
+    "doi_source": "https://ieeexplore.ieee.org/document/10158513/",
+    "needs_metadata_review": false
   },
   "acc511485554": {
     "id": "acc511485554",
@@ -1545,10 +2479,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Evaluating the influence of backbone network architectures for object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Evaluating the influence of backbone network architectures for object detection in aerial images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "vietnam-journal-of-science-and-technology",
+    "venue_name": "Vietnam Journal of Science and Technology",
+    "publication_type": "journal",
+    "doi": "10.15625/2525-2518/17595",
+    "doi_source": "https://vjs.ac.vn/jst/article/view/17595",
+    "needs_metadata_review": false
   },
   "09c496da2c87": {
     "id": "09c496da2c87",
@@ -1558,10 +2500,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Disease Recognition in X-ray Images with Doctor Consultation-Inspired Model",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Disease Recognition in X-ray Images with Doctor Consultation-Inspired Model",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "journal-of-imaging",
+    "venue_name": "Journal of Imaging",
+    "publication_type": "journal",
+    "doi": "10.3390/jimaging8120323",
+    "doi_source": "https://doi.org/10.3390/jimaging8120323",
+    "needs_metadata_review": false
   },
   "215149e653a9": {
     "id": "215149e653a9",
@@ -1571,10 +2521,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Rethinking Classification of Oriented Object Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ijacsa",
+    "venue_name": "International Journal of Advanced Computer Science and Applications (IJACSA)",
+    "publication_type": "journal",
+    "doi": "10.14569/IJACSA.2022.0130987",
+    "doi_source": "https://dx.doi.org/10.14569/IJACSA.2022.0130987",
+    "needs_metadata_review": false
   },
   "35f181a1e3cc": {
     "id": "35f181a1e3cc",
@@ -1584,10 +2542,19 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A Benchmark of Parsing Vietnamese Publications",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A Benchmark of Parsing Vietnamese Publications",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3183193",
+    "doi_source": "https://doi.org/10.1109/ACCESS.2022.3183193",
+    "needs_metadata_review": false,
+    "doi_verification_note": "Official DOI resolver redirects to IEEE document 9796543, matching preserved publisher link; title/authors also cited by Springer IJDAR review 10.1007/s10032-023-00431-0."
   },
   "b75cd833f4af": {
     "id": "b75cd833f4af",
@@ -1597,10 +2564,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "EAES: Effective Augmented Embedding Spaces for Text-Based Image Captioning",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "10.1109/ACCESS.2022.3158763",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "5b603935190c": {
     "id": "5b603935190c",
@@ -1610,10 +2585,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Analysis of Fog density on oriented object detection in aerial images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Analysis of Fog density on oriented object detection in aerial images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "23574c74167e": {
     "id": "23574c74167e",
@@ -1625,10 +2608,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study of Real-time One-Stage Object Detection Methods on Recyclable Waste Dataset",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study of Real-time One-Stage Object Detection Methods on Recyclable Waste Dataset",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "41dedf2ee414": {
     "id": "41dedf2ee414",
@@ -1640,10 +2631,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study of the Performance of Object Detection Methods on Road Marking Dataset",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study of the Performance of Object Detection Methods on Road Marking Dataset",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "84851e32063e": {
     "id": "84851e32063e",
@@ -1653,10 +2652,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Foggy-DOTA: An Adverse Weather Dataset for Object Detection in Aerial Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Foggy-DOTA: An Adverse Weather Dataset for Object Detection in Aerial Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS56915.2022.10013441",
+    "doi_source": "https://ieeexplore.ieee.org/document/10013441/",
+    "needs_metadata_review": false
   },
   "ae6f0e9c907e": {
     "id": "ae6f0e9c907e",
@@ -1666,10 +2673,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Empirical Study One-Stage Object Detection Methods for RoboCup Small Size League",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Empirical Study One-Stage Object Detection Methods for RoboCup Small Size League",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS56915.2022.10013320",
+    "doi_source": "https://www.scitepress.org/Papers/2025/138763/138763.pdf",
+    "needs_metadata_review": false
   },
   "142ef91ff209": {
     "id": "142ef91ff209",
@@ -1679,10 +2694,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "A Multi-Scale Approach for Vietnamese Image Captioning in Healthcare Domain",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "A Multi-Scale Approach for Vietnamese Image Captioning in Healthcare Domain",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "43f07ced2fb9": {
     "id": "43f07ced2fb9",
@@ -1692,10 +2715,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Page Object Detection in Vietnamese Document Images with Novel Approach",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Page Object Detection in Vietnamese Document Images with Novel Approach",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "de06ab17ae4e": {
     "id": "de06ab17ae4e",
@@ -1705,10 +2736,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Vi-DRSNet: A Novel Hybrid Model for Vietnamese Image Captioning in Healthcare Domain",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Vi-DRSNet: A Novel Hybrid Model for Vietnamese Image Captioning in Healthcare Domain",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "mapr",
+    "venue_name": "International Conference on Multimedia Analysis and Pattern Recognition (MAPR)",
+    "publication_type": "conference",
+    "doi": "10.1109/MAPR56351.2022.9924781",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   },
   "817b7c500692": {
     "id": "817b7c500692",
@@ -1718,10 +2757,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "Human-Object Grouping Discovery for Human Action Recognition in Still Images",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "Human-Object Grouping Discovery for Human Action Recognition in Still Images",
+    "metadata_source": "quoted_legacy_title",
+    "venue_id": "kicss",
+    "venue_name": "International Conference on Knowledge, Information and Creativity Support Systems (KICSS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "6ac025bba1d4": {
     "id": "6ac025bba1d4",
@@ -1731,10 +2778,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "You always look again: Learning to detect the unseen objects",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "You always look again: Learning to detect the unseen objects",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "journal-of-visual-communication-and-image-representation",
+    "venue_name": "Journal of Visual Communication and Image Representation",
+    "publication_type": "journal",
+    "doi": "10.1016/j.jvcir.2019.02.020",
+    "doi_source": "https://khcn.uit.edu.vn/cbkhcn/loaibai/baibao/2/99?page=5",
+    "needs_metadata_review": false
   },
   "4375ed216536": {
     "id": "4375ed216536",
@@ -1744,10 +2799,18 @@
     "layouts": [
       "citation"
     ],
-    "title": "",
+    "title": "YADA: You Always Dream Again for Better Object Detection",
     "authors": "",
     "venue": "",
-    "image": ""
+    "image": "",
+    "display_title": "YADA: You Always Dream Again for Better Object Detection",
+    "metadata_source": "explicit_legacy_title_match",
+    "venue_id": "multimedia-tools-and-applications",
+    "venue_name": "Multimedia Tools and Applications",
+    "publication_type": "journal",
+    "doi": "10.1007/s11042-019-07888-4",
+    "doi_source": "https://link.springer.com/article/10.1007/s11042-019-07888-4",
+    "needs_metadata_review": false
   },
   "c11ac8ac9ccb": {
     "id": "c11ac8ac9ccb",
@@ -1764,7 +2827,16 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Nguyen D. Vo, HUONG-GIANG NGO, TOAN LE, QUANG NGUYEN, DANH-DU DOAN, BINH NGUYEN, DO LE-HUU, NGUYEN LE-DUY, HUY TRAN, KHANH DUY NGUYEN and KHANG NGUYEN,\n\t\t\t\t\tIEEE Access (SCIE, Q1, IF: 3.4)",
-    "homepage_date_label": "Jan 2024"
+    "homepage_date_label": "Jan 2024",
+    "display_title": "Aerial Data Exploration: An In-Depth Study from Horizontal to Oriented Viewpoint",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-access",
+    "venue_name": "IEEE Access",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/10453557"
   },
   "d70141405c7c": {
     "id": "d70141405c7c",
@@ -1779,7 +2851,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Tung Minh Tran, Tu N Vu, Tam V Nguyen, Khang Nguyen, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (2023) (SCIE, Q1, IF:5.5).",
-    "homepage_date_label": "June 2023"
+    "homepage_date_label": "June 2023",
+    "display_title": "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection",
+    "metadata_source": "existing_title",
+    "venue_id": "ieee-jstars",
+    "venue_name": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "publication_type": "journal",
+    "doi": "10.1109/JSTARS.2023.3285905",
+    "doi_source": "https://ieeexplore.ieee.org/document/10158513/",
+    "needs_metadata_review": false
   },
   "2bf30a7fcbe6": {
     "id": "2bf30a7fcbe6",
@@ -1794,7 +2874,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Phuc Nguyen, Luu Ngo, Thang Truong, Thuan Trong Nguyen, Nguyen D. Vo and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "Page Object Detection with YOLOF",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701449",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/view/4172",
+    "needs_metadata_review": false
   },
   "34d48fd85d03": {
     "id": "34d48fd85d03",
@@ -1809,7 +2897,16 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Tu Ngoc Vu, Toan Dinh, Nguyen D. Vo, Tung Tran and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "VNAnomaly: A Novel Vietnam Surveillance Video Dataset for Anomaly Detection",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://drive.google.com/file/d/175i4cQhaP_2HUpkz3jQ7Skz2D4kzF8-e/view"
   },
   "e7ed633bfc3b": {
     "id": "e7ed633bfc3b",
@@ -1824,7 +2921,16 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Minh T. Tran, Bao V. Tran, Nguyen D. Vo and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "UIT-DroneFog: Toward High-Performance Object Detection via High-Quality Aerial Foggy Dataset",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://drive.google.com/file/d/1pUaxGfmKxXGEypcwyzYUNoliwxiYLOmJ/view"
   },
   "393e1cd9a311": {
     "id": "393e1cd9a311",
@@ -1839,7 +2945,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Hai Le, Truong Nguyen, Vy Le, Thuan Trong Nguyen, Nguyen D. Vo and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "Guided Anchoring Cascade R-CNN: An Intensive Improvement of R-CNN in Vietnamese Document Detection",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701510",
+    "doi_source": "https://cjss.ac.cn/en/article/doi/10.11728/cjss2025.04.2024-0103",
+    "needs_metadata_review": false
   },
   "1e50402fb508": {
     "id": "1e50402fb508",
@@ -1854,7 +2968,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Doanh C. Bui, Truc Trinh, Nguyen D. Vo and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "An Augmented Embedding Spaces Approach for Text-Based Image Captioning",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "76437dc50fee": {
     "id": "76437dc50fee",
@@ -1869,7 +2991,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Dung T.T. Vo, Tung Tran, Nguyen D. Vo and Khang Nguyen, NAFOSTED Conference on Information and Computer Science (NICS), 2021.",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "UIT-Anomaly: A Modern Vietnamese Video Dataset for Anomaly Detection",
+    "metadata_source": "existing_title",
+    "venue_id": "nics",
+    "venue_name": "NAFOSTED Conference on Information and Computer Science (NICS)",
+    "publication_type": "conference",
+    "doi": "10.1109/NICS54270.2021.9701556",
+    "doi_source": "https://ieeexplore.ieee.org/document/9701556/",
+    "needs_metadata_review": false
   },
   "a8555304fdb5": {
     "id": "a8555304fdb5",
@@ -1884,7 +3014,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Phan Thị Hồng Cúc, Nguyễn Thành Hiệp, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Hội thảo Quốc gia lần thứ XXIV về Điện tử, Truyền thông và Công nghệ Thông tin, (2021)",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "Phát hiện phương tiện giao thông trong không ảnh với nhiều tình huống khác nhau",
+    "metadata_source": "existing_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "c8db714f64b0": {
     "id": "c8db714f64b0",
@@ -1899,7 +3037,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Tú Vũ, Toàn Đinh, Trần Minh Tùng, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Hội thảo Quốc gia lần thứ XXIV về Điện tử, Truyền thông và Công nghệ Thông tin, (2021)",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "Một hàm lỗi cho phát hiện bất thường trên video giám sát",
+    "metadata_source": "existing_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "ad59b4891f86": {
     "id": "ad59b4891f86",
@@ -1914,7 +3060,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Ngô Minh Phú, Lê Minh Phước, Nguyễn Trần Phúc An, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Hội thảo Quốc gia lần thứ XXIV về Điện tử, Truyền thông và Công nghệ Thông tin, (2021)",
-    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\tDec 2021",
+    "display_title": "Phát hiện phương tiện giao thông ở môi trường đô thị việt nam trong ảnh chụp từ drone",
+    "metadata_source": "existing_title",
+    "venue_id": "rev-ecit",
+    "venue_name": "National Conference on Electronics, Communications and Information Technology (REV-ECIT)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "2a78427e5b32": {
     "id": "2a78427e5b32",
@@ -1929,7 +3083,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Thuan Trong Nguyen, Thuan Q. Nguyen, Long Duong, Nguyen D. Vo, Khang Nguyen, International Conference on Multimedia Modelling (MMM), 2022",
-    "homepage_date_label": "Accepted \n\t\t\t\t\t01 Nov 2021"
+    "homepage_date_label": "Accepted \n\t\t\t\t\t01 Nov 2021",
+    "display_title": "CDeRSNet: Towards High Performance Object Detection in Vietnamese Documents Images",
+    "metadata_source": "existing_title",
+    "venue_id": "mmm",
+    "venue_name": "International Conference on Multimedia Modeling (MMM)",
+    "publication_type": "conference",
+    "doi": "10.1007/978-3-030-98355-0_36",
+    "doi_source": "https://ctujsvn.ctu.edu.vn/index.php/ctujsvn/article/view/4172",
+    "needs_metadata_review": false
   },
   "f9d32f91184e": {
     "id": "f9d32f91184e",
@@ -1944,7 +3106,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Lương Văn Song, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Hội nghị Khoa học công nghệ Quốc gia lần thứ XIV về Nghiên cứu Cơ bản và Ứng dụng Công nghệ thông tin, (2021)",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t15 Oct 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t15 Oct 2021",
+    "display_title": "Thử nghiệm hệ thống nhận diện khuôn mặt trên video được stream từ Drone",
+    "metadata_source": "existing_title",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false
   },
   "1f3b97cc662d": {
     "id": "1f3b97cc662d",
@@ -1959,7 +3129,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Nguyễn Hoàn Mỹ, Bùi Cao Doanh, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Hội nghị Khoa học công nghệ Quốc gia lần thứ XIV về Nghiên cứu Cơ bản và Ứng dụng Công nghệ thông tin, (2021)",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t15 Oct 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t15 Oct 2021",
+    "display_title": "Khai phá hàm chi phí cho phát hiện phương tiện giao thông trong không ảnh",
+    "metadata_source": "existing_title",
+    "venue_id": "fair",
+    "venue_name": "National Conference on Fundamental and Applied Information Technology Research (FAIR)",
+    "publication_type": "conference",
+    "doi": "10.15625/vap.2021.0051",
+    "doi_source": "https://vap.ac.vn/Portals/0/TuyenTap/2021/12/22/1ecec417207345d595e011cb434f7fe8/16_FAIR2021_paper_98.pdf",
+    "needs_metadata_review": false
   },
   "40751812ef5f": {
     "id": "40751812ef5f",
@@ -1974,7 +3152,16 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Trịnh Thị Thanh Trúc, Võ Duy Nguyên, Nguyễn Tấn Trần Minh Khang, Journal of Science and Technology on Information and Communications – JSTIC",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t31 Aug 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t31 Aug 2021",
+    "display_title": "Phân loại phương tiện giao thông Việt Nam trong không ảnh",
+    "metadata_source": "existing_title",
+    "venue_id": "jstic",
+    "venue_name": "Journal of Science and Technology on Information and Communications",
+    "publication_type": "journal",
+    "doi": "",
+    "doi_source": "",
+    "needs_metadata_review": false,
+    "paper_url": "https://jstic.ptit.edu.vn/jstic-ptit/files/journals/1/articles/419/submission/419-1-1528-1-2-20210618.pdf"
   },
   "103eae01b1b5": {
     "id": "103eae01b1b5",
@@ -1989,7 +3176,16 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Nguyen, Thuan T., et al. Vietnam Journal of Science and Technology – VJST",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t10 Aug 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t10 Aug 2021",
+    "display_title": "An Empirical Evaluation of Feature Extraction of Vietnamese Fruit Classification",
+    "metadata_source": "existing_title",
+    "venue_id": "vietnam-journal-of-science-and-technology",
+    "venue_name": "Vietnam Journal of Science and Technology",
+    "publication_type": "journal",
+    "doi": "10.15625/2525-2518/16299",
+    "doi_source": "https://vjs.ac.vn/index.php/jst/article/download/16299/2543254591/2543257176",
+    "needs_metadata_review": true,
+    "metadata_note": "Publisher identifies 2022 and title uses \"for Vietnamese fruit classification\"; legacy 2021/title preserved."
   },
   "e2503d3e3afb": {
     "id": "e2503d3e3afb",
@@ -2006,7 +3202,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Truong, Linh D., et al. International Conference on Computer Analysis of Images and Patterns 2021",
-    "homepage_date_label": "Published\n\t\t\t\t\t15 July 2021"
+    "homepage_date_label": "Published\n\t\t\t\t\t15 July 2021",
+    "display_title": "Parsing Digitized Vietnamese Paper Documents",
+    "metadata_source": "existing_title",
+    "venue_id": "caip",
+    "venue_name": "International Conference on Computer Analysis of Images and Patterns (CAIP)",
+    "publication_type": "conference",
+    "doi": "10.1007/978-3-030-89128-2_37",
+    "doi_source": "https://link.springer.com/chapter/10.1007/978-3-030-89128-2_37?fbclid=IwAR2KRhLDSbQsLgI2K1-HLgBsqWRZDyHpa855B8bjeyWSxe8RB-Kgei6kt2w",
+    "needs_metadata_review": false
   },
   "e76eedbcd6a0": {
     "id": "e76eedbcd6a0",
@@ -2023,7 +3227,15 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Nguyen, Thuan T., Nguyen D. Vo, and Khang Nguyen. 2021 RIVF International Conference on Computing and Communication Technologies (RIVF). IEEE, 2021.\n\t\t\t\t\t2021",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t10 April 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t10 April 2021",
+    "display_title": "A Novel Dataset for Evaluating Vietnamese Food Recognition",
+    "metadata_source": "existing_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "10.1109/RIVF51545.2021.9642151",
+    "doi_source": "https://scholar.dlu.edu.vn/thuvienso/bitstream/DLU123456789/256906/1/ToanVan_052.pdf",
+    "needs_metadata_review": false
   },
   "08a74a4a10a4": {
     "id": "08a74a4a10a4",
@@ -2040,6 +3252,14 @@
     "venue": "",
     "image": "",
     "homepage_reference": "Doanh C. Bui, Nguyen D. Vo, and Khang Nguyen. 2021 RIVF International Conference on Computing and Communication Technologies (RIVF). IEEE, 2021.\n\t\t\t\t\t2021",
-    "homepage_date_label": "Accepted\n\t\t\t\t\t10 April 2021"
+    "homepage_date_label": "Accepted\n\t\t\t\t\t10 April 2021",
+    "display_title": "MC-OCR Challenge 2021: Deep Learning Approach for Vietnamese Receipts OCR",
+    "metadata_source": "existing_title",
+    "venue_id": "rivf",
+    "venue_name": "RIVF International Conference on Computing and Communication Technologies",
+    "publication_type": "conference",
+    "doi": "10.1109/RIVF51545.2021.9642128",
+    "doi_source": "https://caodoanh2001.github.io/publications/",
+    "needs_metadata_review": false
   }
 }

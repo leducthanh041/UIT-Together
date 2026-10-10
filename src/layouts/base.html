@@ -1,37 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ language }}">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}{% if page.section != 'home' %} · {{ site.name }}{% endif %}</title>
+  <link rel="alternate" hreflang="en" href="{{ page.url }}">
+  <link rel="alternate" hreflang="vi" href="/vi{{ page.url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ page.url }}">
   <meta name="description" content="{{ page.hero[2] or site.description }}">
+  {% if page.redirect_to is defined %}<meta http-equiv="refresh" content="0; url={{ page.redirect_to }}"><link rel="canonical" href="{{ page.redirect_to }}">{% endif %}
   <link rel="icon" href="/assets/themes/lab/images/logo/favicon-32x32.png">
-  <link rel="stylesheet" href="/assets/themes/lab/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/themes/lab/css/style.css">
+  <link rel="stylesheet" href="/assets/themes/portfolio/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/themes/portfolio/css/fontawesome.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/portfolio.css">
   <script src="/js/site.js" defer></script>
 </head>
-<body class="page-{{ page.section }}">
+<body id="top" class="page-{{ page.section }}">
 <a class="skip-link" href="#main">Skip to content</a>
 {% include 'partials/header.html' %}
-<section class="page-hero"><div class="container{% if page.section == 'home' %} hero-grid{% endif %}">
+<section class="page-hero"><div class="container{% if page.section == 'home' %} hero-grid{% else %} subpage-hero-grid{% endif %}">
   <div class="hero-copy">
+  {% if page.section == 'home' %}
+  <p class="home-affiliation">University of Information Technology · VNU-HCM</p>
+  <h1 class="home-wordmark"><span>UIT</span> Together</h1>
+  <p class="home-research-directions"><span>Computer Vision</span><span>Machine Learning</span></p>
+  <p class="home-hero-description">Understanding visual worlds. Learning from data. Researching together.</p>
+  {% else %}
   <p class="eyebrow">{{ page.hero[0] }}</p>
   <h1>{{ page.hero[1] }}</h1><p>{{ page.hero[2] }}</p>
-  {% if page.section == 'home' %}<div class="hero-actions"><a class="btn btn-primary" href="/papers/">Explore publications</a><a class="btn btn-outline-primary" href="/team/">Meet our people</a></div>{% endif %}
+  {% endif %}
+  {% if page.section == 'home' %}<div class="hero-actions"><a class="template-button" href="/papers/">Explore publications <span aria-hidden="true">→</span></a><a class="hero-secondary" href="/team/">Meet our people <span aria-hidden="true">↗</span></a></div>{% endif %}
   </div>
   {% if page.section == 'home' %}
-  <figure class="hero-visual">
-    <img src="/assets/images/team/team0.jpg" alt="UIT-Together group meeting" width="800" height="600" fetchpriority="high" decoding="async">
-    <figcaption><span class="eyebrow">UIT · VNU-HCM</span><strong>Research together.<br>Discover what's next.</strong><span>Computer vision & machine learning</span></figcaption>
+  <figure class="hero-visual group-logo">
+    <img src="/assets/themes/lab/images/logo/lab-logo.svg" alt="UIT Together logo" width="400" height="400" fetchpriority="high" decoding="async">
   </figure>
+  {% else %}
+  {% set page_icon = {'research':'microscope', 'projects':'microscope', 'team':'users', 'papers':'newspaper', 'PapersByYear':'newspaper', 'datasets':'database', 'tutorials':'book-open', 'contact':'envelope', 'news':'bullhorn', 'about':'info-circle', 'homes':'home'}.get(page.section, 'file-alt') %}
+  <div class="page-icon" aria-hidden="true"><i class="fas fa-{{ page_icon }}"></i></div>
   {% endif %}
-</div></section>
+</div>
+{% if page.section == 'home' %}<svg class="hero-wave" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>{% endif %}</section>
 <main id="main" class="page-content" tabindex="-1">
 {% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %}
 <div class="container"><div class="filter-toolbar">
 <div><label for="search">{% if page.section == 'team' %}Search people{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>
 {% if page.section != 'team' %}<div><label for="year">Publication year</label><select id="year" data-year-filter><option value="">All years</option></select></div>{% endif %}
+{% if page.section == 'papers' %}
+<div><label for="publication-type">Publication type</label><select id="publication-type" data-type-filter><option value="">Journal & conference</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="unknown">Not yet classified</option></select></div>
+<div><label for="publication-venue">Venue</label><select id="publication-venue" data-venue-filter><option value="">All venues</option></select></div>
+{% endif %}
 <button class="btn btn-outline-primary" type="button" data-filter-reset>Clear filters</button>
 </div></div>
 {% endif %}
@@ -40,4 +59,5 @@
 {% if page.section != 'home' %}</div>{% endif %}
 </main>
 {% include 'partials/footer.html' %}
+<a class="back-to-top" href="#top" aria-label="Back to top">↑</a>
 </body></html>
