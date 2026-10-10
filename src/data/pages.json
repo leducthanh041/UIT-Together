@@ -46,12 +46,12 @@
   {
     "source": "index.html",
     "url": "/",
-    "title": "UIT-Together Research Group",
+    "title": "UIT Together · Computer Vision & Machine Learning",
     "section": "home",
     "hero": [
-      "UIT-Together",
-      "Research grows through collaboration.",
-      "Computer vision and machine learning at the University of Information Technology."
+      "UIT · VNU-HCM",
+      "UIT Together",
+      "Research group in computer vision and machine learning."
     ]
   },
   {
@@ -115,9 +115,9 @@
     "title": "Publications",
     "section": "papers",
     "hero": [
+      "Research output",
       "Publications",
-      "Ideas, experiments and discoveries.",
-      "Explore journal articles and conference papers."
+      "Explore our papers by year, publication type and venue."
     ]
   },
   {
@@ -353,7 +353,7 @@
   },
   {
     "source": "papers/paper/LTC-index.html",
-    "url": "/papers/paper/LTC-",
+    "url": "/papers/paper/LTC-index.html",
     "title": "A novel fuel performance index for LTC engines based on operating envelopes in light-duty driving cycle simulations",
     "section": "papers",
     "hero": [
@@ -586,12 +586,13 @@
     "source": "PapersByYear/index.html",
     "url": "/PapersByYear/",
     "title": "Publications by year",
-    "section": "PapersByYear",
+    "section": "archive-redirect",
     "hero": [
       "Publications",
       "Our research, year by year.",
       "Browse the publication archive by year."
-    ]
+    ],
+    "redirect_to": "/papers/"
   },
   {
     "source": "PapersByYear/paper/stiff-GPU-integrators.html",
@@ -826,7 +827,7 @@
   },
   {
     "source": "PapersByYear/paper/LTC-index.html",
-    "url": "/PapersByYear/paper/LTC-",
+    "url": "/PapersByYear/paper/LTC-index.html",
     "title": "A novel fuel performance index for LTC engines based on operating envelopes in light-duty driving cycle simulations",
     "section": "PapersByYear",
     "hero": [
@@ -1128,8 +1129,8 @@
     "section": "research",
     "hero": [
       "Research",
-      "Questions worth exploring.",
-      "Research directions and projects."
+      "Our research directions.",
+      "Medical imaging, anomaly detection and object detection."
     ]
   },
   {
@@ -1145,7 +1146,7 @@
   },
   {
     "source": "research/ltc-index.html",
-    "url": "/research/ltc-",
+    "url": "/research/ltc-index.html",
     "title": "Fuels for low-temperature combustion engines",
     "section": "research",
     "hero": [
@@ -1277,7 +1278,7 @@
   },
   {
     "source": "projects/ltc-index.html",
-    "url": "/projects/ltc-",
+    "url": "/projects/ltc-index.html",
     "title": "Fuels for low-temperature combustion engines",
     "section": "projects",
     "hero": [
@@ -1575,12 +1576,24 @@
   {
     "source": "homes/index.html",
     "url": "/homes/",
-    "title": "Homes",
-    "section": "homes",
+    "title": "Home",
+    "section": "home-redirect",
     "hero": [
-      "Welcome to UIT-Together",
-      "Explore. Connect. Discover.",
-      "Your starting point for our people, research and shared resources."
+      "Home",
+      "UIT Together",
+      "Visit our unified home page."
+    ],
+    "redirect_to": "/"
+  },
+  {
+    "source": "contact/index.html",
+    "url": "/contact/",
+    "title": "Contact",
+    "section": "contact",
+    "hero": [
+      "Get in touch",
+      "Let’s connect through research.",
+      "Contact UIT-Together for collaboration and student supervision."
     ]
   }
 ]

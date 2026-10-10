@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Nguyen Tan Tran Minh Khang",
+    "full_name": "Nguyen Tan Tran Minh Khang",
+    "role": "President · Associate Professor, PhD",
+    "email": "khangnttm@uit.edu.vn",
+    "image": "/assets/images/team/thay_khang.jpg",
+    "verified": true,
+    "affiliation": "University of Information Technology, Vietnam National University - Ho Chi Minh City",
+    "information_source": "User-provided"
+  },
+  {
+    "name": "Khanh Duy Nguyen",
+    "full_name": "Khanh Duy Nguyen",
+    "role": "PhD",
+    "email": "khanhnd@uit.edu.vn",
+    "image": "/assets/images/team/khanh_nguyen.jpg",
+    "verified": true,
+    "affiliation": "",
+    "information_source": "User-provided"
+  }
+]

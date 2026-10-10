@@ -1,26 +1,2 @@
 {% extends "layouts/base.html" %}
-{% block content %}
-<div class="container homes-content">
-  <section class="homes-introduction">
-    <p class="eyebrow">UIT-Together · UIT, VNU-HCM</p>
-    <h2>A place for research and collaboration.</h2>
-    <p>We bring researchers and students together to explore computer vision and machine learning. Discover our work, meet the people behind it, and explore the resources shared by our group.</p>
-  </section>
-  <nav class="homes-directory" aria-label="Explore UIT-Together">
-    {% for item in [
-      ('01', 'Our people', 'Meet our researchers, collaborators and students across cohorts.', '/team/'),
-      ('02', 'Publications', 'Explore journal articles and conference papers from the group.', '/papers/'),
-      ('03', 'Research', 'Learn about research directions and projects.', '/research/'),
-      ('04', 'Datasets', 'Find datasets and resources shared with the research community.', '/datasets/'),
-      ('05', 'Tutorials', 'Read practical guides and learning materials.', '/tutorials/'),
-      ('06', 'Group updates', 'Browse announcements and publication highlights on our main page.', '/')
-    ] %}
-    <a class="homes-directory-link" href="{{ item[3] }}">
-      <span class="homes-number" aria-hidden="true">{{ item[0] }}</span>
-      <span><h3>{{ item[1] }}</h3><p>{{ item[2] }}</p></span>
-      <span class="homes-arrow" aria-hidden="true">↗</span>
-    </a>
-    {% endfor %}
-  </nav>
-</div>
-{% endblock %}
+{% block content %}<div class="container"><p>Our home page has moved to <a href="/">UIT Together</a>.</p></div>{% endblock %}

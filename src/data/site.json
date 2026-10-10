@@ -1,10 +1,10 @@
 {
-  "name": "UIT-Together",
+  "name": "UIT Together",
   "description": "Research group in computer vision and machine learning.",
   "nav": [
     {
-      "label": "Homes",
-      "url": "/homes/"
+      "label": "Home",
+      "url": "/"
     },
     {
       "label": "Research",
@@ -19,16 +19,16 @@
       "url": "/papers/"
     },
     {
-      "label": "By year",
-      "url": "/PapersByYear/"
-    },
-    {
       "label": "Datasets",
       "url": "/datasets/"
     },
     {
       "label": "Tutorials",
       "url": "/tutorials/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
     }
   ]
 }

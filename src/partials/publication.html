@@ -1,9 +1,13 @@
-{% if kind == 'card' %}
-<article class="col-md-4 paperbox" data-filter-item data-year="{{ publication.year }}">
-{% if publication.image %}<img src="{{ publication.image }}" alt="" loading="lazy" decoding="async" class="publication-image">{% endif %}
-<h3 class="smallhead">{% if publication.links %}<a href="{{ publication.links[0] }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
-<p class="note">{{ publication.authors }}</p><p>{{ publication.venue }}</p>
+<article class="publication-row" data-filter-item data-year="{{ publication.year }}" data-publication-type="{{ publication.publication_type }}" data-venue="{{ publication.venue_id }}" data-venue-name="{{ publication.venue_name }}" data-search-text="{{ publication.search_text }}">
+  <div class="publication-summary">
+    <span class="publication-year">{{ publication.year or '—' }}</span>
+    <div class="publication-copy">
+      <h3 translate="no">{% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}">{{ publication.display_title }}</a>{% elif publication.paper_url %}<a href="{{ publication.paper_url }}">{{ publication.display_title }}</a>{% elif publication.links %}<a href="{{ publication.links[0] }}">{{ publication.display_title }}</a>{% else %}{{ publication.display_title }}{% endif %}</h3>
+      <div class="publication-links">
+      {% if publication.doi %}<a class="doi-link" href="https://doi.org/{{ publication.doi }}">DOI: {{ publication.doi }}</a>
+      {% else %}<span class="metadata-pending">DOI not yet verified</span>{% if publication.paper_url %}<a href="{{ publication.paper_url }}">View paper ↗</a>{% elif publication.links %}<a href="{{ publication.links[0] }}">Publication link ↗</a>{% endif %}{% endif %}
+      </div>
+    </div>
+  </div>
+  <details class="publication-details"><summary>Full citation</summary>{% for citation in publication.citations %}<p translate="no">{{ citation }}</p>{% endfor %}</details>
 </article>
-{% else %}
-<li class="list-group-item publication-citation" data-filter-item data-year="{{ publication.year }}"><p>{{ publication.citation }}</p>{% for url in publication.links %}<a href="{{ url }}">{{ 'DOI' if 'doi.org' in url else 'Publication link' }}</a>{% endfor %}</li>
-{% endif %}
