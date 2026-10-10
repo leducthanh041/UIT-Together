@@ -1,0 +1,9 @@
+{% if kind == 'card' %}
+<article class="col-md-4 paperbox" data-filter-item data-year="{{ publication.year }}">
+{% if publication.image %}<img src="{{ publication.image }}" alt="" loading="lazy" decoding="async" class="publication-image">{% endif %}
+<h3 class="smallhead">{% if publication.links %}<a href="{{ publication.links[0] }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}</h3>
+<p class="note">{{ publication.authors }}</p><p>{{ publication.venue }}</p>
+</article>
+{% else %}
+<li class="list-group-item publication-citation" data-filter-item data-year="{{ publication.year }}"><p>{{ publication.citation }}</p>{% for url in publication.links %}<a href="{{ url }}">{{ 'DOI' if 'doi.org' in url else 'Publication link' }}</a>{% endfor %}</li>
+{% endif %}

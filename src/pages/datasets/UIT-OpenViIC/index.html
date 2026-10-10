@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<h2 id="uit-anomaly">UIT-OpenViIC DATASET</h2>
+<p>Organization: <em>UIT-Together</em></p>
+<p>Download: [<a href="https://drive.google.com/drive/folders/1EJXBClRD_r4UTsUXVy80eh8DqM_ESlRZ">Link</a>]</p>
+<p><img alt="uitopenviic" decoding="async" loading="lazy" src="/datasets/UIT-OpenViIC/uitopenviic.png"/></p>
+<p>Illustration of the UIT-OpenViIC dataset.</p>
+<h2 id="DataAcquisition">1. Data Acquisition</h2>
+<p>We crawled the images mainly from two sources: Google and Bing with Vietnamese keywords. After that, we filtered some coincident images that did not contain enough information to be described. The final number of selected images is 13,100 images.</p>
+<h2 id="DatasetStatistics">2. Dataset Statistics</h2>
+<p>In total, the UIT-OpenViIC dataset has 13,100 images with 61,241 appropriate captions. To split the dataset into train-dev-test partitions, we took approximately 30% of total images and all its captions for the validation set and the test set, where each set has approximately 15% of total images and left the remaining images as the training set. We randomly selected images for the validation set and test set using the uniform distribution so that all images have the same chance to participate in the dev set and test set. The sampling process for the validation set (test set, respectively) was performed until the ratio of selected images was equal to or higher than 15% (15%, respectively). Statistically, the training set of the UIT-OpenViIC has 9,088 images with 41,238 captions; the validation set has 2,011 images with 10,002 captions, and the test set has 2,001 images with 10,001 captions.</p>
+<h2 id="video-cleaning">3.	Annotation</h2>
+<p>We split the raw dataset into ten subsets; each subset included 1,310 images. For annotation, we have a team including 51 individual students at the Faculty of Software Engineering, University of Information Technology. These 51 students are split into ten groups, each contains five students. Each student in a group was assigned one subset to annotate. All members in a group were given the same subset to obtain approximately five captions per image. Notably, we did not let the students in a group know each other, and the file name of images was also set as random strings to ensure they did not copy each other.</p>
+<h2 id="citation">Citation</h2>
+<p>If the project helps your research, please cite this paper.</p>
+<pre><code>@misc{bui2023uitopenviic,
+      title={UIT-OpenViIC: A Novel Benchmark for Evaluating Image Captioning in Vietnamese}, 
+      author={Doanh C. Bui and Nghia Hieu Nguyen and Khang Nguyen},
+      year={2023},
+      eprint={2305.04166},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+    }
+    </code></pre>
+</div>
+{% endblock %}

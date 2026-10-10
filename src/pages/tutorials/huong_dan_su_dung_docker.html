@@ -1,0 +1,100 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" id="doc"><h2 data-id="Hướng-dẫn-sử-dụng-docker" id="Hướng-dẫn-sử-dụng-docker"><a class="anchor hidden-xs" href="#Hướng-dẫn-sử-dụng-docker" title="Hướng-dẫn-sử-dụng-docker"><span class="octicon octicon-link"></span></a><span>Hướng dẫn sử dụng docker</span></h2><h2 data-id="0-Mục-tiêu-của-docker" id="0-Mục-tiêu-của-docker"><a class="anchor hidden-xs" href="#0-Mục-tiêu-của-docker" title="0-Mục-tiêu-của-docker"><span class="octicon octicon-link"></span></a><span>0. Mục tiêu của docker</span></h2><p><span>Tạo một môi trường máy ảo để đóng gói code. Sau này mang code đi sử dụng ở bất kỳ máy nào khác chỉ cần chạy file docker là xong, không cần có các thao tác cài đặt lại.</span></p><blockquote>
+<p><span>Hướng dẫn được thực hiện ở trên máy Ubuntu 20.04 LTS, chú ý rằng các dịch vụ máy ảo như Google Colab hay Paperspace không sử dụng được Docker.</span></p>
+</blockquote><p><span>Trước hết phân biệt khái niệm:</span></p><ul>
+<li><b><span>Image</span></b><span>: là tập hợp các tập tin của ứng dụng.</span></li>
+<li><b><span>Container</span></b><span>: là môi trường runtime để chạy các docker image.</span></li>
+</ul><h2 data-id="1-Các-bước-cài-đặt-docker" id="1-Các-bước-cài-đặt-docker"><a class="anchor hidden-xs" href="#1-Các-bước-cài-đặt-docker" title="1-Các-bước-cài-đặt-docker"><span class="octicon octicon-link"></span></a><span>1. Các bước cài đặt docker</span></h2><p><span>Có thể cần dùng đến quyền sudo</span></p><pre><code>sudo apt-get update
+sudo apt-get install docker.io
+</code></pre><p><span>Sau khi cài đặt xong cần chạy thêm dòng lệnh dưới đây để khởi động docker:</span></p><pre><code>systemctl start docker
+</code></pre><p><span>Sau khi thực hiện hai bước trên, thực hiện lệnh dưới đây để đảm bảo việc cài đặt được hoàn thành không có lỗi:</span></p><pre><code>sudo docker run -it hello-world
+</code></pre><p><span>Nếu bạn nhận được dòng phản hồi dưới đây đồng nghĩa với việc cài đặt đã hoàn tất:</span></p><p><img alt="pnMI2MO" decoding="async" loading="lazy" src="https://i.imgur.com/pnMI2MO.png"/></p><h2 data-id="2-Tải-image-ubuntu" id="2-Tải-image-ubuntu"><a class="anchor hidden-xs" href="#2-Tải-image-ubuntu" title="2-Tải-image-ubuntu"><span class="octicon octicon-link"></span></a><span>2. Tải image ubuntu</span></h2><p><span>Docker có chuẩn bị sẵn image ubuntu, chúng ta có thể tải về và làm việc trên container này.</span></p><pre><code>sudo docker run -it ubuntu
+</code></pre><p><span>Sau dòng lệnh này thì image ubuntu sẽ tự động được tải về từ máy chủ.</span></p><p><span>Tải thành công:</span></p><p><img alt="AmXNLX1" decoding="async" loading="lazy" src="https://i.imgur.com/AmXNLX1.png"/></p><p><span>Sau bước này thì docker đã tự động tạo ra một máy ảo, cụ thể có Container ID là </span><b><span>17b889396950</span></b><span>. Chúng ta có thể tạm thời thoát ra container này, về lại terminal chính bằng cách </span><b><span>Ctrl + D</span></b><span> hoặc gõ </span><b><span>Exit</span></b><span>.</span></p><h2 data-id="3-Thực-hiện-chạy-một-container" id="3-Thực-hiện-chạy-một-container"><a class="anchor hidden-xs" href="#3-Thực-hiện-chạy-một-container" title="3-Thực-hiện-chạy-một-container"><span class="octicon octicon-link"></span></a><span>3. Thực hiện chạy một container</span></h2><p><span>Bây giờ chúng ta sẽ tạo lại một container bằng cách làm y chang bước 2.</span></p><pre><code>sudo docker run -it ubuntu
+</code></pre><p><span>Mở ra 1 terminal khác, gõ lệnh sau:</span></p><pre><code>sudo docker ps
+</code></pre><p><img alt="w8INflv" decoding="async" loading="lazy" src="https://i.imgur.com/w8INflv.png"/></p><p><span>Có thể thấy container chúng ta vừa tạo có ID là </span><b><span>87164a4ceea0</span></b><span>, docker image có name là </span><b><span>ubuntu</span></b></p><p><span>Như vậy, chúng ta giữ </span><b><span>1 cửa sổ terminal</span></b><span> để làm việc </span><b><span>từ bên ngoài (user gốc của máy) </span></b><span>. </span><b><span>Một cửa sở </span></b><span> để làm việc </span><b><span>bên trong</span></b><span> image.</span></p><blockquote>
+<p><span>Có thể coi Docker image là máy ảo, container giống như chúng ta mở terminal của máy ảo đó vậy.</span></p>
+</blockquote><h2 data-id="4-Các-bước-gói-source-code-vào-docker" id="4-Các-bước-gói-source-code-vào-docker"><a class="anchor hidden-xs" href="#4-Các-bước-gói-source-code-vào-docker" title="4-Các-bước-gói-source-code-vào-docker"><span class="octicon octicon-link"></span></a><span>4. Các bước gói source code vào docker</span></h2><h3 data-id="41-Copy-code-vào-docker" id="41-Copy-code-vào-docker"><a class="anchor hidden-xs" href="#41-Copy-code-vào-docker" title="41-Copy-code-vào-docker"><span class="octicon octicon-link"></span></a><span>4.1. Copy code vào docker</span></h3><p><span>Ở terminal user gốc, chúng ta thực hiện lệnh dưới đây để copy source code vào container.</span></p><pre><code>cp &lt;thư mục code ở user gốc&gt; &lt;id container&gt;:&lt;đường dẫn muốn copy vào trong docker image&gt;
+</code></pre><p><b><span>Ví dụ, </span></b><span> toàn bộ code nằm trong folder source, trong folder này có một file </span><a href="http://hello.py" rel="noopener" target="_blank"><span>hello.py</span></a><span> có nội dung như sau:</span></p><pre><code class="python hljs">print(<span class="hljs-string">"Hello world. Su dung docker that vui"</span>)
+</code></pre><p><span>Ta tiến hành cp từ ngoài vào docker image:</span></p><pre><code>sudo docker cp WORKING/DDocker/source 87164a4ceea0:/source
+</code></pre><p><span>Command line trên sẽ copy folder source từ ngoài vào folder source bên trong docker image.</span></p><p><span>Sau khi copy ta commit lại:</span></p><pre><code>sudo docker commit &lt;container ID&gt; &lt;image name&gt;
+</code></pre><p><span>Cụ thể:</span></p><pre><code>sudo docker commit 87164a4ceea0 ubuntu
+</code></pre><p><span>Bây giờ chúng ta chuyển sang terminal docker image kiểm tra thử xem đã có thư mục source trong docker chưa</span></p><pre><code>root@87164a4ceea0:/# ls
+</code></pre><p><span>Kết quả:</span></p><p><img alt="go9kNab" decoding="async" loading="lazy" src="https://i.imgur.com/go9kNab.png"/></p><p><span>Như vậy chúng ta đã có folder source bên trong docker.</span></p><p><span>Thử vào thư mục source và kiểm tra:</span></p><pre><code>cd source
+ls
+</code></pre><p><img alt="Y4tFekC" decoding="async" loading="lazy" src="https://i.imgur.com/Y4tFekC.png"/></p><p><span>Như vây là đã có file </span><a href="http://hello.py" rel="noopener" target="_blank"><span>hello.py</span></a><span> của chúng ta, tiến hành chạy thử file này trong docker:</span></p><pre><code>python3 hello.py
+</code></pre><p><img alt="aHaBQKs" decoding="async" loading="lazy" src="https://i.imgur.com/aHaBQKs.png"/></p><p><span>Đến đây chúng ta đã hiểu sơ được cách docker hoạt động.</span></p><p><span>Thường sử dụng docker chúng ta sẽ chuẩn bị một file bash để chạy end-to-end source code của chúng ta. Tiến hành thử tạo một file bash để chạy file </span><a href="http://hello.py" rel="noopener" target="_blank"><span>hello.py</span></a><span>.</span></p><p><span>File bash này đặt tên là </span><b><span>run.sh</span></b></p><pre><code class="bash hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span></div><div class="code"><span class="hljs-built_in">cd</span> <span class="hljs-built_in">source</span> <span class="hljs-comment">#cd vào thư mục source</span>
+python3 hello.py <span class="hljs-comment">#Chạy file hello.</span>
+</div></div></code></pre><p><span>Chúng ta tiến hành cp fle này vào folder source trong docker image</span></p><pre><code>sudo docker cp WORKING/DDocker/source/run.sh 87164a4ceea0:/source
+</code></pre><h3 data-id="42-Cài-đặt-environment-cần-thiết-trong-image" id="42-Cài-đặt-environment-cần-thiết-trong-image"><a class="anchor hidden-xs" href="#42-Cài-đặt-environment-cần-thiết-trong-image" title="42-Cài-đặt-environment-cần-thiết-trong-image"><span class="octicon octicon-link"></span></a><span>4.2. Cài đặt environment cần thiết trong image.</span></h3><p><span>Ở terminal container, chúng ta tiến hành dùng lệnh pip cài đặt các thư viện cần dùng cho source code của chúng ta.</span></p><p><b><span>Tuy nhiên, </span></b><span> docker image ta đang dùng có thể chưa cài pip, trước hết chúng ta cài pip.</span></p><ol>
+<li><span>apt update trước:</span></li>
+</ol><pre><code>apt update
+</code></pre><ol start="2">
+<li><span>cài đặt pip3:</span></li>
+</ol><pre><code>apt install python3-pip
+</code></pre><p><span>Sau khi cài đặt xong chúng ta sẽ tiến hành cài toàn bộ thư viện cần thiết để chạy code của chúng ta. Cài đặt như thông thường:</span></p><pre><code>pip3 install &lt;thư viện&gt;
+</code></pre><p><b><span>Ví dụ</span></b><span> muốn cài thu viện numpy:</span></p><pre><code>pip3 install numpy
+</code></pre><p><span>Tiến hành cài đặt thư viện numpy bình thường như ở bên ngoài:</span><br/>
+<img alt="JwPgPy1" decoding="async" loading="lazy" src="https://i.imgur.com/JwPgPy1.png"/></p><p><span>Hoặc ta có thể cp file requirements.txt hay .yml từ bên ngoài vào trong docker image, rồi chạy cài đặt thư viện gắn flag -r vào.</span></p><pre><code>pip3 install -r requirements.txt
+</code></pre><blockquote>
+<p><span>Các lỗi trên docker image cũng như các lỗi trên máy linux bình thường. Gặp lỗi gì cứ stackoverflow.</span></p>
+</blockquote><h3 data-id="43-Verify-lại-code-trong-docker" id="43-Verify-lại-code-trong-docker"><a class="anchor hidden-xs" href="#43-Verify-lại-code-trong-docker" title="43-Verify-lại-code-trong-docker"><span class="octicon octicon-link"></span></a><span>4.3 Verify lại code trong docker.</span></h3><p><span>Ta tiến hành chạy lại source đã copy vào docker image để verify lại mọi thứ đều đúng.</span></p><p><span>Tiến hành chạy lại file bash </span><b><span>run.sh</span></b><span> trong docker image xem có chạy được không bằng dòng lệnh:</span></p><pre><code>sudo docker run &lt;image name&gt; /bin/bash &lt;đường dẫn file bash&gt;
+</code></pre><p><span>Ví dụ cụ thể:</span></p><pre><code>sudo docker run ubuntu /bin/bash source/run.sh
+</code></pre><p><span>Kết quả:</span><br/>
+<img alt="1rCabok" decoding="async" loading="lazy" src="https://i.imgur.com/1rCabok.png"/></p><p><span>Như vậy ta đã chắc rằng docker image hoạt động tốt.</span></p><h2 data-id="5-Xuất-docker-image" id="5-Xuất-docker-image"><a class="anchor hidden-xs" href="#5-Xuất-docker-image" title="5-Xuất-docker-image"><span class="octicon octicon-link"></span></a><span>5. Xuất docker image</span></h2><p><span>Sau khi hoàn thành các bước trên, ta tiến hành xuất file image ra.</span></p><p><span>Ta kiểm tra image id</span></p><pre><code>sudo docker images
+</code></pre><p><img alt="F26dPru" decoding="async" loading="lazy" src="https://i.imgur.com/F26dPru.png"/></p><p><span>Ta sử dụng image id của </span>&lt;lastest&gt;<span>, là image id chúng ta commit mới nhất.</span></p><p><span>Xuất image:</span></p><pre><code>sudo docker save -o &lt;name output&gt; &lt;image_id&gt; 
+</code></pre><p><span>Thường chúng ta lưu docker image ở đuôi .tar:</span></p><pre><code>sudo docker save -o test.tar 3bd5fce5bc3e
+</code></pre><p><span>Sau khi lưu sẽ có file output test.tar được tạo, đây là docker image chứ code, môi trường mà nãy giờ chúng ta tạo.</span></p><h2 data-id="6-Load-thử-image" id="6-Load-thử-image"><a class="anchor hidden-xs" href="#6-Load-thử-image" title="6-Load-thử-image"><span class="octicon octicon-link"></span></a><span>6. Load thử image</span></h2><p><span>Sau khi xong xuôi, để chắc chắn docker hoạt động tốt ta load lại docker image</span></p><pre><code>sudo docker load -i &lt;docker image name&gt;
+</code></pre><p><span>cụ thể:</span></p><pre><code>sudo docker load -i test.tar
+</code></pre><p><span>Kiểm tra lại ta thấy có một docker image mới được thêm</span></p><p><img alt="O2Wh5Cl" decoding="async" loading="lazy" src="https://i.imgur.com/O2Wh5Cl.png"/></p><p><span>Lấy image id ra và chạy lại thử file bash trong image</span></p><pre><code>sudo docker run 3bd5fce5bc3e /bin/bash source/run.sh
+</code></pre><p><span>Kết quả như mong đợi:</span></p><p><img alt="CnC0QX7" decoding="async" loading="lazy" src="https://i.imgur.com/CnC0QX7.png"/></p><p><span>Bài viết trên hướng dẫn sử dụng docker chưa dùng GPU.</span></p></div>
+<div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+<div class="pull-right dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" id="tocLabel" role="button" title="Table of content">
+<i class="fa fa-bars"></i>
+</a>
+<ul aria-labelledby="tocLabel" class="ui-toc-dropdown dropdown-menu" id="ui-toc">
+<div class="toc"><ul class="nav">
+<li class=""><a href="#Hướng-dẫn-sử-dụng-docker" title="Hướng dẫn sử dụng docker">Hướng dẫn sử dụng docker</a><ul class="nav">
+<li class=""><a href="#0-Mục-tiêu-của-docker" title="0. Mục tiêu của docker">0. Mục tiêu của docker</a></li>
+<li class=""><a href="#1-Các-bước-cài-đặt-docker" title="1. Các bước cài đặt docker">1. Các bước cài đặt docker</a></li>
+<li class=""><a href="#2-Tải-image-ubuntu" title="2. Tải image ubuntu">2. Tải image ubuntu</a></li>
+<li class=""><a href="#3-Thực-hiện-chạy-một-container" title="3. Thực hiện chạy một container">3. Thực hiện chạy một container</a></li>
+<li class=""><a href="#4-Các-bước-gói-source-code-vào-docker" title="4. Các bước gói source code vào docker">4. Các bước gói source code vào docker</a><ul class="nav">
+<li class=""><a href="#41-Copy-code-vào-docker" title="4.1. Copy code vào docker">4.1. Copy code vào docker</a></li>
+<li class=""><a href="#42-Cài-đặt-environment-cần-thiết-trong-image" title="4.2. Cài đặt environment cần thiết trong image.">4.2. Cài đặt environment cần thiết trong image.</a></li>
+<li class=""><a href="#43-Verify-lại-code-trong-docker" title="4.3 Verify lại code trong docker.">4.3 Verify lại code trong docker.</a></li>
+</ul>
+</li>
+<li><a href="#5-Xuất-docker-image" title="5. Xuất docker image">5. Xuất docker image</a></li>
+<li><a href="#6-Load-thử-image" title="6. Load thử image">6. Load thử image</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+</ul>
+</div>
+</div>
+<div class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" id="ui-toc-affix" null="" style="top:17px;display:none;">
+<div class="toc"><ul class="nav">
+<li class=""><a href="#Hướng-dẫn-sử-dụng-docker" title="Hướng dẫn sử dụng docker">Hướng dẫn sử dụng docker</a><ul class="nav">
+<li class=""><a href="#0-Mục-tiêu-của-docker" title="0. Mục tiêu của docker">0. Mục tiêu của docker</a></li>
+<li class=""><a href="#1-Các-bước-cài-đặt-docker" title="1. Các bước cài đặt docker">1. Các bước cài đặt docker</a></li>
+<li class=""><a href="#2-Tải-image-ubuntu" title="2. Tải image ubuntu">2. Tải image ubuntu</a></li>
+<li class=""><a href="#3-Thực-hiện-chạy-một-container" title="3. Thực hiện chạy một container">3. Thực hiện chạy một container</a></li>
+<li class=""><a href="#4-Các-bước-gói-source-code-vào-docker" title="4. Các bước gói source code vào docker">4. Các bước gói source code vào docker</a><ul class="nav">
+<li class=""><a href="#41-Copy-code-vào-docker" title="4.1. Copy code vào docker">4.1. Copy code vào docker</a></li>
+<li class=""><a href="#42-Cài-đặt-environment-cần-thiết-trong-image" title="4.2. Cài đặt environment cần thiết trong image.">4.2. Cài đặt environment cần thiết trong image.</a></li>
+<li class=""><a href="#43-Verify-lại-code-trong-docker" title="4.3 Verify lại code trong docker.">4.3 Verify lại code trong docker.</a></li>
+</ul>
+</li>
+<li><a href="#5-Xuất-docker-image" title="5. Xuất docker image">5. Xuất docker image</a></li>
+<li><a href="#6-Load-thử-image" title="6. Load thử image">6. Load thử image</a></li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+</div>
+
+{% endblock %}

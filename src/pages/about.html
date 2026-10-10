@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="row">
+<div class="column">
+<img alt="UIT" decoding="async" loading="lazy" src="./assets/images/about/UIT.jpg" width="90%"/>
+</div>
+<div class="column">
+<p><i aria-hidden="true" class="far fa-building"></i>Room A108, Block A, University of Information Technology, VNU-HCM<br/>
+      Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City<br/></p>
+<p>
+      Website: www.uit.edu.vn<br/>
+      Email: khangnttm (at) uit.edu.vn (Mr. Khang)<br/>
+      Email: nguyenvd (at) uit.edu.vn (Mr. Nguyen)<br/>
+</p>
+</div>
+</div>
+</div>
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+{% endblock %}

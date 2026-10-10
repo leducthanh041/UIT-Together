@@ -1,0 +1,92 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-3">
+<div class="media">
+<img alt="target species selection abstract" class="pull-left pad-right media-object paper-image" decoding="async" loading="lazy" src="/assets/images/papers/target-species-selection-abstract.svg"/>
+</div>
+</div>
+<div class="col-md-9">
+<div class="media-body titlebox">
+<div class="title media-heading">
+				An automated target species selection method for dynamic adaptive chemistry simulations
+			</div>
+<p>
+<div class="smallhead">
+				Curtis NJ, Niemeyer KE, Sung CJ.
+				<span class="journal">
+				Combustion and Flame
+				</span>
+				
+				162
+				
+				
+				(4)
+				
+				
+				:1358–1374
+				
+				(2015).
+			</div>
+</p></div>
+</div>
+</div>
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="bigspacer"></div>
+<div class="glyphbox note">
+<div class="smallhead subtle">
+                Full text
+            </div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="ai ai-doi fa-fw"></i>
+<a class="off" href="https://doi.org/10.1016/j.combustflame.2014.11.004">10.1016/j.combustflame.2014.11.004</a>
+<br/>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Altmetrics
+			</div>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1016/j.combustflame.2014.11.004" data-hide-no-mentions="true">
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Share
+			</div>
+<div class="post-sharing">
+<i class="fab fa-twitter fa-fw"></i>
+<a class="off" data-related="kyleniemeyer" data-text="An automated target species selection method for dynamic adaptive chemistry simulations" data-via="" href="https://twitter.com/share?url=&amp;text=" target="_blank">tweet</a>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="post">
+<h2 id="abstract">Abstract</h2>
+<p>The relative importance index (RII) method for determining appropriate target species for dynamic adaptive chemistry (DAC) simulations using the directed relation graph with error propagation (DRGEP) method is developed. The adequacy and effectiveness of this RII method is validated for two fuels: n-heptane and isopentanol, representatives of a ground transportation fuel component and bio-alcohol, respectively.</p>
+<p>The conventional method of DRGEP target species selection involves picking an unchanging (static) set of target species based on the combustion processes of interest; however, these static target species may not remain important throughout the entire combustion simulation, adversely affecting the accuracy of the method. In particular, this behavior may significantly reduce the accuracy of the DRGEP-based DAC approach in complex multidimensional simulations where the encountered combustion conditions cannot be known a priori with high certainty. Moreover, testing multiple sets of static target species to ensure the accuracy of the method is generally computationally prohibitive. Instead, the RII method determines appropriate DRGEP target species solely from the local thermo-chemical state of the simulation, ensuring that accuracy will be maintained. Further, the RII method reduces the expertise required of users to select DRGEP target species sets appropriate to the combustion phenomena under consideration.</p>
+<p>Constant volume autoignition simulations run over a wide range of initial conditions using detailed reaction mechanisms for n-heptane and isopentanol show that the RII method is able to maintain accuracy even when traditional static target species sets fail, and are even more accurate than expert-selected target species sets. Additionally, the accuracy and efficiency of the RII method are compared to those of static target species sets in single-cell engine simulations under homogeneous charge compression ignition conditions. For simulations using more stringent DRGEP thresholds, the RII method performs similarly to that of the static target species sets. With a larger DRGEP threshold, the RII method is significantly more accurate than the static target species sets without imposing significant computational overhead.</p>
+<p>Furthermore, the applicability of the RII method to a DRG-based DAC scheme is discussed.</p>
+</div>
+<div class="post">
+<h2 id="bibte">BibTeX</h2>
+<pre> @article{Curtis:2015,
+  Author = {Nicholas J Curtis and Kyle E Niemeyer and Chih-Jen Sung},
+  Title = {An automated target species selection method for dynamic adaptive chemistry simulations},
+  Journal = {Combust. Flame},
+  Volume = {162},
+  Number = {4},
+  Pages = {1358--1374}
+  Year = 2015
+}
+ </pre>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+</div>
+</div>
+{% endblock %}

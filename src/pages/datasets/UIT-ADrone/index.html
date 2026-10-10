@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<h2 id="uit-anomaly">UIT-ADrone DATASET</h2>
+<p>Organization: <em>UIT-Together</em></p>
+<p>Download: [<a href="https://drive.google.com/drive/folders/1ygWcuOZ7kEwS-rC35gWv6f6qeNx0BHyg?usp=share_link">Link</a>]</p>
+<p><img alt="demo" decoding="async" loading="lazy" src="/datasets/UIT-ADrone/demo.jpg"/></p>
+<p>Visualization of traffic scenes included in the UIT-ADrone (Ours) dataset.</p>
+<h2 id="DataAcquisition">1. Data Acquisition</h2>
+<p>We have conducted videos captured by the aerial perspective with a camera to collect practical traffic data for detecting traffic abnormalities in Hochiminh city, Vietnam. The used drone is a DJI MAVIC MINI 2, recording at 30 frames per second (fps), with a resolution of 920 x1080 pixels ranging from 50 to 70 meters in height at different times of the day. More specifically, the videos of the drone are recorded at two roundabouts on the campus of the Vietnam National University, Ho Chi Minh City, and at one public roundabout in Ho Chi Minh City. Note that the public roundabout has an especially high traffic volume, with a variety of motorbikes on the streets.</p>
+<h2 id="DatasetStatistics">2. Dataset Statistics</h2>
+<p>The UIT-ADrone dataset consists of 51 videos with a total of 206,194 extracted video frames covering various anomalous events. The entire video is approximately 6.50 hours long, recorded in complex real-world scenarios, and they pose significant new challenges, such as complex scenes, high density, occlusion of moving objects, lighting conditions, small objects, and large camera motion. Furthermore, it contains ten abnormal events related to various types of violations of regulations, including crossing the road at the wrong lane, walking under the street, driving in the wrong roundabout, illegally driving on the sidewalk, illegal left turn/ turn right, illegally parking in the street, carrying bulky goods, parking on the sidewalk, driving in the opposite directions, and falling off motorcycles.</p>
+<h2 id="video-cleaning">3.	Annotation</h2>
+<p>To generate ground-truth data for the purpose of evaluating different models to detect traffic anomalies, we use a tool called Supervisely assign frame-level labels. This tool is browser-based and supports advanced functions, such as drawing a bounding box or tracking the objects of interest in a video drone. Since the frames we label are sequential at a frame rate of 30 fps, and the position of objects of interest changes little from frame to frame, Supervisely is an easy-to-use tool for annotating challenge data. In addition, the UIT-ADrone dataset comprises bounding boxes for the training and testing set for object detection, following the format of the MS COCO dataset, which is standard for object detection. Therefore, our dataset contains train.json and test.json for the training and testing set, respectively. For anomaly detection, testing labels are organized as arrays (.npy). It means the video is equal to the array. The indexes for frames start at 0 and end at a total of frames subtraction of 1. Each element in the array is set to 0 as normal or 1 as abnormal. Notably, only normal data are available in the training step for these unsupervised tasks in our study. Additionally, we also carry out cross-checking between annotators to check for error labels based on the consensus of annotators.</p>
+<h2 id="citation">Citation</h2>
+<p>If the project helps your research, please cite this paper.</p>
+<pre><code>@inproceedings{T. M. Tran, T. N. Vu, T. V. Nguyen and K. Nguyen, "UIT-ADrone: A Novel Drone Dataset for Traffic Anomaly Detection," 
+      in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 
+      doi: 10.1109/JSTARS.2023.3285905.}
+    </code></pre>
+</div>
+{% endblock %}

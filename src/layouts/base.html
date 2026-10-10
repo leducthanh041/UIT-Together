@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}{% if page.section != 'home' %} · {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ page.hero[2] or site.description }}">
+  <link rel="icon" href="/assets/themes/lab/images/logo/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/themes/lab/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/themes/lab/css/style.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/js/site.js" defer></script>
+</head>
+<body class="page-{{ page.section }}">
+<a class="skip-link" href="#main">Skip to content</a>
+{% include 'partials/header.html' %}
+<section class="page-hero"><div class="container{% if page.section == 'home' %} hero-grid{% endif %}">
+  <div class="hero-copy">
+  <p class="eyebrow">{{ page.hero[0] }}</p>
+  <h1>{{ page.hero[1] }}</h1><p>{{ page.hero[2] }}</p>
+  {% if page.section == 'home' %}<div class="hero-actions"><a class="btn btn-primary" href="/papers/">Explore publications</a><a class="btn btn-outline-primary" href="/team/">Meet our people</a></div>{% endif %}
+  </div>
+  {% if page.section == 'home' %}
+  <figure class="hero-visual">
+    <img src="/assets/images/team/team0.jpg" alt="UIT-Together group meeting" width="800" height="600" fetchpriority="high" decoding="async">
+    <figcaption><span class="eyebrow">UIT · VNU-HCM</span><strong>Research together.<br>Discover what's next.</strong><span>Computer vision & machine learning</span></figcaption>
+  </figure>
+  {% endif %}
+</div></section>
+<main id="main" class="page-content" tabindex="-1">
+{% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %}
+<div class="container"><div class="filter-toolbar">
+<div><label for="search">{% if page.section == 'team' %}Search people{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>
+{% if page.section != 'team' %}<div><label for="year">Publication year</label><select id="year" data-year-filter><option value="">All years</option></select></div>{% endif %}
+<button class="btn btn-outline-primary" type="button" data-filter-reset>Clear filters</button>
+</div></div>
+{% endif %}
+{% if page.section != 'home' %}<div class="content-scroll subpage-scroll" role="region" aria-label="{{ page.title }} content" tabindex="0">{% endif %}
+{% block content %}{% endblock %}
+{% if page.section != 'home' %}</div>{% endif %}
+</main>
+{% include 'partials/footer.html' %}
+</body></html>

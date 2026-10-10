@@ -1,0 +1,167 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="markdown-body container-fluid comment-enabled" data-hard-breaks="true" id="doc"><h2 data-id="Cài-đặt-docker-Detectron2-và-mmdetection" id="Cài-đặt-docker-Detectron2-và-mmdetection"><a class="anchor hidden-xs" href="#Cài-đặt-docker-Detectron2-và-mmdetection" title="Cài-đặt-docker-Detectron2-và-mmdetection"><span class="octicon octicon-link"></span></a><span>Cài đặt docker Detectron2 và mmdetection</span></h2><h2 data-id="0-Cài-đặt-GPU-docker" id="0-Cài-đặt-GPU-docker"><a class="anchor hidden-xs" href="#0-Cài-đặt-GPU-docker" title="0-Cài-đặt-GPU-docker"><span class="octicon octicon-link"></span></a><span>0. Cài đặt GPU docker</span></h2><h3 data-id="Setting-up-NVIDIA-Container-Toolkit" id="Setting-up-NVIDIA-Container-Toolkit"><a class="anchor hidden-xs" href="#Setting-up-NVIDIA-Container-Toolkit" title="Setting-up-NVIDIA-Container-Toolkit"><span class="octicon octicon-link"></span></a><span>Setting up NVIDIA Container Toolkit</span></h3><p><span>Chạy 2 command line sau:</span></p><pre><code>distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
+   &amp;&amp; curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
+   &amp;&amp; curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+</code></pre><pre><code>curl -s -L https://nvidia.github.io/nvidia-container-runtime/experimental/$distribution/nvidia-container-runtime.list | sudo tee /etc/apt/sources.list.d/nvidia-container-runtime.list
+</code></pre><p><span>Cài </span><b><span>nvidia-docker2</span></b></p><pre><code>sudo apt-get update
+</code></pre><pre><code>sudo apt-get install -y nvidia-docker2
+</code></pre><p><span>Khởi động lại docker:</span></p><pre><code>sudo systemctl restart docker
+</code></pre><h2 data-id="1-Detectron2" id="1-Detectron2"><a class="anchor hidden-xs" href="#1-Detectron2" title="1-Detectron2"><span class="octicon octicon-link"></span></a><span>1. Detectron2</span></h2><h3 data-id="Chuẩn-bị-dockerfile" id="Chuẩn-bị-dockerfile"><a class="anchor hidden-xs" href="#Chuẩn-bị-dockerfile" title="Chuẩn-bị-dockerfile"><span class="octicon octicon-link"></span></a><span>Chuẩn bị dockerfile</span></h3><p><span>Tạo một thư mục mới </span><b><span>detectron2_docker</span></b><span>, tải 2 file </span><b><span>Dockerfile</span></b><span> và </span><b><span>docker-compose.yml</span></b><span> ở </span><a href="https://github.com/facebookresearch/detectron2/tree/master/docker" rel="noopener" target="_blank"><span>đây</span></a><span> về.</span></p><h3 data-id="Cài-đặt" id="Cài-đặt"><a class="anchor hidden-xs" href="#Cài-đặt" title="Cài-đặt"><span class="octicon octicon-link"></span></a><span>Cài đặt</span></h3><p><span>Chạy lệnh sau việc cài đặt được thực hiện từ A -&gt; Z:</span></p><pre><code>sudo docker build --build-arg USER_ID=$UID -t detectron2:v0 .
+</code></pre><h2 data-id="2-mmdetection" id="2-mmdetection"><a class="anchor hidden-xs" href="#2-mmdetection" title="2-mmdetection"><span class="octicon octicon-link"></span></a><span>2. mmdetection</span></h2><h3 data-id="Chuẩn-bị-dockerfile" id="Chuẩn-bị-dockerfile1"><a class="anchor hidden-xs" href="#Chuẩn-bị-dockerfile1" title="Chuẩn-bị-dockerfile1"><span class="octicon octicon-link"></span></a><span>Chuẩn bị dockerfile</span></h3><p><span>Tạo một thư mục mới </span><b><span>mmdetection_docker</span></b><span>, tải file </span><b><span>Dockerfile</span></b><span> ở </span><a href="https://github.com/open-mmlab/mmdetection/tree/master/docker" rel="noopener" target="_blank"><span>đây</span></a><span> về.</span></p><h3 data-id="Cài-đặt" id="Cài-đặt1"><a class="anchor hidden-xs" href="#Cài-đặt1" title="Cài-đặt1"><span class="octicon octicon-link"></span></a><span>Cài đặt</span></h3><p><span>Chạy lệnh sau việc cài đặt được thực hiện từ A -&gt; Z:</span></p><pre><code>sudo docker build --build-arg USER_ID=$UID -t mmdetection:v0 .
+</code></pre><h2 data-id="3-Sử-dụng" id="3-Sử-dụng"><a class="anchor hidden-xs" href="#3-Sử-dụng" title="3-Sử-dụng"><span class="octicon octicon-link"></span></a><span>3. Sử dụng</span></h2><p><span>Khởi động docker:</span></p><pre><code>systemctl start docker
+</code></pre><p><span>Sau đó chọn user cần dùng (gõ stt user), nhập pass.</span></p><p><span>Sau khi cài đặt xong, gõ lệnh sau để thấy rằng 2 docker mmdetection và detectron2 đã được cài đặt:</span></p><pre><code>sudo docker images
+</code></pre><p><img alt="KpIPpmN" decoding="async" loading="lazy" src="https://i.imgur.com/KpIPpmN.png"/></p><p><span>Muốn khởi động docker thì chỉ cần sử dụng:</span></p><pre><code>sudo docker run --gpus &lt;số gpu sử dụng&gt; &lt;image id&gt;&gt;
+</code></pre><p><span>Ví dụ sử dụng 1 GPU cho detectron2 thì sử dụng</span></p><pre><code>sudo docker run --gpus 1 -it 20a7c98efc33
+</code></pre><p><span>Docker sẽ tạo ra một container để làm việc, sau này muốn train hay test chỉ cần đưa data vào container rồi thực hiện như hướng dẫn bên tutorial của detectron2.</span></p><p><span>Cách mount thư mục dữ liệu của host vào trong container:</span></p><pre><code>sudo docker run \ 
+-v /output:/home/appuser/detectron2_repo/outputs \
+--gpus 1 \
+8538a3c34fb7
+</code></pre><p><span>Lúc này, thư mục </span><b><span>outputs</span></b><span> bên trong docker image đã kết nối với thư mục </span><b><span>output</span></b><span> bên ngoài. Mọi thao tác lấy/xuất file trong thư mục outputs bên trong docker image đều cho lấy/xuất ra thư mục output bên ngoài.</span></p><p><span>Sau 2 bước trên thì sử dụng docker image bình thường như một máy linux.</span></p><h2 data-id="Share-permission-for-user-use-docker-without-sudo" id="Share-permission-for-user-use-docker-without-sudo"><a class="anchor hidden-xs" href="#Share-permission-for-user-use-docker-without-sudo" title="Share-permission-for-user-use-docker-without-sudo"><span class="octicon octicon-link"></span></a><span>Share permission for user (use docker without sudo)</span></h2><p><span>If you want to run docker as non-root user then you need to add it to the docker group.</span></p><pre><code>Create the docker group if it does not exist
+</code></pre><p><span>$ sudo groupadd docker</span></p><pre><code>Add your user to the docker group.
+</code></pre><p><span>$ sudo usermod -aG docker $USER</span></p><pre><code>Run the following command or Logout and login again and run (that doesn't work you may need to reboot your machine first)
+</code></pre><p><span>$ newgrp docker</span></p><pre><code>Check if docker can be run without root
+</code></pre><p><span>$ docker run hello-world</span></p><p><span>Reboot if still got error</span></p><p><span>$ reboot</span></p><p><span>Taken from the docker official documentation: manage-docker-as-a-non-root-user</span></p><h2 data-id="Train-custom-data-mmdetection" id="Train-custom-data-mmdetection"><a class="anchor hidden-xs" href="#Train-custom-data-mmdetection" title="Train-custom-data-mmdetection"><span class="octicon octicon-link"></span></a><span>Train custom data mmdetection</span></h2><p><span>Trong document này hướng dẫn train mmdetection trên dữ liệu custom định dạng COCO.</span></p><h3 data-id="1-Chuẩn-bị-dữ-liệu" id="1-Chuẩn-bị-dữ-liệu"><a class="anchor hidden-xs" href="#1-Chuẩn-bị-dữ-liệu" title="1-Chuẩn-bị-dữ-liệu"><span class="octicon octicon-link"></span></a><span>1. Chuẩn bị dữ liệu</span></h3><p><span>Chuẫn bị dữ liệu theo cấu trúc thư mục sau:</span></p><pre><code>&lt;thư mục data&gt;/
+├── images (chứa toàn bộ ảnh)
+├── annotations
+    ├── train.json (chứa annotation của tập train)
+    ├── val.json (chứa annotation của tập val)
+    ├── test.json (chứa annotation của tập test)
+</code></pre><p><span>(Có thể chỉ chuẩn bị 1 trong 2 file val/ test.json)</span></p><h3 data-id="2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào" id="2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào"><a class="anchor hidden-xs" href="#2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào" title="2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào"><span class="octicon octicon-link"></span></a><span>2. Kết nối docker mount thư mục dữ liệu vào</span></h3><p><span>Thư mục dữ liệu đang nằm trên host, ta khởi động docker và mount thư mục data nằm trong host lên docker.</span></p><p><span>Trước hết ta cd vào thư mục data nằm trên host (tức là đi vào trong thư mục data)</span></p><pre><code>cd &lt;thư mục data&gt;
+</code></pre><p><span>Kiểm tra thử các thư mục có bên trong</span></p><pre><code>ls
+</code></pre><p><span>Kết quả sau đây là đúng:</span></p><pre><code>images annotations
+</code></pre><p><span>Sau đó chạy lệnh sau để khởi động image docker </span><b><span>mmdetection</span></b></p><pre><code>docker run -d \
+        --shm-size 8G \
+        --gpus 1 -it --name thu_nghiem \
+        --mount type=bind,source="$(pwd)",target=/mmdetection/data_train \
+         mmdetection:latest
+</code></pre><p><span>lúc này thư mục data_train trong docker đã mount với thư mục data host bên ngoài. Kiểm tra lại các thư mục bên trong data_train bằng lệnh </span><code>ls</code></p><h3 data-id="3-Chuẩn-bị-file-config" id="3-Chuẩn-bị-file-config"><a class="anchor hidden-xs" href="#3-Chuẩn-bị-file-config" title="3-Chuẩn-bị-file-config"><span class="octicon octicon-link"></span></a><span>3. Chuẩn bị file config</span></h3><p><span>Để huấn luyện mmdetection custom data trước hết chuẩn bị file config. Ở đây hướng dẫn train bằng faster r-cnn. Có thể sử dụng backbone khác.</span></p><p><span>File config có dạng như sau:</span></p><pre><code class="python hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-comment"># The new config inherits a base config to highlight the necessary modification</span>
+_base_ = <span class="hljs-string">'faster_rcnn/faster_rcnn_r50_fpn_2x_coco.py'</span>
+
+<span class="hljs-comment"># We also need to change the num_classes in head to match the dataset's annotation</span>
+model = <span class="hljs-built_in">dict</span>(
+    roi_head=<span class="hljs-built_in">dict</span>(
+        bbox_head=<span class="hljs-built_in">dict</span>(num_classes=<span class="hljs-number">8</span>)))
+
+<span class="hljs-comment"># Modify dataset related settings</span>
+dataset_type = <span class="hljs-string">'COCODataset'</span>
+classes = (<span class="hljs-string">'cam_nguoc_chieu'</span>, <span class="hljs-string">'cam_do_xe'</span>, <span class="hljs-string">'cam_re'</span>, <span class="hljs-string">'gioi_han_toc_do'</span>, <span class="hljs-string">'cam_con_lai'</span>, <span class="hljs-string">'nguy_hiem'</span>, <span class="hljs-string">'hieu_lenh'</span>,)
+data = <span class="hljs-built_in">dict</span>(
+    train=<span class="hljs-built_in">dict</span>(
+        img_prefix=<span class="hljs-string">'./data_train/images/'</span>,
+        classes=classes,
+        ann_file=<span class="hljs-string">'./data_train/annotations/train.json'</span>),
+    val=<span class="hljs-built_in">dict</span>(
+        img_prefix=<span class="hljs-string">'./data_train/images/'</span>,
+        classes=classes,
+        ann_file=<span class="hljs-string">'./data_train/annotations/val.json'</span>),
+    test=<span class="hljs-built_in">dict</span>(
+        img_prefix=<span class="hljs-string">'./data_train/images/'</span>,
+        classes=classes,
+        ann_file=<span class="hljs-string">'./data_train/annotations/test.json'</span>))
+</div></div></code></pre><p><span>Trong đó:</span></p><ul>
+<li><span>_base : file config của backbone sử dụng, xem </span><a href="https://github.com/open-mmlab/mmdetection/tree/master/configs" rel="noopener" target="_blank"><span>tại đây</span></a><span>. Ở đây sử dụng faster_rcnn/faster_rcnn_r50_fpn_2x_coco.py.</span></li>
+<li><span>chỉnh num_classes ở dòng 7 thành </span><code>số lớp + 1</code><span>. Tức dữ liệu có 7 lớp thì </span><code>num_classes=8</code></li>
+<li><span>classes : tuple chứa các tên class.</span></li>
+<li><span>data : dictonary chứa các thông tin đường dẫn của dữ liệu &amp; annotation của train/test.</span></li>
+</ul><blockquote>
+<p><span>Cơ bản các đường dẫn trong dictionary </span><code>data</code><span> đã được chỉnh để phù hợp với hướng dẫn chuẩn bị dữ liệu ở </span><b><span>Mục 1</span></b><span>. Nếu đã thực hiện chuẩn bị dữ liệu như Mục 1 và mount vào docker như Mục 2 thì dictionary data có thể giữ nguyên các đường dẫn như vậy.</span></p>
+</blockquote><p><span>Đặt tên file config. Ví dụ : </span><code>config_train.py</code><span>. Tiến hành cp file config này vào thư mục </span><code>configs</code><span> nằm trong docker.</span></p><p><span>Trước hết cần biết container id của mình đang dùng</span></p><pre><code>docker ps
+</code></pre><p><span>lấy </span><code>container id</code><span> ra, sử dụng lệnh sau để cp vào mmdetection:</span></p><pre><code>docker cp &lt;đường dẫn của config_train.py&gt; container_id:/mmdetection/configs
+</code></pre><h3 data-id="4-Huấn-luyện" id="4-Huấn-luyện"><a class="anchor hidden-xs" href="#4-Huấn-luyện" title="4-Huấn-luyện"><span class="octicon octicon-link"></span></a><span>4. Huấn luyện.</span></h3><p><span>Trong docker mmdetection,</span><br/>
+<span>Chạy lệnh sau để tiến hành huấn luyện:</span></p><pre><code>python tools/train.py configs/config_train.py
+</code></pre><p><span>Weight lưu ở thư mục </span><code>work_dirs</code></p></div>
+<div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+<div class="pull-right dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" id="tocLabel" role="button" title="Table of content">
+<i class="fa fa-bars"></i>
+</a>
+<ul aria-labelledby="tocLabel" class="ui-toc-dropdown dropdown-menu" id="ui-toc">
+<div class="toc"><ul class="nav">
+<li class=""><a href="#Cài-đặt-docker-Detectron2-và-mmdetection" title="Cài đặt docker Detectron2 và mmdetection">Cài đặt docker Detectron2 và mmdetection</a><ul class="nav">
+<li class=""><a href="#0-Cài-đặt-GPU-docker" title="0. Cài đặt GPU docker">0. Cài đặt GPU docker</a><ul class="nav">
+<li class=""><a href="#Setting-up-NVIDIA-Container-Toolkit" title="Setting up NVIDIA Container Toolkit">Setting up NVIDIA Container Toolkit</a></li>
+</ul>
+</li>
+<li class=""><a href="#1-Detectron2" title="1. Detectron2">1. Detectron2</a><ul class="nav">
+<li><a href="#Chuẩn-bị-dockerfile" title="Chuẩn bị dockerfile">Chuẩn bị dockerfile</a></li>
+<li class=""><a href="#Cài-đặt" title="Cài đặt">Cài đặt</a></li>
+</ul>
+</li>
+<li class=""><a href="#2-mmdetection" title="2. mmdetection">2. mmdetection</a><ul class="nav">
+<li class=""><a href="#Chuẩn-bị-dockerfile1" title="Chuẩn bị dockerfile">Chuẩn bị dockerfile</a></li>
+<li class=""><a href="#Cài-đặt1" title="Cài đặt">Cài đặt</a></li>
+</ul>
+</li>
+<li class=""><a href="#3-Sử-dụng" title="3. Sử dụng">3. Sử dụng</a></li>
+<li class=""><a href="#Share-permission-for-user-use-docker-without-sudo" title="Share permission for user (use docker without sudo)">Share permission for user (use docker without sudo)</a></li>
+<li class=""><a href="#Train-custom-data-mmdetection" title="Train custom data mmdetection">Train custom data mmdetection</a><ul class="nav">
+<li class=""><a href="#1-Chuẩn-bị-dữ-liệu" title="1. Chuẩn bị dữ liệu">1. Chuẩn bị dữ liệu</a></li>
+<li class=""><a href="#2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào" title="2. Kết nối docker mount thư mục dữ liệu vào">2. Kết nối docker mount thư mục dữ liệu vào</a></li>
+<li class=""><a href="#3-Chuẩn-bị-file-config" title="3. Chuẩn bị file config">3. Chuẩn bị file config</a></li>
+<li class=""><a href="#4-Huấn-luyện" title="4. Huấn luyện.">4. Huấn luyện.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+</ul>
+</div>
+</div>
+<div class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" id="ui-toc-affix" null="" style="top:17px;display:none;">
+<div class="toc"><ul class="nav">
+<li class=""><a href="#Cài-đặt-docker-Detectron2-và-mmdetection" title="Cài đặt docker Detectron2 và mmdetection">Cài đặt docker Detectron2 và mmdetection</a><ul class="nav">
+<li class=""><a href="#0-Cài-đặt-GPU-docker" title="0. Cài đặt GPU docker">0. Cài đặt GPU docker</a><ul class="nav">
+<li class=""><a href="#Setting-up-NVIDIA-Container-Toolkit" title="Setting up NVIDIA Container Toolkit">Setting up NVIDIA Container Toolkit</a></li>
+</ul>
+</li>
+<li class=""><a href="#1-Detectron2" title="1. Detectron2">1. Detectron2</a><ul class="nav">
+<li><a href="#Chuẩn-bị-dockerfile" title="Chuẩn bị dockerfile">Chuẩn bị dockerfile</a></li>
+<li class=""><a href="#Cài-đặt" title="Cài đặt">Cài đặt</a></li>
+</ul>
+</li>
+<li class=""><a href="#2-mmdetection" title="2. mmdetection">2. mmdetection</a><ul class="nav">
+<li class=""><a href="#Chuẩn-bị-dockerfile1" title="Chuẩn bị dockerfile">Chuẩn bị dockerfile</a></li>
+<li class=""><a href="#Cài-đặt1" title="Cài đặt">Cài đặt</a></li>
+</ul>
+</li>
+<li class=""><a href="#3-Sử-dụng" title="3. Sử dụng">3. Sử dụng</a></li>
+<li class=""><a href="#Share-permission-for-user-use-docker-without-sudo" title="Share permission for user (use docker without sudo)">Share permission for user (use docker without sudo)</a></li>
+<li class=""><a href="#Train-custom-data-mmdetection" title="Train custom data mmdetection">Train custom data mmdetection</a><ul class="nav">
+<li class=""><a href="#1-Chuẩn-bị-dữ-liệu" title="1. Chuẩn bị dữ liệu">1. Chuẩn bị dữ liệu</a></li>
+<li class=""><a href="#2-Kết-nối-docker-mount-thư-mục-dữ-liệu-vào" title="2. Kết nối docker mount thư mục dữ liệu vào">2. Kết nối docker mount thư mục dữ liệu vào</a></li>
+<li class=""><a href="#3-Chuẩn-bị-file-config" title="3. Chuẩn bị file config">3. Chuẩn bị file config</a></li>
+<li class=""><a href="#4-Huấn-luyện" title="4. Huấn luyện.">4. Huấn luyện.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+</div>
+
+{% endblock %}

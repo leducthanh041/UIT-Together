@@ -1,0 +1,1586 @@
+[
+  {
+    "source": "categories.html",
+    "url": "/categories.html",
+    "title": "Categories",
+    "section": "about",
+    "hero": [
+      "Categories",
+      "Categories",
+      ""
+    ]
+  },
+  {
+    "source": "404.html",
+    "url": "/404.html",
+    "title": "404",
+    "section": "about",
+    "hero": [
+      "404",
+      "404",
+      ""
+    ]
+  },
+  {
+    "source": "about.html",
+    "url": "/about.html",
+    "title": "About",
+    "section": "about",
+    "hero": [
+      "About",
+      "About",
+      ""
+    ]
+  },
+  {
+    "source": "tags.html",
+    "url": "/tags.html",
+    "title": "Tags",
+    "section": "about",
+    "hero": [
+      "Tags",
+      "Tags",
+      ""
+    ]
+  },
+  {
+    "source": "index.html",
+    "url": "/",
+    "title": "UIT-Together Research Group",
+    "section": "home",
+    "hero": [
+      "UIT-Together",
+      "Research grows through collaboration.",
+      "Computer vision and machine learning at the University of Information Technology."
+    ]
+  },
+  {
+    "source": "archive.html",
+    "url": "/archive.html",
+    "title": "Archive",
+    "section": "about",
+    "hero": [
+      "Archive",
+      "Archive",
+      ""
+    ]
+  },
+  {
+    "source": "pages.html",
+    "url": "/pages.html",
+    "title": "Pages",
+    "section": "about",
+    "hero": [
+      "Pages",
+      "Pages",
+      ""
+    ]
+  },
+  {
+    "source": "team/khang-tran.html",
+    "url": "/team/khang-tran.html",
+    "title": "Khang Tran",
+    "section": "team",
+    "hero": [
+      "Our people",
+      "A community across generations.",
+      "Meet our researchers, collaborators and student cohorts."
+    ]
+  },
+  {
+    "source": "team/tungufm.html",
+    "url": "/team/tungufm.html",
+    "title": "Tung Minh Tran",
+    "section": "team",
+    "hero": [
+      "Our people",
+      "A community across generations.",
+      "Meet our researchers, collaborators and student cohorts."
+    ]
+  },
+  {
+    "source": "team/index.html",
+    "url": "/team/",
+    "title": "Our people",
+    "section": "team",
+    "hero": [
+      "Our people",
+      "A community across generations.",
+      "Meet our researchers, collaborators and student cohorts."
+    ]
+  },
+  {
+    "source": "papers/index.html",
+    "url": "/papers/",
+    "title": "Publications",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/stiff-GPU-integrators.html",
+    "url": "/papers/paper/stiff-GPU-integrators.html",
+    "title": "An investigation of GPU-based stiff chemical kinetics integration methods",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/software-citation-principles.html",
+    "url": "/papers/paper/software-citation-principles.html",
+    "title": "Software citation principles",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/FTIR-LTC.html",
+    "url": "/papers/paper/FTIR-LTC.html",
+    "title": "Predicting fuel low-temperature combustion performance using Fourier-transform infrared absorption spectra of neat hydrocarbons",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/FACE-surrogates.html",
+    "url": "/papers/paper/FACE-surrogates.html",
+    "title": "FACE gasoline surrogates formulated by an enhanced multivariate optimization framework",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/wssspe3-report.html",
+    "url": "/papers/paper/wssspe3-report.html",
+    "title": "Report on the Third Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE3)",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/kerosene-model-reduction.html",
+    "url": "/papers/paper/kerosene-model-reduction.html",
+    "title": "Development of efficient and accurate skeletal mechanisms for hydrocarbon fuels and kerosene surrogate",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/butanol-skeletal-models.html",
+    "url": "/papers/paper/butanol-skeletal-models.html",
+    "title": "Reduced chemistry for butanol isomers at engine-relevant conditions",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/jmse-aps-analysis.html",
+    "url": "/papers/paper/jmse-aps-analysis.html",
+    "title": "Analysis of an approach for detecting arc positions during vacuum arc remelting based on magnetic flux density measurements",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/multicomponent-diffusion-flame.html",
+    "url": "/papers/paper/multicomponent-diffusion-flame.html",
+    "title": "Assessing the impact of multicomponent diffusion in direct numerical simulations of premixed, high-Karlovitz, turbulent flames",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/graph-search.html",
+    "url": "/papers/paper/graph-search.html",
+    "title": "On the importance of graph search algorithms for DRGEP-based mechanism reduction methods",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/douglas-fir-reduced-model.html",
+    "url": "/papers/paper/douglas-fir-reduced-model.html",
+    "title": "Reduced Gas-Phase Kinetic Models for Burning of Douglas Fir",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/bone-imaging.html",
+    "url": "/papers/paper/bone-imaging.html",
+    "title": "Three-dimensional surface texture visualization of bone tissue through epifluorescence-based serial block face imaging",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/software-citation-challenge.html",
+    "url": "/papers/paper/software-citation-challenge.html",
+    "title": "The challenge and promise of software citation for credit, identification, discovery, and reuse",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/langmuir-carbonate-chemistry.html",
+    "url": "/papers/paper/langmuir-carbonate-chemistry.html",
+    "title": "Effects of Langmuir turbulence on upper ocean carbonate chemistry",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/smoldering-mixtures-poci.html",
+    "url": "/papers/paper/smoldering-mixtures-poci.html",
+    "title": "Computational study of the effects of density, fuel content, and moisture content on smoldering propagation of cellulose and hemicellulose mixtures",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/review-GPU-CFD.html",
+    "url": "/papers/paper/review-GPU-CFD.html",
+    "title": "Recent progress and challenges in exploiting graphics processors in computational fluid dynamics",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/tomorrows-university.html",
+    "url": "/papers/paper/tomorrows-university.html",
+    "title": "The principles of tomorrow's university",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/multicomponent-diffusion-method.html",
+    "url": "/papers/paper/multicomponent-diffusion-method.html",
+    "title": "A fast, low-memory, and stable algorithm for implementing multicomponent transport in direct numerical simulations",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/moderately-stiff-GPU.html",
+    "url": "/papers/paper/moderately-stiff-GPU.html",
+    "title": "Accelerating moderately stiff chemical kinetics in reactive-flow simulations using GPUs",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/reduced-gasoline-surrogate.html",
+    "url": "/papers/paper/reduced-gasoline-surrogate.html",
+    "title": "Reduced chemistry for a gasoline surrogate valid at engine-relevant conditions",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/smoldering-exp-comp-poci.html",
+    "url": "/papers/paper/smoldering-exp-comp-poci.html",
+    "title": "Effects of fuel content and density on the smoldering characteristics of cellulose and hemicellulose",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/LTC-index.html",
+    "url": "/papers/paper/LTC-",
+    "title": "A novel fuel performance index for LTC engines based on operating envelopes in light-duty driving cycle simulations",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/model-parameter-discrepancy.html",
+    "url": "/papers/paper/model-parameter-discrepancy.html",
+    "title": "Assessing impacts of discrepancies in model parameters on autoignition model performance: A case study using butanol",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/wssspe4-jors.html",
+    "url": "/papers/paper/wssspe4-jors.html",
+    "title": "Fourth Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE4)",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/simd-simt-pyjac2.html",
+    "url": "/papers/paper/simd-simt-pyjac2.html",
+    "title": "Using SIMD and SIMT vectorization to evaluate sparse chemical kinetic Jacobian matrices and thermochemical source terms",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/pymars-joss.html",
+    "url": "/papers/paper/pymars-joss.html",
+    "title": "pyMARS: automatically reducing chemical kinetic models in Python",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/skeletal-reduction.html",
+    "url": "/papers/paper/skeletal-reduction.html",
+    "title": "Skeletal mechanism generation for surrogate fuels using directed relation graph with error propagation and sensitivity analysis",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/GPU-swept-rule-1D.html",
+    "url": "/papers/paper/GPU-swept-rule-1D.html",
+    "title": "Accelerating solutions of one-dimensional unsteady PDEs with GPU-based swept time–space decomposition",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/pyjac-paper.html",
+    "url": "/papers/paper/pyjac-paper.html",
+    "title": "pyJac: Analytical Jacobian generator for chemical kinetics",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/cpc-chemistry-vectorization.html",
+    "url": "/papers/paper/cpc-chemistry-vectorization.html",
+    "title": "Accelerating finite-rate chemical kinetics with coprocessors: Comparing vectorization methods on GPUs, MICs, and CPUs",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/nbutanol-counterflow.html",
+    "url": "/papers/paper/nbutanol-counterflow.html",
+    "title": "Counterflow ignition ofn-butanol at atmospheric and elevated pressures",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/openness-engineering.html",
+    "url": "/papers/paper/openness-engineering.html",
+    "title": "The case for openness in engineering research",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/CAABA-MECCA.html",
+    "url": "/papers/paper/CAABA-MECCA.html",
+    "title": "The community atmospheric chemistry box model CAABA/MECCA-4.0",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/peer-review.html",
+    "url": "/papers/paper/peer-review.html",
+    "title": "A multi-disciplinary perspective on emergent and future innovations in peer review",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/LTC-index-oxygenated.html",
+    "url": "/papers/paper/LTC-index-oxygenated.html",
+    "title": "Investigation of the LTC fuel performance index for oxygenated reference fuel blends",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/joss-peerjcs.html",
+    "url": "/papers/paper/joss-peerjcs.html",
+    "title": "Journal of Open Source Software (JOSS): design and first-year review",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/multicomponent-reduction.html",
+    "url": "/papers/paper/multicomponent-reduction.html",
+    "title": "Mechanism reduction for multicomponent surrogates: a case study using toluene reference fuels",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/chemked-ijck.html",
+    "url": "/papers/paper/chemked-ijck.html",
+    "title": "ChemKED: A human- and machine-readable data standard for chemical kinetics experiments",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/RON-FTIR.html",
+    "url": "/papers/paper/RON-FTIR.html",
+    "title": "Predicting fuel research octane number using Fourier-transform infrared absorption spectra of neat hydrocarbons",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/target-species-selection.html",
+    "url": "/papers/paper/target-species-selection.html",
+    "title": "An automated target species selection method for dynamic adaptive chemistry simulations",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/oil-water-natural-gas-engine.html",
+    "url": "/papers/paper/oil-water-natural-gas-engine.html",
+    "title": "Effects of oil and water contamination on natural gas engine combustion processes",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "papers/paper/swept-heterogeneous.html",
+    "url": "/papers/paper/swept-heterogeneous.html",
+    "title": "Applying the swept rule for solving explicit partial differential equations on heterogeneous computing systems",
+    "section": "papers",
+    "hero": [
+      "Publications",
+      "Ideas, experiments and discoveries.",
+      "Explore journal articles and conference papers."
+    ]
+  },
+  {
+    "source": "PapersByYear/index.html",
+    "url": "/PapersByYear/",
+    "title": "Publications by year",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/stiff-GPU-integrators.html",
+    "url": "/PapersByYear/paper/stiff-GPU-integrators.html",
+    "title": "An investigation of GPU-based stiff chemical kinetics integration methods",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/software-citation-principles.html",
+    "url": "/PapersByYear/paper/software-citation-principles.html",
+    "title": "Software citation principles",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/FTIR-LTC.html",
+    "url": "/PapersByYear/paper/FTIR-LTC.html",
+    "title": "Predicting fuel low-temperature combustion performance using Fourier-transform infrared absorption spectra of neat hydrocarbons",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/FACE-surrogates.html",
+    "url": "/PapersByYear/paper/FACE-surrogates.html",
+    "title": "FACE gasoline surrogates formulated by an enhanced multivariate optimization framework",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/wssspe3-report.html",
+    "url": "/PapersByYear/paper/wssspe3-report.html",
+    "title": "Report on the Third Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE3)",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/kerosene-model-reduction.html",
+    "url": "/PapersByYear/paper/kerosene-model-reduction.html",
+    "title": "Development of efficient and accurate skeletal mechanisms for hydrocarbon fuels and kerosene surrogate",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/butanol-skeletal-models.html",
+    "url": "/PapersByYear/paper/butanol-skeletal-models.html",
+    "title": "Reduced chemistry for butanol isomers at engine-relevant conditions",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/jmse-aps-analysis.html",
+    "url": "/PapersByYear/paper/jmse-aps-analysis.html",
+    "title": "Analysis of an approach for detecting arc positions during vacuum arc remelting based on magnetic flux density measurements",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/multicomponent-diffusion-flame.html",
+    "url": "/PapersByYear/paper/multicomponent-diffusion-flame.html",
+    "title": "Assessing the impact of multicomponent diffusion in direct numerical simulations of premixed, high-Karlovitz, turbulent flames",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/graph-search.html",
+    "url": "/PapersByYear/paper/graph-search.html",
+    "title": "On the importance of graph search algorithms for DRGEP-based mechanism reduction methods",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/douglas-fir-reduced-model.html",
+    "url": "/PapersByYear/paper/douglas-fir-reduced-model.html",
+    "title": "Reduced Gas-Phase Kinetic Models for Burning of Douglas Fir",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/bone-imaging.html",
+    "url": "/PapersByYear/paper/bone-imaging.html",
+    "title": "Three-dimensional surface texture visualization of bone tissue through epifluorescence-based serial block face imaging",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/software-citation-challenge.html",
+    "url": "/PapersByYear/paper/software-citation-challenge.html",
+    "title": "The challenge and promise of software citation for credit, identification, discovery, and reuse",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/langmuir-carbonate-chemistry.html",
+    "url": "/PapersByYear/paper/langmuir-carbonate-chemistry.html",
+    "title": "Effects of Langmuir turbulence on upper ocean carbonate chemistry",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/smoldering-mixtures-poci.html",
+    "url": "/PapersByYear/paper/smoldering-mixtures-poci.html",
+    "title": "Computational study of the effects of density, fuel content, and moisture content on smoldering propagation of cellulose and hemicellulose mixtures",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/review-GPU-CFD.html",
+    "url": "/PapersByYear/paper/review-GPU-CFD.html",
+    "title": "Recent progress and challenges in exploiting graphics processors in computational fluid dynamics",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/tomorrows-university.html",
+    "url": "/PapersByYear/paper/tomorrows-university.html",
+    "title": "The principles of tomorrow's university",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/multicomponent-diffusion-method.html",
+    "url": "/PapersByYear/paper/multicomponent-diffusion-method.html",
+    "title": "A fast, low-memory, and stable algorithm for implementing multicomponent transport in direct numerical simulations",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/moderately-stiff-GPU.html",
+    "url": "/PapersByYear/paper/moderately-stiff-GPU.html",
+    "title": "Accelerating moderately stiff chemical kinetics in reactive-flow simulations using GPUs",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/reduced-gasoline-surrogate.html",
+    "url": "/PapersByYear/paper/reduced-gasoline-surrogate.html",
+    "title": "Reduced chemistry for a gasoline surrogate valid at engine-relevant conditions",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/smoldering-exp-comp-poci.html",
+    "url": "/PapersByYear/paper/smoldering-exp-comp-poci.html",
+    "title": "Effects of fuel content and density on the smoldering characteristics of cellulose and hemicellulose",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/LTC-index.html",
+    "url": "/PapersByYear/paper/LTC-",
+    "title": "A novel fuel performance index for LTC engines based on operating envelopes in light-duty driving cycle simulations",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/model-parameter-discrepancy.html",
+    "url": "/PapersByYear/paper/model-parameter-discrepancy.html",
+    "title": "Assessing impacts of discrepancies in model parameters on autoignition model performance: A case study using butanol",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/wssspe4-jors.html",
+    "url": "/PapersByYear/paper/wssspe4-jors.html",
+    "title": "Fourth Workshop on Sustainable Software for Science: Practice and Experiences (WSSSPE4)",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/simd-simt-pyjac2.html",
+    "url": "/PapersByYear/paper/simd-simt-pyjac2.html",
+    "title": "Using SIMD and SIMT vectorization to evaluate sparse chemical kinetic Jacobian matrices and thermochemical source terms",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/pymars-joss.html",
+    "url": "/PapersByYear/paper/pymars-joss.html",
+    "title": "pyMARS: automatically reducing chemical kinetic models in Python",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/skeletal-reduction.html",
+    "url": "/PapersByYear/paper/skeletal-reduction.html",
+    "title": "Skeletal mechanism generation for surrogate fuels using directed relation graph with error propagation and sensitivity analysis",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/GPU-swept-rule-1D.html",
+    "url": "/PapersByYear/paper/GPU-swept-rule-1D.html",
+    "title": "Accelerating solutions of one-dimensional unsteady PDEs with GPU-based swept time–space decomposition",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/pyjac-paper.html",
+    "url": "/PapersByYear/paper/pyjac-paper.html",
+    "title": "pyJac: Analytical Jacobian generator for chemical kinetics",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/cpc-chemistry-vectorization.html",
+    "url": "/PapersByYear/paper/cpc-chemistry-vectorization.html",
+    "title": "Accelerating finite-rate chemical kinetics with coprocessors: Comparing vectorization methods on GPUs, MICs, and CPUs",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/nbutanol-counterflow.html",
+    "url": "/PapersByYear/paper/nbutanol-counterflow.html",
+    "title": "Counterflow ignition ofn-butanol at atmospheric and elevated pressures",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/openness-engineering.html",
+    "url": "/PapersByYear/paper/openness-engineering.html",
+    "title": "The case for openness in engineering research",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/CAABA-MECCA.html",
+    "url": "/PapersByYear/paper/CAABA-MECCA.html",
+    "title": "The community atmospheric chemistry box model CAABA/MECCA-4.0",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/peer-review.html",
+    "url": "/PapersByYear/paper/peer-review.html",
+    "title": "A multi-disciplinary perspective on emergent and future innovations in peer review",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/LTC-index-oxygenated.html",
+    "url": "/PapersByYear/paper/LTC-index-oxygenated.html",
+    "title": "Investigation of the LTC fuel performance index for oxygenated reference fuel blends",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/joss-peerjcs.html",
+    "url": "/PapersByYear/paper/joss-peerjcs.html",
+    "title": "Journal of Open Source Software (JOSS): design and first-year review",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/multicomponent-reduction.html",
+    "url": "/PapersByYear/paper/multicomponent-reduction.html",
+    "title": "Mechanism reduction for multicomponent surrogates: a case study using toluene reference fuels",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/chemked-ijck.html",
+    "url": "/PapersByYear/paper/chemked-ijck.html",
+    "title": "ChemKED: A human- and machine-readable data standard for chemical kinetics experiments",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/RON-FTIR.html",
+    "url": "/PapersByYear/paper/RON-FTIR.html",
+    "title": "Predicting fuel research octane number using Fourier-transform infrared absorption spectra of neat hydrocarbons",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/target-species-selection.html",
+    "url": "/PapersByYear/paper/target-species-selection.html",
+    "title": "An automated target species selection method for dynamic adaptive chemistry simulations",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/oil-water-natural-gas-engine.html",
+    "url": "/PapersByYear/paper/oil-water-natural-gas-engine.html",
+    "title": "Effects of oil and water contamination on natural gas engine combustion processes",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "PapersByYear/paper/swept-heterogeneous.html",
+    "url": "/PapersByYear/paper/swept-heterogeneous.html",
+    "title": "Applying the swept rule for solving explicit partial differential equations on heterogeneous computing systems",
+    "section": "PapersByYear",
+    "hero": [
+      "Publications",
+      "Our research, year by year.",
+      "Browse the publication archive by year."
+    ]
+  },
+  {
+    "source": "research/smoldering-combustion.html",
+    "url": "/research/smoldering-combustion.html",
+    "title": "Ignition, propagation, and emissions of smoldering combustion",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/chemked.html",
+    "url": "/research/chemked.html",
+    "title": "Open database of combustion measurements (ChemKED/Pr.omethe.us)",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/open-software.html",
+    "url": "/research/open-software.html",
+    "title": "Reproducibility, sustainable research software, and open science",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/detonation-magnetohydrodynamics.html",
+    "url": "/research/detonation-magnetohydrodynamics.html",
+    "title": "Pulse detonation engine for advanced oxy-combustion of coal-based fuels",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/turbulent-combustion.html",
+    "url": "/research/turbulent-combustion.html",
+    "title": "Turbulent combustion modeling",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/swept-time-space.html",
+    "url": "/research/swept-time-space.html",
+    "title": "Swept time-space domain decomposition",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/index.html",
+    "url": "/research/",
+    "title": "Research",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/arc-position-sensing.html",
+    "url": "/research/arc-position-sensing.html",
+    "title": "Arc position sensing for vacuum arc remelting furnaces",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/ltc-index.html",
+    "url": "/research/ltc-",
+    "title": "Fuels for low-temperature combustion engines",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/ocean-flows.html",
+    "url": "/research/ocean-flows.html",
+    "title": "Turbulence-chemistry interactions in the ocean",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/kinetic-model-reduction.html",
+    "url": "/research/kinetic-model-reduction.html",
+    "title": "Reducing chemical kinetic models",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "research/slackha.html",
+    "url": "/research/slackha.html",
+    "title": "Efficient integrators for chemical kinetics",
+    "section": "research",
+    "hero": [
+      "Research",
+      "Questions worth exploring.",
+      "Research directions and projects."
+    ]
+  },
+  {
+    "source": "projects/smoldering-combustion.html",
+    "url": "/projects/smoldering-combustion.html",
+    "title": "Ignition, propagation, and emissions of smoldering combustion",
+    "section": "projects",
+    "hero": [
+      "Ignition, propagation, and emissions of smoldering combustion",
+      "Ignition, propagation, and emissions of smoldering combustion",
+      ""
+    ]
+  },
+  {
+    "source": "projects/chemked.html",
+    "url": "/projects/chemked.html",
+    "title": "Open database of combustion measurements (ChemKED/Pr.omethe.us)",
+    "section": "projects",
+    "hero": [
+      "Open database of combustion measurements (ChemKED/Pr.omethe.us)",
+      "Open database of combustion measurements (ChemKED/Pr.omethe.us)",
+      ""
+    ]
+  },
+  {
+    "source": "projects/open-software.html",
+    "url": "/projects/open-software.html",
+    "title": "Reproducibility, sustainable research software, and open science",
+    "section": "projects",
+    "hero": [
+      "Reproducibility, sustainable research software, and open science",
+      "Reproducibility, sustainable research software, and open science",
+      ""
+    ]
+  },
+  {
+    "source": "projects/detonation-magnetohydrodynamics.html",
+    "url": "/projects/detonation-magnetohydrodynamics.html",
+    "title": "Pulse detonation engine for advanced oxy-combustion of coal-based fuels",
+    "section": "projects",
+    "hero": [
+      "Pulse detonation engine for advanced oxy-combustion of coal-based fuels",
+      "Pulse detonation engine for advanced oxy-combustion of coal-based fuels",
+      ""
+    ]
+  },
+  {
+    "source": "projects/turbulent-combustion.html",
+    "url": "/projects/turbulent-combustion.html",
+    "title": "Turbulent combustion modeling",
+    "section": "projects",
+    "hero": [
+      "Turbulent combustion modeling",
+      "Turbulent combustion modeling",
+      ""
+    ]
+  },
+  {
+    "source": "projects/swept-time-space.html",
+    "url": "/projects/swept-time-space.html",
+    "title": "Swept time-space domain decomposition",
+    "section": "projects",
+    "hero": [
+      "Swept time-space domain decomposition",
+      "Swept time-space domain decomposition",
+      ""
+    ]
+  },
+  {
+    "source": "projects/index.html",
+    "url": "/projects/",
+    "title": "Research",
+    "section": "projects",
+    "hero": [
+      "Research",
+      "Research",
+      ""
+    ]
+  },
+  {
+    "source": "projects/arc-position-sensing.html",
+    "url": "/projects/arc-position-sensing.html",
+    "title": "Arc position sensing for vacuum arc remelting furnaces",
+    "section": "projects",
+    "hero": [
+      "Arc position sensing for vacuum arc remelting furnaces",
+      "Arc position sensing for vacuum arc remelting furnaces",
+      ""
+    ]
+  },
+  {
+    "source": "projects/ltc-index.html",
+    "url": "/projects/ltc-",
+    "title": "Fuels for low-temperature combustion engines",
+    "section": "projects",
+    "hero": [
+      "Fuels for low-temperature combustion engines",
+      "Fuels for low-temperature combustion engines",
+      ""
+    ]
+  },
+  {
+    "source": "projects/ocean-flows.html",
+    "url": "/projects/ocean-flows.html",
+    "title": "Turbulence-chemistry interactions in the ocean",
+    "section": "projects",
+    "hero": [
+      "Turbulence-chemistry interactions in the ocean",
+      "Turbulence-chemistry interactions in the ocean",
+      ""
+    ]
+  },
+  {
+    "source": "projects/kinetic-model-reduction.html",
+    "url": "/projects/kinetic-model-reduction.html",
+    "title": "Reducing chemical kinetic models",
+    "section": "projects",
+    "hero": [
+      "Reducing chemical kinetic models",
+      "Reducing chemical kinetic models",
+      ""
+    ]
+  },
+  {
+    "source": "projects/slackha.html",
+    "url": "/projects/slackha.html",
+    "title": "Efficient integrators for chemical kinetics",
+    "section": "projects",
+    "hero": [
+      "Efficient integrators for chemical kinetics",
+      "Efficient integrators for chemical kinetics",
+      ""
+    ]
+  },
+  {
+    "source": "datasets/index.html",
+    "url": "/datasets/",
+    "title": "Datasets",
+    "section": "datasets",
+    "hero": [
+      "Open research",
+      "Datasets for new discoveries.",
+      "Explore datasets and resources shared by the group."
+    ]
+  },
+  {
+    "source": "datasets/UIT-OpenViIC/index.html",
+    "url": "/datasets/UIT-OpenViIC/",
+    "title": "Research",
+    "section": "datasets",
+    "hero": [
+      "Open research",
+      "Datasets for new discoveries.",
+      "Explore datasets and resources shared by the group."
+    ]
+  },
+  {
+    "source": "datasets/UIT-ADrone/index.html",
+    "url": "/datasets/UIT-ADrone/",
+    "title": "Research",
+    "section": "datasets",
+    "hero": [
+      "Open research",
+      "Datasets for new discoveries.",
+      "Explore datasets and resources shared by the group."
+    ]
+  },
+  {
+    "source": "tutorials/submit_coco.html",
+    "url": "/tutorials/submit_coco.html",
+    "title": "Hướng dẫn submit kết quả lên hệ thống chấp MS-COCO - HackMD",
+    "section": "tutorials",
+    "hero": [
+      "Hướng dẫn submit kết quả lên hệ thống chấp MS-COCO - HackMD",
+      "Hướng dẫn submit kết quả lên hệ thống chấp MS-COCO - HackMD",
+      ""
+    ]
+  },
+  {
+    "source": "tutorials/huong_dan_su_dung_docker.html",
+    "url": "/tutorials/huong_dan_su_dung_docker.html",
+    "title": "Hướng dẫn sử dụng docker - HackMD",
+    "section": "tutorials",
+    "hero": [
+      "Hướng dẫn sử dụng docker - HackMD",
+      "Hướng dẫn sử dụng docker - HackMD",
+      ""
+    ]
+  },
+  {
+    "source": "tutorials/cai_dat_detectron2_mmdetection.html",
+    "url": "/tutorials/cai_dat_detectron2_mmdetection.html",
+    "title": "Cài đặt docker Detectron2 và mmdetection - HackMD",
+    "section": "tutorials",
+    "hero": [
+      "Cài đặt docker Detectron2 và mmdetection - HackMD",
+      "Cài đặt docker Detectron2 và mmdetection - HackMD",
+      ""
+    ]
+  },
+  {
+    "source": "tutorials/index.html",
+    "url": "/tutorials/",
+    "title": "Tổng hợp các tutorial của UIT-Together - HackMD",
+    "section": "tutorials",
+    "hero": [
+      "Tổng hợp các tutorial của UIT-Together - HackMD",
+      "Tổng hợp các tutorial của UIT-Together - HackMD",
+      ""
+    ]
+  },
+  {
+    "source": "tutorials/mmdetection_step_by_step.html",
+    "url": "/tutorials/mmdetection_step_by_step.html",
+    "title": "Train mmdetection custom data step by step - HackMD",
+    "section": "tutorials",
+    "hero": [
+      "Train mmdetection custom data step by step - HackMD",
+      "Train mmdetection custom data step by step - HackMD",
+      ""
+    ]
+  },
+  {
+    "source": "news/kyle-faculty-spotlight.html",
+    "url": "/news/kyle-faculty-spotlight.html",
+    "title": "Kyle featured in faculty spotlight article",
+    "section": "news",
+    "hero": [
+      "Kyle featured in faculty spotlight article",
+      "Kyle featured in faculty spotlight article",
+      ""
+    ]
+  },
+  {
+    "source": "news/tenure-emily.html",
+    "url": "/news/tenure-emily.html",
+    "title": "Kyle receives tenure, Emily defends MS",
+    "section": "news",
+    "hero": [
+      "Kyle receives tenure, Emily defends MS",
+      "Kyle receives tenure, Emily defends MS",
+      ""
+    ]
+  },
+  {
+    "source": "news/liblab-local-news.html",
+    "url": "/news/liblab-local-news.html",
+    "title": "AJ in Gazette-Times",
+    "section": "news",
+    "hero": [
+      "AJ in Gazette-Times",
+      "AJ in Gazette-Times",
+      ""
+    ]
+  },
+  {
+    "source": "news/dan-andrew-luz-defended.html",
+    "url": "/news/dan-andrew-luz-defended.html",
+    "title": "NRG group MS defenses",
+    "section": "news",
+    "hero": [
+      "NRG group MS defenses",
+      "NRG group MS defenses",
+      ""
+    ]
+  },
+  {
+    "source": "news/af-defended.html",
+    "url": "/news/af-defended.html",
+    "title": "AJ successfully defended his PhD",
+    "section": "news",
+    "hero": [
+      "AJ successfully defended his PhD",
+      "AJ successfully defended his PhD",
+      ""
+    ]
+  },
+  {
+    "source": "news/NRG-featured-news.html",
+    "url": "/news/NRG-featured-news.html",
+    "title": "NRG in the news",
+    "section": "news",
+    "hero": [
+      "NRG in the news",
+      "NRG in the news",
+      ""
+    ]
+  },
+  {
+    "source": "news/phil-featured.html",
+    "url": "/news/phil-featured.html",
+    "title": "Phil featured in Honors Link",
+    "section": "news",
+    "hero": [
+      "Phil featured in Honors Link",
+      "Phil featured in Honors Link",
+      ""
+    ]
+  },
+  {
+    "source": "news/pilot-liblab-video.html",
+    "url": "/news/pilot-liblab-video.html",
+    "title": "AJ in the news",
+    "section": "news",
+    "hero": [
+      "AJ in the news",
+      "AJ in the news",
+      ""
+    ]
+  },
+  {
+    "source": "news/index.html",
+    "url": "/news/",
+    "title": "News",
+    "section": "news",
+    "hero": [
+      "News",
+      "News",
+      ""
+    ]
+  },
+  {
+    "source": "news/aj-featured-newspaper.html",
+    "url": "/news/aj-featured-newspaper.html",
+    "title": "AJ featured in Gazette-Times",
+    "section": "news",
+    "hero": [
+      "AJ featured in Gazette-Times",
+      "AJ featured in Gazette-Times",
+      ""
+    ]
+  },
+  {
+    "source": "software/index.html",
+    "url": "/software/",
+    "title": "Software",
+    "section": "software",
+    "hero": [
+      "Software",
+      "Software",
+      ""
+    ]
+  },
+  {
+    "source": "docs/mission.html",
+    "url": "/docs/mission.html",
+    "title": "Mission",
+    "section": "docs",
+    "hero": [
+      "Mission",
+      "Mission",
+      ""
+    ]
+  },
+  {
+    "source": "docs/code-of-conduct.html",
+    "url": "/docs/code-of-conduct.html",
+    "title": "Code of Conduct",
+    "section": "docs",
+    "hero": [
+      "Code of Conduct",
+      "Code of Conduct",
+      ""
+    ]
+  },
+  {
+    "source": "docs/expectations.html",
+    "url": "/docs/expectations.html",
+    "title": "Expectations",
+    "section": "docs",
+    "hero": [
+      "Expectations",
+      "Expectations",
+      ""
+    ]
+  },
+  {
+    "source": "docs/index.html",
+    "url": "/docs/",
+    "title": "Group Docs",
+    "section": "docs",
+    "hero": [
+      "Group Docs",
+      "Group Docs",
+      ""
+    ]
+  },
+  {
+    "source": "homes/index.html",
+    "url": "/homes/",
+    "title": "Homes",
+    "section": "homes",
+    "hero": [
+      "Welcome to UIT-Together",
+      "Explore. Connect. Discover.",
+      "Your starting point for our people, research and shared resources."
+    ]
+  }
+]

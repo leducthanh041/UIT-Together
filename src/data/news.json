@@ -1,0 +1,42 @@
+[
+  {
+    "id": "news-001",
+    "title": "We publish the DODV-Ext dataset",
+    "url": "https://ieeexplore.ieee.org/abstract/document/9796543",
+    "description": "DODV-Ext dataset: a challenging Vietnamese document image including scientific papers and textbooks with 5,000 fully annotated images.",
+    "date_label": "Posted\n\t\t\t\t15 June 2022",
+    "links": []
+  },
+  {
+    "id": "news-002",
+    "title": "We publish the UIT-CVID21 dataset",
+    "url": "https://github.com/nguyenvd-uit/uit-together-dataset/blob/main/UIT-CVID21.md",
+    "description": "UIT-CVID21 has 10,000 images which include four classes: bus, car, truck and van. This is one of the first dataset in this present time that has captured the most diverse angles and clearly show the characteristics of Vietnamese road thanks to the flexibility of unmanned aerial equipment.",
+    "date_label": "Posted\n\t\t\t\t3 Sep 2021",
+    "links": []
+  },
+  {
+    "id": "news-003",
+    "title": "We publish the UIT-VinaFruit20 dataset",
+    "url": "https://github.com/nguyenvd-uit/uit-together-dataset/blob/main/UIT-DODV.md",
+    "description": "UIT-VinaFruit20 contains 63,541 images are corresponding to 20 Vietnam popular fruits, with the average images per class are about 3,700 images. UIT-VinaFruit20 is the first Vietnamese fruit dataset with four main features promising more challenges.",
+    "date_label": "Posted\n\t\t\t\t12 Aug 2021",
+    "links": []
+  },
+  {
+    "id": "news-004",
+    "title": "We publish the UIT-DODV dataset",
+    "url": "https://github.com/nguyenvd-uit/uit-together-dataset/blob/main/UIT-DODV.md",
+    "description": "We collected the data from the scientific paper available on the website of Can Tho University (CTU). In addition, we used the physical scanner and the scanning app on smartphone \n\t\t\t\t\t\tto scan the hard-copy of National Conference \"Some Selected Issues of Information Technology and Communication\" of two Editions. Click the link for more details",
+    "date_label": "Posted\n\t\t\t\t\t19 July 2021",
+    "links": []
+  },
+  {
+    "id": "news-005",
+    "title": "We publish the VinaFood21 dataset",
+    "url": "https://github.com/nguyenvd-uit/uit-together-dataset/blob/main/VinaFood21.md",
+    "description": "We offically publish VinaFood21 dataset, which has 13,950 images from 21 dishes. This is a new milestone for complexVietnamese food recognition. Click the link for more details",
+    "date_label": "Posted\n\t\t\t\t\t03 July 2021",
+    "links": []
+  }
+]

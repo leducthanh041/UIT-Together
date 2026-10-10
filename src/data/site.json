@@ -1,0 +1,34 @@
+{
+  "name": "UIT-Together",
+  "description": "Research group in computer vision and machine learning.",
+  "nav": [
+    {
+      "label": "Homes",
+      "url": "/homes/"
+    },
+    {
+      "label": "Research",
+      "url": "/research/"
+    },
+    {
+      "label": "People",
+      "url": "/team/"
+    },
+    {
+      "label": "Publications",
+      "url": "/papers/"
+    },
+    {
+      "label": "By year",
+      "url": "/PapersByYear/"
+    },
+    {
+      "label": "Datasets",
+      "url": "/datasets/"
+    },
+    {
+      "label": "Tutorials",
+      "url": "/tutorials/"
+    }
+  ]
+}

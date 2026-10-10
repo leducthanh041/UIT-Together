@@ -1,0 +1,3 @@
+<article class="col-sm memberbox" data-filter-item><div class="media">
+{% if member.image %}<img class="member-photo" src="{{ member.image }}" alt="{{ member.name }}" loading="lazy" decoding="async">{% endif %}
+<div class="media-body"><h3 class="member-name">{% if member.url and member.url != '#' %}<a href="{{ member.url }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>{% for note in member.notes %}<p class="note">{{ note }}</p>{% endfor %}</div></div></article>

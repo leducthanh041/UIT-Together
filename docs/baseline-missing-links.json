@@ -1,0 +1,1046 @@
+[
+  {
+    "page": "categories.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "404.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "about.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "tags.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "archive.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "pages.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "team/khang-tran.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "team/khang-tran.html",
+    "url": "/assets/images/team/khang-tran.png"
+  },
+  {
+    "page": "team/tungufm.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "team/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/stiff-GPU-integrators.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/stiff-GPU-integrators.html",
+    "url": "/assets/images/papers/integrator-abstract.png"
+  },
+  {
+    "page": "papers/paper/software-citation-principles.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/software-citation-principles.html",
+    "url": "/assets/images/papers/software-citation-principles-abstract.svg"
+  },
+  {
+    "page": "papers/paper/FTIR-LTC.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/FTIR-LTC.html",
+    "url": "/assets/images/papers/fuel-cover.jpg"
+  },
+  {
+    "page": "papers/paper/FACE-surrogates.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/FACE-surrogates.html",
+    "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
+  },
+  {
+    "page": "papers/paper/wssspe3-report.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/wssspe3-report.html",
+    "url": "/assets/images/papers/wssspe3-report-abstract.svg"
+  },
+  {
+    "page": "papers/paper/kerosene-model-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/kerosene-model-reduction.html",
+    "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
+  },
+  {
+    "page": "papers/paper/butanol-skeletal-models.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/butanol-skeletal-models.html",
+    "url": "/assets/images/papers/butanol-structure.png"
+  },
+  {
+    "page": "papers/paper/jmse-aps-analysis.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/jmse-aps-analysis.html",
+    "url": "/assets/images/papers/jmse-aps-analysis.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-diffusion-flame.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-diffusion-flame.html",
+    "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
+  },
+  {
+    "page": "papers/paper/graph-search.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/graph-search.html",
+    "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
+  },
+  {
+    "page": "papers/paper/douglas-fir-reduced-model.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/douglas-fir-reduced-model.html",
+    "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
+  },
+  {
+    "page": "papers/paper/bone-imaging.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/bone-imaging.html",
+    "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
+  },
+  {
+    "page": "papers/paper/software-citation-challenge.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/software-citation-challenge.html",
+    "url": "/assets/images/papers/software-citation-challenge.png"
+  },
+  {
+    "page": "papers/paper/langmuir-carbonate-chemistry.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/langmuir-carbonate-chemistry.html",
+    "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
+  },
+  {
+    "page": "papers/paper/smoldering-mixtures-poci.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/smoldering-mixtures-poci.html",
+    "url": "/assets/images/papers/smoldering-mixtures-poci.png"
+  },
+  {
+    "page": "papers/paper/review-GPU-CFD.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/review-GPU-CFD.html",
+    "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
+  },
+  {
+    "page": "papers/paper/tomorrows-university.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/tomorrows-university.html",
+    "url": "/assets/images/papers/tomorrows-university.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-diffusion-method.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-diffusion-method.html",
+    "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
+  },
+  {
+    "page": "papers/paper/moderately-stiff-GPU.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/moderately-stiff-GPU.html",
+    "url": "/assets/images/papers/integrator-abstract.png"
+  },
+  {
+    "page": "papers/paper/reduced-gasoline-surrogate.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/reduced-gasoline-surrogate.html",
+    "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
+  },
+  {
+    "page": "papers/paper/smoldering-exp-comp-poci.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/smoldering-exp-comp-poci.html",
+    "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
+  },
+  {
+    "page": "papers/paper/LTC-index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/LTC-index.html",
+    "url": "/assets/images/papers/LTC-index-abstract.png"
+  },
+  {
+    "page": "papers/paper/model-parameter-discrepancy.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/model-parameter-discrepancy.html",
+    "url": "/assets/images/papers/model-parameter-discrepancy.png"
+  },
+  {
+    "page": "papers/paper/wssspe4-jors.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/wssspe4-jors.html",
+    "url": "/assets/images/papers/wssspe4-jors.svg"
+  },
+  {
+    "page": "papers/paper/simd-simt-pyjac2.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/simd-simt-pyjac2.html",
+    "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+  },
+  {
+    "page": "papers/paper/pymars-joss.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/pymars-joss.html",
+    "url": "/assets/images/papers/pymars-logo.png"
+  },
+  {
+    "page": "papers/paper/skeletal-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/skeletal-reduction.html",
+    "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
+  },
+  {
+    "page": "papers/paper/GPU-swept-rule-1D.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/GPU-swept-rule-1D.html",
+    "url": "/assets/images/papers/GPU-swept-rule-1D.png"
+  },
+  {
+    "page": "papers/paper/pyjac-paper.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/pyjac-paper.html",
+    "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+  },
+  {
+    "page": "papers/paper/cpc-chemistry-vectorization.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/cpc-chemistry-vectorization.html",
+    "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
+  },
+  {
+    "page": "papers/paper/nbutanol-counterflow.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/nbutanol-counterflow.html",
+    "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
+  },
+  {
+    "page": "papers/paper/openness-engineering.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/openness-engineering.html",
+    "url": "/assets/images/papers/open-engineering.png"
+  },
+  {
+    "page": "papers/paper/CAABA-MECCA.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/CAABA-MECCA.html",
+    "url": "/assets/images/papers/caaba-mecca.png"
+  },
+  {
+    "page": "papers/paper/peer-review.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/peer-review.html",
+    "url": "/assets/images/papers/peer-review-abstract.png"
+  },
+  {
+    "page": "papers/paper/LTC-index-oxygenated.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/LTC-index-oxygenated.html",
+    "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
+  },
+  {
+    "page": "papers/paper/joss-peerjcs.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/joss-peerjcs.html",
+    "url": "/assets/images/papers/joss-peerjcs.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/multicomponent-reduction.html",
+    "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
+  },
+  {
+    "page": "papers/paper/chemked-ijck.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/chemked-ijck.html",
+    "url": "/assets/images/papers/chemked-ijck.png"
+  },
+  {
+    "page": "papers/paper/RON-FTIR.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/RON-FTIR.html",
+    "url": "/assets/images/papers/RON-FTIR-abstract.svg"
+  },
+  {
+    "page": "papers/paper/target-species-selection.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/target-species-selection.html",
+    "url": "/assets/images/papers/target-species-selection-abstract.svg"
+  },
+  {
+    "page": "papers/paper/oil-water-natural-gas-engine.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/oil-water-natural-gas-engine.html",
+    "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
+  },
+  {
+    "page": "papers/paper/swept-heterogeneous.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "papers/paper/swept-heterogeneous.html",
+    "url": "/assets/images/papers/swept-heterogeneous.png"
+  },
+  {
+    "page": "PapersByYear/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/stiff-GPU-integrators.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/stiff-GPU-integrators.html",
+    "url": "/assets/images/papers/integrator-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/software-citation-principles.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/software-citation-principles.html",
+    "url": "/assets/images/papers/software-citation-principles-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/FTIR-LTC.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/FTIR-LTC.html",
+    "url": "/assets/images/papers/fuel-cover.jpg"
+  },
+  {
+    "page": "PapersByYear/paper/FACE-surrogates.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/FACE-surrogates.html",
+    "url": "/assets/images/papers/enfuem.2018.32.cover.jpg"
+  },
+  {
+    "page": "PapersByYear/paper/wssspe3-report.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/wssspe3-report.html",
+    "url": "/assets/images/papers/wssspe3-report-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/kerosene-model-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/kerosene-model-reduction.html",
+    "url": "/assets/images/papers/kerosene-model-reduction-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/butanol-skeletal-models.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/butanol-skeletal-models.html",
+    "url": "/assets/images/papers/butanol-structure.png"
+  },
+  {
+    "page": "PapersByYear/paper/jmse-aps-analysis.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/jmse-aps-analysis.html",
+    "url": "/assets/images/papers/jmse-aps-analysis.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-diffusion-flame.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-diffusion-flame.html",
+    "url": "/assets/images/papers/multicomponent-diffusion-flame.png"
+  },
+  {
+    "page": "PapersByYear/paper/graph-search.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/graph-search.html",
+    "url": "/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/douglas-fir-reduced-model.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/douglas-fir-reduced-model.html",
+    "url": "/assets/images/papers/douglas-fir-reduced-model.jpg"
+  },
+  {
+    "page": "PapersByYear/paper/bone-imaging.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/bone-imaging.html",
+    "url": "/assets/images/papers/bone-tissue-imaging-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/software-citation-challenge.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/software-citation-challenge.html",
+    "url": "/assets/images/papers/software-citation-challenge.png"
+  },
+  {
+    "page": "PapersByYear/paper/langmuir-carbonate-chemistry.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/langmuir-carbonate-chemistry.html",
+    "url": "/assets/images/papers/langmuir-carbonate-chemistry.png"
+  },
+  {
+    "page": "PapersByYear/paper/smoldering-mixtures-poci.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/smoldering-mixtures-poci.html",
+    "url": "/assets/images/papers/smoldering-mixtures-poci.png"
+  },
+  {
+    "page": "PapersByYear/paper/review-GPU-CFD.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/review-GPU-CFD.html",
+    "url": "/assets/images/papers/review-GPU-CFD-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/tomorrows-university.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/tomorrows-university.html",
+    "url": "/assets/images/papers/tomorrows-university.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-diffusion-method.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-diffusion-method.html",
+    "url": "/assets/images/papers/multicomponent-diffusion-method.jpg"
+  },
+  {
+    "page": "PapersByYear/paper/moderately-stiff-GPU.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/moderately-stiff-GPU.html",
+    "url": "/assets/images/papers/integrator-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/reduced-gasoline-surrogate.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/reduced-gasoline-surrogate.html",
+    "url": "/assets/images/papers/reduced-gasoline-surrogate-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/smoldering-exp-comp-poci.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/smoldering-exp-comp-poci.html",
+    "url": "/assets/images/papers/smoldering-exp-comp-poci.jpg"
+  },
+  {
+    "page": "PapersByYear/paper/LTC-index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/LTC-index.html",
+    "url": "/assets/images/papers/LTC-index-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/model-parameter-discrepancy.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/model-parameter-discrepancy.html",
+    "url": "/assets/images/papers/model-parameter-discrepancy.png"
+  },
+  {
+    "page": "PapersByYear/paper/wssspe4-jors.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/wssspe4-jors.html",
+    "url": "/assets/images/papers/wssspe4-jors.svg"
+  },
+  {
+    "page": "PapersByYear/paper/simd-simt-pyjac2.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/simd-simt-pyjac2.html",
+    "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/pymars-joss.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/pymars-joss.html",
+    "url": "/assets/images/papers/pymars-logo.png"
+  },
+  {
+    "page": "PapersByYear/paper/skeletal-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/skeletal-reduction.html",
+    "url": "/assets/images/papers/skeletal-reduction-paper-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/GPU-swept-rule-1D.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/GPU-swept-rule-1D.html",
+    "url": "/assets/images/papers/GPU-swept-rule-1D.png"
+  },
+  {
+    "page": "PapersByYear/paper/pyjac-paper.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/pyjac-paper.html",
+    "url": "/assets/images/papers/pyjac-paper-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/cpc-chemistry-vectorization.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/cpc-chemistry-vectorization.html",
+    "url": "/assets/images/papers/cpc-chemistry-vectorization.png"
+  },
+  {
+    "page": "PapersByYear/paper/nbutanol-counterflow.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/nbutanol-counterflow.html",
+    "url": "/assets/images/papers/nbutanol-counterflow-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/openness-engineering.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/openness-engineering.html",
+    "url": "/assets/images/papers/open-engineering.png"
+  },
+  {
+    "page": "PapersByYear/paper/CAABA-MECCA.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/CAABA-MECCA.html",
+    "url": "/assets/images/papers/caaba-mecca.png"
+  },
+  {
+    "page": "PapersByYear/paper/peer-review.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/peer-review.html",
+    "url": "/assets/images/papers/peer-review-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/LTC-index-oxygenated.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/LTC-index-oxygenated.html",
+    "url": "/assets/images/papers/LTC-index-oxygenated-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/joss-peerjcs.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/joss-peerjcs.html",
+    "url": "/assets/images/papers/joss-peerjcs.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/multicomponent-reduction.html",
+    "url": "/assets/images/papers/multicomponent-reduction-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/chemked-ijck.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/chemked-ijck.html",
+    "url": "/assets/images/papers/chemked-ijck.png"
+  },
+  {
+    "page": "PapersByYear/paper/RON-FTIR.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/RON-FTIR.html",
+    "url": "/assets/images/papers/RON-FTIR-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/target-species-selection.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/target-species-selection.html",
+    "url": "/assets/images/papers/target-species-selection-abstract.svg"
+  },
+  {
+    "page": "PapersByYear/paper/oil-water-natural-gas-engine.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/oil-water-natural-gas-engine.html",
+    "url": "/assets/images/papers/oil-water-natural-gas-engine-abstract.png"
+  },
+  {
+    "page": "PapersByYear/paper/swept-heterogeneous.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "PapersByYear/paper/swept-heterogeneous.html",
+    "url": "/assets/images/papers/swept-heterogeneous.png"
+  },
+  {
+    "page": "research/smoldering-combustion.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/chemked.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/open-software.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/detonation-magnetohydrodynamics.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/turbulent-combustion.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/swept-time-space.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/arc-position-sensing.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/ltc-index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/ocean-flows.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/kinetic-model-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "research/slackha.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/smoldering-combustion.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/chemked.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/open-software.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/detonation-magnetohydrodynamics.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/turbulent-combustion.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/swept-time-space.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/arc-position-sensing.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/ltc-index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/ocean-flows.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/kinetic-model-reduction.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "projects/slackha.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "datasets/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "datasets/UIT-OpenViIC/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "datasets/UIT-ADrone/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/kyle-faculty-spotlight.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/kyle-faculty-spotlight.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/tenure-emily.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/tenure-emily.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/tenure-emily.html",
+    "url": "/team/emily-klee"
+  },
+  {
+    "page": "news/liblab-local-news.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/liblab-local-news.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/dan-andrew-luz-defended.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/dan-andrew-luz-defended.html",
+    "url": "/team/dan-magee"
+  },
+  {
+    "page": "news/dan-andrew-luz-defended.html",
+    "url": "/team/andrew-alferman"
+  },
+  {
+    "page": "news/dan-andrew-luz-defended.html",
+    "url": "/team/luz-pacheco"
+  },
+  {
+    "page": "news/af-defended.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/af-defended.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/miguel-soler"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/matt-zaiger"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/tejas-mulky"
+  },
+  {
+    "page": "news/NRG-featured-news.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/phil-featured.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/phil-featured.html",
+    "url": "/team/phillip-mestas"
+  },
+  {
+    "page": "news/pilot-liblab-video.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/pilot-liblab-video.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/emily-klee"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/phillip-mestas"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/dan-magee"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/andrew-alferman"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/luz-pacheco"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/miguel-soler"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/matt-zaiger"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/tejas-mulky"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "news/index.html",
+    "url": "/team/kyle-niemeyer"
+  },
+  {
+    "page": "news/aj-featured-newspaper.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "news/aj-featured-newspaper.html",
+    "url": "/team/aj-fillo"
+  },
+  {
+    "page": "software/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "docs/mission.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "docs/code-of-conduct.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "docs/expectations.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  },
+  {
+    "page": "docs/index.html",
+    "url": "/assets/themes/lab/images/logo/apple-touch-icon.png"
+  }
+]

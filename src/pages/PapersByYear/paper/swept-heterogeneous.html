@@ -1,0 +1,105 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-3">
+<div class="media">
+<img alt="swept heterogeneous" class="pull-left pad-right media-object paper-image" decoding="async" loading="lazy" src="/assets/images/papers/swept-heterogeneous.png"/>
+</div>
+</div>
+<div class="col-md-9">
+<div class="media-body titlebox">
+<div class="title media-heading">
+				Applying the swept rule for solving explicit partial differential equations on heterogeneous computing systems
+			</div>
+<p>
+<div class="smallhead">
+				Magee DJ, Walker AS, and Niemeyer KE.
+				<span class="journal">
+				Journal of Supercomputing
+				</span>
+				
+				
+				
+				(2020).
+			</div>
+</p></div>
+</div>
+</div>
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="bigspacer"></div>
+<div class="glyphbox note">
+<div class="smallhead subtle">
+                Full text
+            </div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="ai ai-doi fa-fw"></i>
+<a class="off" href="https://doi.org/10.1007/s11227-020-03340-9">10.1007/s11227-020-03340-9</a>
+<br/>
+<i class="ai ai-arxiv fa-fw"></i>
+<a class="off" href="https://arxiv.org/abs/1811.08282"><code>arXiv:1811.08282 [cs.MS]</code></a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Source code
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-cog fa-fw"></i>
+<a class="off" href="https://github.com/Niemeyer-Research-Group/hSweep">github.com/Niemeyer-Research-Group/hSweep</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Data
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-database fa-fw"></i>
+<a class="off" href="https://doi.org/10.5281/zenodo.3787144">Zenodo</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Altmetrics
+			</div>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1007/s11227-020-03340-9" data-hide-no-mentions="true">
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Share
+			</div>
+<div class="post-sharing">
+<i class="fab fa-twitter fa-fw"></i>
+<a class="off" data-related="kyleniemeyer" data-text="Applying the swept rule for solving explicit partial differential equations on heterogeneous computing systems" data-via="" href="https://twitter.com/share?url=&amp;text=" target="_blank">tweet</a>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="post">
+<h2 id="abstract">Abstract</h2>
+<p>Applications that exploit the architectural details of high-performance computing (HPC) systems have become increasingly invaluable in academia and industry over the past two decades. The most important hardware development of the last decade in HPC has been the General Purpose Graphics Processing Unit (GPGPU), a class of massively parallel devices that now contributes the majority of computational power in the top 500 supercomputers. As these systems grow, small costs such as latency—due to the fixed cost of memory accesses and communication—accumulate in a large simulation and become a significant barrier to performance. The swept time-space decomposition rule is a communication-avoiding technique for time-stepping stencil update formulas that attempts to reduce latency costs. This work extends the swept rule by targeting heterogeneous, CPU/GPU architectures representing current and future HPC systems. We compare our approach to a naive decomposition scheme with two test equations using an MPI+CUDA pattern on 40 processes over two nodes containing one GPU. The swept rule produces a factor of 1.9 to 23 speedup for the heat equation and a factor of 1.1 to 2.0 speedup for the Euler equations, using the same processors and work distribution, and with the best possible configurations. These results show the potential effectiveness of the swept rule for different equations and numerical schemes on massively parallel computing systems that incur substantial latency costs.</p>
+</div>
+<div class="post">
+<h2 id="bibte">BibTeX</h2>
+<pre> @article{Magee2020,
+  doi = {10.1007/s11227-020-03340-9},
+  year = 2020,
+  month = {},
+  volume = {},
+  number = {},
+  pages = {},
+  author = {Daniel J. Magee and Anthony S. Walker and Kyle E. Niemeyer},
+  title = {Applying the swept rule for solving explicit partial differential equations on heterogeneous computing systems},
+  journal = {Journal of Supercomputing}
+}
+ </pre>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+</div>
+</div>
+{% endblock %}

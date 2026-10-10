@@ -1,0 +1,17 @@
+<div class="container">
+<section class="group-introduction"><p class="eyebrow">Who we are</p><p>
+                We are <strong>UIT-Together</strong>. Here our goal is to build a strong affiliated research group 
+				in <strong>Computer vision</strong> and <strong>Machine learning</strong>. Besides key persons who are leaders in 
+				these field, the young enthusiastic and energetic force in research are trained 
+				and supported for the development orientation of group in the long-term and strengthening 
+				international links, improving the ability of scientific publishing.
+				
+            </p></section>
+<div class="home-columns">
+<section><div class="section-heading"><h2 id="group-updates-title">Group updates</h2><a href="/datasets/">Explore datasets →</a></div>
+<div class="content-scroll home-feed-scroll" role="region" aria-labelledby="group-updates-title" tabindex="0">
+{% for item in news %}<article class="news-entry"><p class="note">{{ item.date_label }}</p><h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.description }}</p>{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a> {% endfor %}</article>{% endfor %}</div></section>
+<section><div class="section-heading"><h2 id="publication-highlights-title">Publication highlights</h2><a href="/papers/">All publications →</a></div>
+<div class="content-scroll home-feed-scroll" role="region" aria-labelledby="publication-highlights-title" tabindex="0">
+{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry"><p class="note">{{ item.homepage_date_label }}</p><h3>{% if item.links %}<a href="{{ item.links[0] }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.homepage_reference }}</p></article>{% endfor %}</div></section>
+</div></div>

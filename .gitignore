@@ -1,0 +1,8 @@
+dist/
+__pycache__/
+*.pyc
+.env
+deploy/.env
+.DS_Store
+/core-source/
+/tools/

@@ -1,0 +1,61 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<style>
+    div {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+<div class="container">
+<h2>Active Projects</h2>
+<div class="container">
+<div class="row">
+<div class="media mb-1 mt-1">
+<div class="col-md-4">
+<a class="media-left" href="#">
+<img alt="ANOMOLY DETECTION" class="pull-left mr-3 img-fluid" decoding="async" loading="lazy" src="/assets/images/projects/anomoly1.jpg"/>
+<img alt="ANOMOLY DETECTION" class="pull-left mr-3 img-fluid" decoding="async" loading="lazy" src="/assets/images/projects/anomoly2.jpg"/>
+</a>
+</div>
+<div class="media-body col-md-8">
+<a href="#">
+<h4 class="media-heading">ANOMALY DETECTION<small class="text-muted">(2022–)</small></h4>
+</a>
+<p>Nowadays, remote anomaly detection has become more popular due to the increase in the number of surveillance cameras. However, these surveillance systems are still not timely and require manual labour. Therefore, it is necessary that we leverage the power of computer vision to automatically detect anomalies in videos. The purpose of this problem is to find out a model to accurately identify the start and the end points of an anomalous event.</p>
+<p><a class="off" href="#"><i aria-hidden="true" class="far fa-file-alt fa-fw"></i>UIT-Anomaly: A Modern Vietnamese Video Dataset for Anomaly Detection </a>(2022)</p>
+<p><a class="off" href="#"><i aria-hidden="true" class="far fa-file-alt fa-fw"></i>VNAnomaly: A Novel Vietnam Surveillance Video Dataset for Anomaly Detection </a>(2022)</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="media mb-1 mt-1">
+<div class="col-md-4">
+<a class="media-left" href="#">
+<img alt="IMAGE CAPTIONING" class="pull-left mr-3 img-fluid" decoding="async" loading="lazy" src="/assets/images/projects/ic1.jpg"/>
+<img alt="IMAGE CAPTIONING" class="pull-left mr-3 img-fluid" decoding="async" loading="lazy" src="/assets/images/projects/ic2.jpg"/>
+</a>
+</div>
+<div class="media-body col-md-8">
+<a href="#">
+<h4 class="media-heading">IMAGE CAPTIONING<small class="text-muted">(2022–)</small></h4>
+</a>
+<a href="/team/khang-tran.html">
+<img alt="Khang Nguyen" class="img-circle" decoding="async" height="60" loading="lazy" src="/assets/images/team/thay_khang.jpg"/>
+</a>
+<a href="http://nguyenvd-uit.github.io">
+<img alt="Nguyen D. Vo" class="img-circle" decoding="async" height="60" loading="lazy" src="/assets/images/team/thay_nguyen.jpg"/>
+</a>
+<a href="#">
+<img alt="Doanh C. Bui" class="img-circle" decoding="async" height="60" loading="lazy" src="/assets/images/team/k2019/doanhcbui.jpg"/>
+</a>
+<a href="#">
+<img alt="Doanh C. Bui" class="img-circle" decoding="async" height="60" loading="lazy" src="/assets/images/team/k2019/thanhtructrinhthi.jpg"/>
+</a>
+<p>Automatically generating captions for images is an exciting subject in computer vision and the natural language processing field. In spite of the precision that recent research has achieved, training an AI model for imitating this unique human ability still has many challenges. In recent years, the common approach for the image captioning problem is based on encoder-decoder architecture like the machine-translation problem: the encoder is a CNN architecture used for extracting visual signals; the decoder is an RNN architecture to predict the possible captions for an according image based on output from the encoder. Inside, feature extraction problem in image captioning has two main approaches: grid features and region features, which one is more effective are now still being discussed.</p>
+<p><a class="off" href="#"><i aria-hidden="true" class="far fa-file-alt fa-fw"></i>EAES: Effective Augmented Embedding Spaces for Text-based Image Captioning</a>(2022)</p>
+<p><a class="off" href="#"><i aria-hidden="true" class="far fa-file-alt fa-fw"></i>An Augmented Embedding Spaces approach for Text-based Image Captioning</a>(2022)</p>
+</div>
+</div>
+</div>
+</div></div>
+{% endblock %}

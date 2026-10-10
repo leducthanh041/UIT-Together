@@ -1,0 +1,113 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-3">
+<div class="media">
+<img alt="pyjac paper abstract" class="pull-left pad-right media-object paper-image" decoding="async" loading="lazy" src="/assets/images/papers/pyjac-paper-abstract.svg"/>
+</div>
+</div>
+<div class="col-md-9">
+<div class="media-body titlebox">
+<div class="title media-heading">
+				pyJac: Analytical Jacobian generator for chemical kinetics
+			</div>
+<p>
+<div class="smallhead">
+				Niemeyer KE, Curtis NJ, Sung CJ.
+				<span class="journal">
+				Computer Physics Communications
+				</span>
+				
+				215
+				
+				
+				
+				:188–203
+				
+				(2017).
+			</div>
+</p></div>
+</div>
+</div>
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="bigspacer"></div>
+<div class="glyphbox note">
+<div class="smallhead subtle">
+                Full text
+            </div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="ai ai-doi fa-fw"></i>
+<a class="off" href="https://doi.org/10.1016/j.cpc.2017.02.004">10.1016/j.cpc.2017.02.004</a>
+<br/>
+<i class="ai ai-arxiv fa-fw"></i>
+<a class="off" href="https://arxiv.org/abs/1605.03262"><code>arXiv:1605.03262 [physics.comp-ph]</code></a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Source code
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-cog fa-fw"></i>
+<a class="off" href="https://github.com/Niemeyer-Research-Group/pyJac-paper">github.com/Niemeyer-Research-Group/pyJac-paper</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Data
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-database fa-fw"></i>
+<a class="off" href="https://doi.org/10.6084/m9.figshare.4578010">Figshare</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Altmetrics
+			</div>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1016/j.cpc.2017.02.004" data-hide-no-mentions="true">
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Share
+			</div>
+<div class="post-sharing">
+<i class="fab fa-twitter fa-fw"></i>
+<a class="off" data-related="kyleniemeyer" data-text="pyJac: Analytical Jacobian generator for chemical kinetics" data-via="" href="https://twitter.com/share?url=&amp;text=" target="_blank">tweet</a>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="post">
+<h2 id="brief-description">Brief description</h2>
+<p>pyJac is an open-source Python-based tool that produces analytical Jacobian
+matrices for chemical kinetics differential equations. This paper describes the
+theory behind pyJac, including derivation of the chemical kinetic Jacobian and
+all necessary components, pyJac’s implementation, verification of pyJac’s output,
+and a performance comparison with alternative methods.</p>
+<h2 id="abstract">Abstract</h2>
+<p>Accurate simulations of combustion phenomena require the use of detailed chemical kinetics in order to capture limit phenomena such as ignition and extinction as well as predict pollutant formation. However, the chemical kinetic models for hydrocarbon fuels of practical interest typically have large numbers of species and reactions and exhibit high levels of mathematical stiffness in the governing differential equations, particularly for larger fuel molecules. In order to integrate the stiff equations governing chemical kinetics, generally reactive-flow simulations rely on implicit algorithms that require frequent Jacobian matrix evaluations. Some in situ and a posteriori computational diagnostics methods also require accurate Jacobian matrices, including computational singular perturbation and chemical explosive mode analysis. Typically, finite differences numerically approximate these, but for larger chemical kinetic models this poses significant computational demands since the number of chemical source term evaluations scales with the square of species count. Furthermore, existing analytical Jacobian tools do not optimize evaluations or support emerging SIMD processors such as GPUs. Here we introduce <code class="language-plaintext highlighter-rouge">pyJac</code>, a Python-based open-source program that generates analytical Jacobian matrices for use in chemical kinetics modeling and analysis. In addition to producing the necessary customized source code for evaluating reaction rates (including all modern reaction rate formulations), the chemical source terms, and the Jacobian matrix, <code class="language-plaintext highlighter-rouge">pyJac</code> uses an optimized evaluation order to minimize computational and memory operations. As a demonstration, we first establish the correctness of the Jacobian matrices for kinetic models of hydrogen, methane, ethylene, and isopentanol oxidation (number of species ranging 13–360) by showing agreement within 0.001% of matrices obtained via automatic differentiation. We then demonstrate the performance achievable on CPUs and GPUs using <code class="language-plaintext highlighter-rouge">pyJac</code> via matrix evaluation timing comparisons; the routines produced by <code class="language-plaintext highlighter-rouge">pyJac</code> outperformed first-order finite differences by 2.9–5.3 times and the existing analytical Jacobian software <code class="language-plaintext highlighter-rouge">TChem</code> by 3.9–41 times. The Jacobian matrix generator we describe here will be useful for reducing the cost of integrating chemical source terms with implicit algorithms in particular and algorithms that require an accurate Jacobian matrix in general. Furthermore, the open-source release of the program and Python-based implementation will enable wide adoption.</p>
+</div>
+<div class="post">
+<h2 id="bibte">BibTeX</h2>
+<pre> @article{Niemeyer:2017py,
+  Author = {Kyle E. Niemeyer and Nicholas J. Curtis and Chih-Jen Sung},
+  Title = {\texttt{pyJac}: analytical Jacobian generator for chemical kinetics},
+  Journal = {Computer Physics Communications},
+  Pages = {188--203},
+  Volume = {215},
+  Year = 2017,
+  doi = {10.1016/j.cpc.2017.02.004}
+}
+ </pre>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+</div>
+</div>
+{% endblock %}

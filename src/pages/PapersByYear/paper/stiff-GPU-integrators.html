@@ -1,0 +1,107 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-3">
+<div class="media">
+<img alt="integrator abstract" class="pull-left pad-right media-object paper-image" decoding="async" loading="lazy" src="/assets/images/papers/integrator-abstract.png"/>
+</div>
+</div>
+<div class="col-md-9">
+<div class="media-body titlebox">
+<div class="title media-heading">
+				An investigation of GPU-based stiff chemical kinetics integration methods
+			</div>
+<p>
+<div class="smallhead">
+				Curtis NJ, Niemeyer KE, Sung CJ.
+				<span class="journal">
+				Combustion and Flame
+				</span>
+				
+				179
+				
+				
+				
+				:312–324
+				
+				(2017).
+			</div>
+</p></div>
+</div>
+</div>
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="bigspacer"></div>
+<div class="glyphbox note">
+<div class="smallhead subtle">
+                Full text
+            </div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="ai ai-doi fa-fw"></i>
+<a class="off" href="https://doi.org/10.1016/j.combustflame.2017.02.005">10.1016/j.combustflame.2017.02.005</a>
+<br/>
+<i class="ai ai-arxiv fa-fw"></i>
+<a class="off" href="https://arxiv.org/abs/1607.03884"><code>arXiv:1607.03884 [physics.comp-ph]</code></a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Source code
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-cog fa-fw"></i>
+<a class="off" href="https://github.com/arghdos/GPU-Integration-Paper">github.com/arghdos/GPU-Integration-Paper</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Data
+			</div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="fas fa-database fa-fw"></i>
+<a class="off" href="https://doi.org/10.6084/m9.figshare.4596847">Figshare</a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Altmetrics
+			</div>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1016/j.combustflame.2017.02.005" data-hide-no-mentions="true">
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Share
+			</div>
+<div class="post-sharing">
+<i class="fab fa-twitter fa-fw"></i>
+<a class="off" data-related="kyleniemeyer" data-text="An investigation of GPU-based stiff chemical kinetics integration methods" data-via="" href="https://twitter.com/share?url=&amp;text=" target="_blank">tweet</a>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="post">
+<h2 id="abstract">Abstract</h2>
+<p>A fifth-order implicit Runge–Kutta method and two fourth-order exponential integration methods equipped with Krylov subspace approximations were implemented for the GPU and paired with the analytical chemical kinetic Jacobian software <code class="language-plaintext highlighter-rouge">pyJac</code>. The performance of each algorithm was evaluated by integrating thermochemical state data sampled from stochastic partially stirred reactor simulations and compared with the commonly used CPU-based implicit integrator <code class="language-plaintext highlighter-rouge">CVODE</code>. We estimated that the implicit Runge–Kutta method running on a single GPU is equivalent to <code class="language-plaintext highlighter-rouge">CVODE</code> running on 12–38 CPU cores for integration of a single global integration time step of 1e-6 s with hydrogen and methane models. In the stiffest case studied—the methane model with a global integration time step of 1e-4 s—thread divergence and higher memory traffic significantly decreased GPU performance to the equivalent of <code class="language-plaintext highlighter-rouge">CVODE</code> running on approximately three CPU cores. The exponential integration algorithms performed more slowly than the implicit integrators on both the CPU and GPU. Thread divergence and memory traffic were identified as the main limiters of GPU integrator performance, and techniques to mitigate these issues were discussed. Use of a finite-difference Jacobian on the GPU—in place of the analytical Jacobian provided by <code class="language-plaintext highlighter-rouge">pyJac</code>—greatly decreased integrator performance due to thread divergence, resulting in maximum slowdowns of 7.11–240.96 times; in comparison, the corresponding slowdowns on the CPU were just 1.39–2.61 times, underscoring the importance of use of an analytical Jacobian for efficient GPU integration. Finally, future research directions for working towards enabling realistic chemistry in reactive-flow simulations via GPU/SIMD-accelerated stiff chemical kinetic integration were identified.</p>
+</div>
+<div class="post">
+<h2 id="bibte">BibTeX</h2>
+<pre> @article{Curtis:2017cf,
+  Author = {Nicholas J. Curtis and Kyle E. Niemeyer and Chih-Jen Sung},
+  Title = {An investigation of {GPU}-based stiff chemical kinetics integration methods},
+  Journal = {Combustion and Flame},
+  Pages = {312--324},
+  Volume = {179},
+  Year = 2017,
+  doi = {10.1016/j.combustflame.2017.02.005}
+}
+ </pre>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+</div>
+</div>
+{% endblock %}

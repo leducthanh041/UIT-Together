@@ -1,0 +1,98 @@
+[
+  {
+    "id": "member-001",
+    "name": "Khang Nguyen",
+    "image": "/assets/images/team/thay_khang.jpg",
+    "url": "",
+    "section": "Leader",
+    "notes": [
+      "Supervisor",
+      "Research scientist",
+      "University of Information Technology, Vietnam National University - Ho Chi Minh City",
+      "Email: khangnttm@uit.edu.vn"
+    ]
+  },
+  {
+    "id": "member-002",
+    "name": "Tam Nguyen",
+    "image": "/assets/images/team/thay_tam.jpg",
+    "url": "https://vantam.github.io/",
+    "section": "Collaborators",
+    "notes": [
+      "Supervisor",
+      "Research scientist",
+      "Assistant Professor at Department of Computer Science, University of Dayton (UD), USA",
+      "Email: tamnguyen@udayton.edu"
+    ]
+  },
+  {
+    "id": "member-003",
+    "name": "Khanh Duy Nguyen",
+    "image": "/assets/images/team/khanh_nguyen.jpg",
+    "url": "/team/",
+    "section": "Current members",
+    "notes": [
+      "PhD"
+    ]
+  },
+  {
+    "id": "member-004",
+    "name": "Tung Minh Tran",
+    "image": "/assets/images/team/thay_tung.jpg",
+    "url": "/team/tungufm",
+    "section": "Current members",
+    "notes": [
+      "PhD Student"
+    ]
+  },
+  {
+    "id": "member-005",
+    "name": "Nguyen D. Vo",
+    "image": "/assets/images/team/thay_nguyen.jpg",
+    "url": "https://nguyenvd-uit.github.io/",
+    "section": "Current members",
+    "notes": [
+      "PhD Student"
+    ]
+  },
+  {
+    "id": "member-006",
+    "name": "Hiep Nguyen",
+    "image": "/assets/images/team/thay_hiep.jpg",
+    "url": "#",
+    "section": "Current members",
+    "notes": [
+      "PhD Student"
+    ]
+  },
+  {
+    "id": "member-007",
+    "name": "My Hoan Nguyen",
+    "image": "/assets/images/team/my_nguyen.jpg",
+    "url": "#",
+    "section": "Current members",
+    "notes": [
+      "MSc"
+    ]
+  },
+  {
+    "id": "member-008",
+    "name": "Long Duong",
+    "image": "/assets/images/team/long_duong.jpg",
+    "url": "#",
+    "section": "Current members",
+    "notes": [
+      "MSc"
+    ]
+  },
+  {
+    "id": "member-009",
+    "name": "Dung Truong",
+    "image": "/assets/images/team/dung_truong.jpg",
+    "url": "#",
+    "section": "Current members",
+    "notes": [
+      "MSc"
+    ]
+  }
+]

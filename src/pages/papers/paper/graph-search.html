@@ -1,0 +1,92 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container">
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-3">
+<div class="media">
+<img alt="skeletal reduction graph search abstract" class="pull-left pad-right media-object paper-image" decoding="async" loading="lazy" src="/assets/images/papers/skeletal-reduction-graph-search-abstract.svg"/>
+</div>
+</div>
+<div class="col-md-9">
+<div class="media-body titlebox">
+<div class="title media-heading">
+				On the importance of graph search algorithms for DRGEP-based mechanism reduction methods
+			</div>
+<p>
+<div class="smallhead">
+				Niemeyer KE, Sung CJ.
+				<span class="journal">
+				Combustion and Flame
+				</span>
+				
+				158
+				
+				
+				(8)
+				
+				
+				:1439–1443
+				
+				(2011).
+			</div>
+</p></div>
+</div>
+</div>
+<div class="bigspacer"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="bigspacer"></div>
+<div class="glyphbox note">
+<div class="smallhead subtle">
+                Full text
+            </div>
+<div class="pad-left note">
+<div class="smallspacer"></div>
+<i class="ai ai-doi fa-fw"></i>
+<a class="off" href="https://doi.org/10.1016/j.combustflame.2010.12.010">10.1016/j.combustflame.2010.12.010</a>
+<br/>
+<i class="ai ai-arxiv fa-fw"></i>
+<a class="off" href="https://arxiv.org/abs/1606.07802"><code>arXiv:1606.07802 [cs.DS]</code></a>
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Altmetrics
+			</div>
+<div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1016/j.combustflame.2010.12.010" data-hide-no-mentions="true">
+</div>
+<div class="bigspacer"></div>
+<div class="smallhead subtle">
+				Share
+			</div>
+<div class="post-sharing">
+<i class="fab fa-twitter fa-fw"></i>
+<a class="off" data-related="kyleniemeyer" data-text="On the importance of graph search algorithms for DRGEP-based mechanism reduction methods" data-via="" href="https://twitter.com/share?url=&amp;text=" target="_blank">tweet</a>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="post">
+<h2 id="abstract">Abstract</h2>
+<p>The importance of graph search algorithm choice to the directed relation graph with error propagation (DRGEP) method is studied by comparing basic and modified depth-first search, basic and R-value-based breadth-first search (RBFS), and Dijkstra’s algorithm. By using each algorithm with DRGEP to produce skeletal mechanisms from a detailed mechanism for n-heptane with randomly-shuffled species order, it is demonstrated that only Dijkstra’s algorithm and RBFS produce results independent of species order. In addition, each algorithm is used with DRGEP to generate skeletal mechanisms for n-heptane covering a comprehensive range of autoignition conditions for pressure, temperature, and equivalence ratio. Dijkstra’s algorithm combined with a coefficient scaling approach is demonstrated to produce the most compact skeletal mechanism with a similar performance compared to larger skeletal mechanisms resulting from the other algorithms. The computational efficiency of each algorithm is also compared by applying the DRGEP method with each search algorithm on the large detailed mechanism for n-alkanes covering n-octane to n-hexadecane with 2115 species and 8157 reactions. Dijkstra’s algorithm implemented with a binary heap priority queue is demonstrated as the most efficient method, with a CPU cost two orders of magnitude less than the other search algorithms.</p>
+</div>
+<div class="post">
+<h2 id="bibte">BibTeX</h2>
+<pre> @article{Niemeyer:2011,
+  Author = {Kyle E Niemeyer and Chih-Jen Sung},
+  Title = {On the importance of graph search algorithms for {DRGEP}-based mechanism reduction methods},
+  Journal = {Combust. Flame},
+  Number = {8},
+  Pages = {1439--1443},
+  Volume = {158},
+  Year = 2011,
+  Doi = {10.1016/j.combustflame.2010.12.010}
+}
+ </pre>
+</div>
+<div class="col-md-1"></div>
+</div>
+<div class="bigspacer"></div>
+</div>
+</div>
+{% endblock %}
