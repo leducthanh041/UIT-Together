@@ -41,3 +41,11 @@ Mỗi template trong pages.json được build ra cả URL gốc và URL có pre
 ## Hướng nghiên cứu
 
 Trang Research dùng `src/partials/research-content.html`, nội dung EN/VI theo biến language. Giới thiệu AI medical (Sparse-View CT Reconstruction, WSI classification/survival risk), Anomaly Detection; Object Detection trong điều kiện clean, fog, rain, snow (video `Object_detection/object_detection.mp4`). Media gốc ở `src/assets/images/research/`; `anomaly-detection-web.mp4` là bản H.264 chuyển từ video gốc để tương thích trình duyệt. Các video tự chạy lặp, tắt tiếng và ẩn controls như GIF; tôn trọng reduced motion qua JS. Không gắn hình minh họa với kết quả hay độ chính xác chưa xác minh.
+
+## Phân trang và ảnh động
+
+Các danh sách có `data-paginate`/`data-page-item`; Publications và People dùng `data-page-size` kết hợp bộ lọc. Đổi bộ lọc trả về trang 1; nhóm venue/cohort trống được ẩn. Không JavaScript vẫn đọc được toàn bộ nội dung. Website dùng MP4 H.264 nén (tối đa 960px, 20fps, không tiếng); MKV là bản cùng codec cho tải/lưu trữ, không dùng làm video trình duyệt. Bản gốc nằm ngoài repo trong UIT-Together-backups.
+
+Slideshow trang chủ dùng 9 ảnh từ gallery People, đổi ảnh mỗi 4,5 giây khi đang trong màn hình. Có trước/sau/tạm dừng; dừng tự chuyển khi hover, focus, tab ẩn hoặc reduced motion. Scroll reveal đặt lại trạng thái khi phần tử rời màn hình để xuất hiện lại khi cuộn quay lại. Tiêu đề UI được Title Case sau dịch và bỏ dấu chấm cuối; bảo vệ tên riêng, paper, venue, code và translate=no.
+
+Thanh phân trang nằm ở đầu mỗi danh sách và sticky dưới header; chuyển trang giữ focus nhưng không gọi scrollIntoView. Chú thích media dùng nền/viền xanh và chữ có tương phản cao; chú thích slideshow nền xanh đậm.

@@ -1,15 +1,17 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 <div class="container">
-<h2 class="display-4 text-center">Leader</h2>
+<section data-page-group><h2 class="display-4 text-center">Leader</h2>
 <div class="row mb-3">
 {% set member = members[0] %}{% include "partials/member.html" %}
 </div>
-<h2 class="display-4 text-center">Collaborators</h2>
+</section>
+<section data-page-group><h2 class="display-4 text-center">Collaborators</h2>
 <div class="row mb-3">
 {% set member = members[1] %}{% include "partials/member.html" %}
 </div>
-<h2 class="display-4 text-center">Current members</h2>
+</section>
+<section data-page-group><h2 class="display-4 text-center">Current members</h2>
 <div class="row mb-3">
 {% set member = members[2] %}{% include "partials/member.html" %}
 {% set member = members[3] %}{% include "partials/member.html" %}
@@ -25,173 +27,24 @@
 <div class="row mb-3">
 {% set member = members[8] %}{% include "partials/member.html" %}
 </div>
+</section>
 <h2 class="display-4 text-center">Students</h2>
 
-<h3>K2022</h3>
-<ol class="cohort-list">{% for name in cohorts[0].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2021</h3>
-<ol class="cohort-list">{% for name in cohorts[1].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2020</h3>
-<ol class="cohort-list">{% for name in cohorts[2].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2019</h3>
-<ol class="cohort-list">{% for name in cohorts[3].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2018</h3>
-<ol class="cohort-list">{% for name in cohorts[4].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2017</h3>
-<ol class="cohort-list">{% for name in cohorts[5].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2016</h3>
-<ol class="cohort-list">{% for name in cohorts[6].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<h3>K2015</h3>
-<ol class="cohort-list">{% for name in cohorts[7].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol>
-<a style="font-size:30px;padding-left:8px;">
-<div class="row">
-<div class="col-md-12 mb-3">
-<div class="carousel slide" data-ride="carousel" id="groupPhotos">
-<ol class="carousel-indicators">
-<li class="active" data-slide-to="0" data-target="#groupPhotos"></li>
-<li data-slide-to="1" data-target="#groupPhotos"></li>
-<li data-slide-to="2" data-target="#groupPhotos"></li>
-<li data-slide-to="3" data-target="#groupPhotos"></li>
-<li data-slide-to="4" data-target="#groupPhotos"></li>
-<li data-slide-to="5" data-target="#groupPhotos"></li>
-<li data-slide-to="6" data-target="#groupPhotos"></li>
-<li data-slide-to="7" data-target="#groupPhotos"></li>
-<li data-slide-to="8" data-target="#groupPhotos"></li>
-</ol>
-<div class="team-gallery">
-<div class="gallery-item active">
-<img alt="team0" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team0.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Gặp mặt và làm việc</p>
+<section data-page-group><h3>K2022</h3>
+<ol class="cohort-list">{% for name in cohorts[0].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2021</h3>
+<ol class="cohort-list">{% for name in cohorts[1].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2020</h3>
+<ol class="cohort-list">{% for name in cohorts[2].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2019</h3>
+<ol class="cohort-list">{% for name in cohorts[3].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2018</h3>
+<ol class="cohort-list">{% for name in cohorts[4].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2017</h3>
+<ol class="cohort-list">{% for name in cohorts[5].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2016</h3>
+<ol class="cohort-list">{% for name in cohorts[6].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+<section data-page-group><h3>K2015</h3>
+<ol class="cohort-list">{% for name in cohorts[7].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
 </div>
-</div>
-<div class="gallery-item">
-<img alt="team1" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team1.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Gặp mặt và làm việc</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team2" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team2.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Khóa 2015 tốt nghiệp</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="N" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team16.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Sinh viên Phan Vĩnh Long báo cáo tại hội nghị REV-ECIT 2020</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team5" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team5.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Báo cáo tiến độ hàng tuần</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team6" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team6.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team14" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team14.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team17" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team17.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Nhóm sinh viên báo cáo tại hội nghị REV-ECIT 2020</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team19" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team19.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Tập thể sinh viên chúc mừng Thầy 20/11 vui vẻ</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team18" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team18.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="team20" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/team20.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);">Tập thể sinh viên chúc mừng Thầy 20/11 vui vẻ</p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 1" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_1.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 2" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_2.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 3" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_3.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 4" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_4.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 5" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_5.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 6" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_6.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 7" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_7.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 8" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_8.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 9" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_9.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 10" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_10.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-<div class="gallery-item">
-<img alt="TN2022 11" class="d-block w-100" decoding="async" loading="lazy" src="/assets/images/team/LeTN2022/TN2022_11.jpg"/>
-<div class="carousel-caption d-none d-md-block">
-<p style="font-family: 'Roboto', sans-serif;background: rgba(0, 0, 0, 0.301);"></p>
-</div>
-</div>
-</div>
-</div>
-</div></div></a></div>
 {% endblock %}

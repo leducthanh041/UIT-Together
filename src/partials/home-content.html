@@ -4,7 +4,22 @@
 <div class="research-feature" data-reveal><div><p class="eyebrow">01 / Computer Vision</p><h3>Understanding the visual world.</h3><p>We study visual understanding through object detection, document analysis and aerial imagery.</p><a class="template-button secondary-button" href="/research/">Explore our research <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/vision.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
 <div class="research-feature research-feature-reverse" data-reveal><div><p class="eyebrow">02 / Machine Learning</p><h3>Turning data into understanding.</h3><p>Our publications explore learning methods and their applications to challenging visual data.</p><a class="template-button secondary-button" href="/papers/">Discover publications <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/learning.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
 </section>
-<section class="group-introduction group-story" data-reveal><img src="/assets/images/team/team0.jpg" alt="UIT Together researchers, collaborators and students at a group meeting" width="800" height="600" loading="lazy" decoding="async"><div><p class="eyebrow">Together at UIT</p><h2>Research grows through collaboration.</h2><p>We bring researchers and students together through shared projects, mentorship and international collaboration.</p><a href="/team/">Meet our people →</a></div></section>
+<section class="group-introduction group-story" data-reveal><div class="group-slideshow" data-slideshow role="region" aria-roledescription="{{ 'trình chiếu ảnh' if language == 'vi' else 'carousel' }}" aria-label="{{ 'Hoạt động của UIT Together' if language == 'vi' else 'UIT Together activities' }}">
+<div class="slideshow-stage">
+{% for image, en, vi in [('team0','Group meetings and collaboration','Gặp mặt và làm việc'),('team1','Group meetings and collaboration','Gặp mặt và làm việc'),('team2','Graduation of the 2015 cohort','Khóa 2015 tốt nghiệp'),('team16','Phan Vinh Long presenting at REV-ECIT 2020','Phan Vĩnh Long báo cáo tại REV-ECIT 2020'),('team5','Weekly progress meeting','Báo cáo tiến độ hàng tuần'),('team6','UIT Together group activities','Hoạt động của UIT Together'),('team14','UIT Together group activities','Hoạt động của UIT Together'),('team17','Student presentations at REV-ECIT 2020','Sinh viên báo cáo tại REV-ECIT 2020'),('team19','UIT Together group activities','Hoạt động của UIT Together')] %}
+<figure class="slideshow-slide{% if loop.first %} is-active{% endif %}" data-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
+<img src="/assets/images/team/{{ image }}.jpg" alt="{{ vi if language == 'vi' else en }}" loading="lazy" decoding="async">
+<figcaption>{{ vi if language == 'vi' else en }}</figcaption>
+</figure>
+{% endfor %}
+</div>
+<div class="slideshow-controls" hidden>
+<button type="button" data-slide-prev aria-label="{{ 'Ảnh trước' if language == 'vi' else 'Previous photo' }}"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+<span data-slide-status>1 / 9</span>
+<button type="button" data-slide-next aria-label="{{ 'Ảnh tiếp theo' if language == 'vi' else 'Next photo' }}"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+<button type="button" data-slide-pause aria-pressed="false">{{ 'Tạm dừng' if language == 'vi' else 'Pause' }}</button>
+</div>
+</div><div><p class="eyebrow">Together at UIT</p><h2>Research grows through collaboration.</h2><p>We bring researchers and students together through shared projects, mentorship and international collaboration.</p><a href="/team/">Meet our members →</a></div></section>
 <nav class="homes-directory home-directory" aria-label="Explore UIT Together">
 {% for label, description, url, icon in [
  ('Research', 'Explore our research directions and projects.', '/research/', 'microscope'),
@@ -17,9 +32,9 @@
 </nav>
 <div class="home-columns">
 <section><div class="section-heading"><h2 id="group-updates-title">Group updates</h2><a href="/datasets/">Explore datasets →</a></div>
-<div class="content-scroll home-feed-scroll" role="region" aria-labelledby="group-updates-title" tabindex="0">
-{% for item in news %}<article class="news-entry"><p class="note">{{ item.date_label }}</p><h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.description }}</p>{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a> {% endfor %}</article>{% endfor %}</div></section>
+<div class="home-paginated-feed" data-paginate data-page-size="3" role="region" aria-labelledby="group-updates-title" tabindex="0">
+{% for item in news %}<article class="news-entry" data-page-item><p class="note">{{ item.date_label }}</p><h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.description }}</p>{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a> {% endfor %}</article>{% endfor %}</div></section>
 <section><div class="section-heading"><h2 id="publication-highlights-title">Publication highlights</h2><a href="/papers/">All publications →</a></div>
-<div class="content-scroll home-feed-scroll" role="region" aria-labelledby="publication-highlights-title" tabindex="0">
-{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry"><p class="note">{{ item.homepage_date_label }}</p><h3 translate="no">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.display_title }}</a>{% elif item.links %}<a href="{{ item.links[0] }}">{{ item.display_title }}</a>{% else %}{{ item.display_title }}{% endif %}</h3><p>{{ item.venue_name }}</p>{% if item.doi %}<a class="doi-link" href="https://doi.org/{{ item.doi }}">DOI: {{ item.doi }}</a>{% endif %}</article>{% endfor %}</div></section>
+<div class="home-paginated-feed" data-paginate data-page-size="3" role="region" aria-labelledby="publication-highlights-title" tabindex="0">
+{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry" data-page-item><p class="note">{{ item.homepage_date_label }}</p><h3 translate="no">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.display_title }}</a>{% elif item.links %}<a href="{{ item.links[0] }}">{{ item.display_title }}</a>{% else %}{{ item.display_title }}{% endif %}</h3><p>{{ item.venue_name }}</p>{% if item.doi %}<a class="doi-link" href="https://doi.org/{{ item.doi }}">DOI: {{ item.doi }}</a>{% endif %}</article>{% endfor %}</div></section>
 </div></div>

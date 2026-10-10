@@ -82,7 +82,7 @@
     "title": "Khang Tran",
     "section": "team",
     "hero": [
-      "Our people",
+      "Member",
       "A community across generations.",
       "Meet our researchers, collaborators and student cohorts."
     ]
@@ -93,7 +93,7 @@
     "title": "Tung Minh Tran",
     "section": "team",
     "hero": [
-      "Our people",
+      "Member",
       "A community across generations.",
       "Meet our researchers, collaborators and student cohorts."
     ]
@@ -101,10 +101,10 @@
   {
     "source": "team/index.html",
     "url": "/team/",
-    "title": "Our people",
+    "title": "Member",
     "section": "team",
     "hero": [
-      "Our people",
+      "Member",
       "A community across generations.",
       "Meet our researchers, collaborators and student cohorts."
     ]

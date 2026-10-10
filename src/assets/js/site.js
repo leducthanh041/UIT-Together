@@ -44,6 +44,52 @@
     });
 
     var vietnamese = document.documentElement.lang === 'vi';
+    function createPager(scope, allItems, size, onRender) {
+      var current = 1, matches = allItems.slice();
+      var nav = document.createElement('nav');
+      nav.className = 'list-pagination';
+      nav.setAttribute('aria-label', vietnamese ? 'Phân trang' : 'Pagination');
+      var info = document.createElement('p');
+      info.className = 'pagination-status';
+      info.setAttribute('role', 'status');
+      var buttons = document.createElement('div');
+      buttons.className = 'pagination-buttons';
+      nav.appendChild(info); nav.appendChild(buttons); scope.insertBefore(nav, scope.firstChild);
+      function render(focusPage) {
+        var pages = Math.max(1, Math.ceil(matches.length / size));
+        current = Math.min(current, pages);
+        allItems.forEach(function (item) { item.hidden = true; });
+        matches.slice((current - 1) * size, current * size).forEach(function (item) { item.hidden = false; });
+        buttons.textContent = '';
+        nav.hidden = matches.length <= size;
+        info.textContent = (vietnamese ? 'Trang ' : 'Page ') + current + ' / ' + pages;
+        function button(label, page, disabled, active) {
+          var element = document.createElement('button');
+          element.type = 'button'; element.textContent = label; element.disabled = disabled;
+          if (active) element.setAttribute('aria-current', 'page');
+          element.addEventListener('click', function () { current = page; render(true); });
+          buttons.appendChild(element);
+          if (focusPage && active) element.focus({preventScroll: true});
+        }
+        button(vietnamese ? 'Trước' : 'Previous', current - 1, current === 1, false);
+        var first = Math.max(1, Math.min(current - 2, pages - 4));
+        var last = Math.min(pages, first + 4);
+        function ellipsis() {
+          var gap = document.createElement('span');
+          gap.className = 'pagination-gap'; gap.textContent = '…';
+          gap.setAttribute('aria-hidden', 'true'); buttons.appendChild(gap);
+        }
+        if (first > 1) button('1', 1, false, false);
+        if (first > 2) ellipsis();
+        for (var page = first; page <= last; page++) button(String(page), page, false, page === current);
+        if (last < pages - 1) ellipsis();
+        if (last < pages) button(String(pages), pages, false, false);
+        button(vietnamese ? 'Sau' : 'Next', current + 1, current === pages, false);
+        if (onRender) onRender();
+
+      }
+      return {setItems:function (items) { matches = items; current = 1; render(false); }};
+    }
     function normalize(value) {
       return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLocaleLowerCase().trim();
     }
@@ -121,23 +167,27 @@
         empty.textContent = vietnamese ? 'Không tìm thấy kết quả. Hãy thử từ khóa khác hoặc bỏ bộ lọc.' : 'No results found. Try another keyword or clear the filters.';
         status.insertAdjacentElement('afterend', empty);
       }
+      function syncGroups() {
+        Array.from(scope.querySelectorAll('[data-venue-group]')).concat(Array.from(scope.querySelectorAll('[data-page-group]'))).forEach(function (group) {
+          group.hidden = !records.some(function (record) { return !record.element.hidden && group.contains(record.element); });
+        });
+      }
+      var size = scope.getAttribute ? Number(scope.getAttribute('data-page-size')) : 0;
+      var pager = size ? createPager(scope, items, size, syncGroups) : null;
       function update() {
         var query = input ? normalize(input.value) : '';
         var year = select ? select.value : '';
         var type = typeSelect ? typeSelect.value : '';
         var venue = venueSelect ? venueSelect.value : '';
         var words = query.split(/\s+/).filter(Boolean);
-        var count = 0;
-        records.forEach(function (record) {
-          var visible = !record.initiallyHidden && words.every(function (word) { return record.text.indexOf(word) !== -1; }) && (!year || year === 'all' || record.year === year) && (!type || record.type === type) && (!venue || record.venue === venue);
-          record.element.hidden = !visible;
-          if (visible) count += 1;
+        var matches = records.filter(function (record) {
+          return !record.initiallyHidden && words.every(function (word) { return record.text.indexOf(word) !== -1; }) && (!year || year === 'all' || record.year === year) && (!type || record.type === type) && (!venue || record.venue === venue);
         });
-        scope.querySelectorAll('[data-venue-group]').forEach(function (group) {
-          group.hidden = !records.some(function (record) { return !record.element.hidden && group.contains(record.element); });
-        });
-        status.textContent = count + ' / ' + records.filter(function (record) { return !record.initiallyHidden; }).length + (vietnamese ? ' kết quả' : ' results');
-        empty.hidden = count > 0;
+        records.forEach(function (record) { record.element.hidden = matches.indexOf(record) === -1; });
+        if (pager) pager.setItems(matches.map(function (record) { return record.element; }));
+        else syncGroups();
+        status.textContent = matches.length + ' / ' + records.filter(function (record) { return !record.initiallyHidden; }).length + (vietnamese ? ' kết quả' : ' results');
+        empty.hidden = matches.length > 0;
       }
       if (input) input.addEventListener('input', update);
       if (select) select.addEventListener('change', update);
@@ -157,6 +207,42 @@
       update();
     });
 
+    document.querySelectorAll('[data-paginate]').forEach(function (scope) {
+      var items = Array.from(scope.querySelectorAll('[data-page-item]'));
+      if (!items.length) return;
+      createPager(scope, items, Number(scope.getAttribute('data-page-size')) || 6).setItems(items);
+    });
+
+    document.querySelectorAll('[data-slideshow]').forEach(function (carousel) {
+      var slides = Array.from(carousel.querySelectorAll('[data-slide]'));
+      if (slides.length < 2) return;
+      var index = 0, paused = false, hovering = false;
+      var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var pause = carousel.querySelector('[data-slide-pause]');
+      carousel.querySelector('.slideshow-controls').hidden = false;
+      function showSlide(next) {
+        index = (next + slides.length) % slides.length;
+        slides.forEach(function (slide, i) {
+          slide.classList.toggle('is-active', i === index);
+          slide.setAttribute('aria-hidden', String(i !== index));
+        });
+        carousel.querySelector('[data-slide-status]').textContent = (index + 1) + ' / ' + slides.length;
+      }
+      carousel.querySelector('[data-slide-prev]').addEventListener('click', function () { showSlide(index - 1); });
+      carousel.querySelector('[data-slide-next]').addEventListener('click', function () { showSlide(index + 1); });
+      pause.addEventListener('click', function () {
+        paused = !paused;
+        pause.setAttribute('aria-pressed', String(paused));
+        pause.textContent = paused ? (vietnamese ? 'Tiếp tục' : 'Play') : (vietnamese ? 'Tạm dừng' : 'Pause');
+      });
+      carousel.addEventListener('mouseenter', function () { hovering = true; });
+      carousel.addEventListener('mouseleave', function () { hovering = false; });
+      window.setInterval(function () {
+        var rect = carousel.getBoundingClientRect();
+        if (!paused && !hovering && !motion.matches && !document.hidden && !carousel.contains(document.activeElement) && rect.bottom > 0 && rect.top < window.innerHeight) showSlide(index + 1);
+      }, 4500);
+    });
+
     // Viewport intersections also respect clipping by nested .content-scroll regions.
     var motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
     if ('IntersectionObserver' in window && !motionPreference.matches) {
@@ -170,7 +256,7 @@
       var observer;
       function show(element) {
         element.classList.add('is-revealed');
-        if (observer) observer.unobserve(element);
+
       }
       function showAll() {
         targets.forEach(show);
@@ -180,6 +266,7 @@
         observer = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {
             if (entry.isIntersecting) show(entry.target);
+            else if (!entry.target.contains(document.activeElement)) entry.target.classList.remove('is-revealed');
           });
         }, { threshold: 0, rootMargin: '0px 0px -16px 0px' });
         targets.forEach(function (element) {

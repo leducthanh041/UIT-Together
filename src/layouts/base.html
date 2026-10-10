@@ -30,7 +30,7 @@
   <p class="eyebrow">{{ page.hero[0] }}</p>
   <h1>{{ page.hero[1] }}</h1><p>{{ page.hero[2] }}</p>
   {% endif %}
-  {% if page.section == 'home' %}<div class="hero-actions"><a class="template-button" href="/papers/">Explore publications <span aria-hidden="true">→</span></a><a class="hero-secondary" href="/team/">Meet our people <span aria-hidden="true">↗</span></a></div>{% endif %}
+  {% if page.section == 'home' %}<div class="hero-actions"><a class="template-button" href="/papers/">Explore publications <span aria-hidden="true">→</span></a><a class="hero-secondary" href="/team/">Meet our members <span aria-hidden="true">↗</span></a></div>{% endif %}
   </div>
   {% if page.section == 'home' %}
   <figure class="hero-visual group-logo">
@@ -42,10 +42,10 @@
   {% endif %}
 </div>
 {% if page.section == 'home' %}<svg class="hero-wave" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>{% endif %}</section>
-<main id="main" class="page-content" tabindex="-1">
+<main id="main" class="page-content" tabindex="-1"{% if page.section in ['papers', 'team'] and page.source.endswith('index.html') %} data-page-size="{{ 10 if page.section == 'papers' else 12 }}"{% endif %}>
 {% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %}
 <div class="container"><div class="filter-toolbar">
-<div><label for="search">{% if page.section == 'team' %}Search people{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>
+<div><label for="search">{% if page.section == 'team' %}Search members{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>
 {% if page.section != 'team' %}<div><label for="year">Publication year</label><select id="year" data-year-filter><option value="">All years</option></select></div>{% endif %}
 {% if page.section == 'papers' %}
 <div><label for="publication-type">Publication type</label><select id="publication-type" data-type-filter><option value="">Journal & conference</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="unknown">Not yet classified</option></select></div>
@@ -54,7 +54,7 @@
 <button class="btn btn-outline-primary" type="button" data-filter-reset>Clear filters</button>
 </div></div>
 {% endif %}
-{% if page.section != 'home' %}<div class="content-scroll subpage-scroll" role="region" aria-label="{{ page.title }} content" tabindex="0">{% endif %}
+{% if page.section != 'home' %}<div class="subpage-content" role="region" aria-label="{{ page.title }} content" tabindex="0">{% endif %}
 {% block content %}{% endblock %}
 {% if page.section != 'home' %}</div>{% endif %}
 </main>
