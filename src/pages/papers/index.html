@@ -6,7 +6,8 @@
   <header class="venue-heading">
     {% if group.venue.image %}<img class="venue-cover" src="{{ group.venue.image }}" alt="{{ group.venue.name }} cover or logo" loading="lazy" decoding="async">
     {% else %}<span class="venue-monogram" aria-hidden="true">{{ group.venue.short_name | default(group.venue.name[:2] | upper) }}</span>{% endif %}
-    <div><p class="eyebrow">{{ group.venue.type | title }}</p><h2>{{ group.venue.name }}</h2></div>
+    <div><p class="eyebrow">{{ group.venue.type | title }}</p><h2>{{ group.venue.name }}</h2>
+{% if group.venue.metrics | default([]) %}<div class="venue-metrics">{% for metric in group.venue.metrics %}<a href="{{ metric.source_url }}" class="venue-metric" rel="noopener noreferrer">{{ metric.kind }}: {{ metric.value }} · {{ metric.year }}{% if metric.category %} · {{ metric.category }}{% endif %}</a>{% endfor %}</div>{% endif %}</div>
   </header>
   <div class="venue-publications">
   {% for publication in group.publications %}

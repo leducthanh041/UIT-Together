@@ -1,0 +1,7 @@
+<section class="conference-watch" data-conference-app data-conference-home aria-label="{{ 'Hội nghị và hạn nộp sắp tới' if language == 'vi' else 'Upcoming conferences and deadlines' }}">
+<div class="section-heading"><div><p class="eyebrow">{{ 'Lịch nghiên cứu' if language == 'vi' else 'Research Calendar' }}</p><h2>{{ 'Hội nghị sắp tới' if language == 'vi' else 'Upcoming Conferences' }}</h2></div><a href="/conferences/">{{ 'Xem mọi hội nghị' if language == 'vi' else 'All Conferences' }} →</a></div>
+<div data-conference-feature><p>{{ 'Đang chuẩn bị lịch hội nghị' if language == 'vi' else 'Preparing the Conference Calendar' }}</p></div>
+<p class="conference-sync" data-conference-sync></p>
+<script type="application/json" data-conference-seed>{{ conferences | tojson }}</script>
+<noscript><p>{{ 'Bật JavaScript để xem bộ đếm trực tiếp' if language == 'vi' else 'Enable JavaScript for live countdowns' }}</p><a href="/conferences/">{{ 'Xem lịch hội nghị' if language == 'vi' else 'View Conference Dates' }}</a></noscript>
+</section>

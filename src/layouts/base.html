@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="{{ language }}">
+<html lang="{{ language }}"{% if page.section == 'team' and page.source.endswith('index.html') %} class="member-scroll"{% endif %}>
 <head>
+  <meta name="site-base-path" content="{{ base_path | default('') }}">
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}{% if page.section != 'home' %} · {{ site.name }}{% endif %}</title>
   <link rel="alternate" hreflang="en" href="{{ page.url }}">
@@ -15,6 +16,8 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   <link rel="stylesheet" href="/assets/css/portfolio.css">
   <script src="/js/site.js" defer></script>
+  {% if page.section == 'team' and page.source.endswith('index.html') %}<link rel="stylesheet" href="/assets/css/members.css"><script src="/js/members.js" defer></script>{% endif %}
+  {% if page.section == 'conferences' %}<link rel="stylesheet" href="/assets/css/conferences.css"><script src="/js/conference-clock.js" defer></script><script src="/js/conferences.js" defer></script>{% endif %}
 </head>
 <body id="top" class="page-{{ page.section }}">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -37,16 +40,16 @@
     <img src="/assets/themes/lab/images/logo/lab-logo.svg" alt="UIT Together logo" width="400" height="400" fetchpriority="high" decoding="async">
   </figure>
   {% else %}
-  {% set page_icon = {'research':'microscope', 'projects':'microscope', 'team':'users', 'papers':'newspaper', 'PapersByYear':'newspaper', 'datasets':'database', 'tutorials':'book-open', 'contact':'envelope', 'news':'bullhorn', 'about':'info-circle', 'homes':'home'}.get(page.section, 'file-alt') %}
+  {% set page_icon = {'research':'microscope', 'projects':'microscope', 'team':'users', 'papers':'newspaper', 'PapersByYear':'newspaper', 'datasets':'database', 'tutorials':'book-open', 'conferences':'calendar-alt', 'contact':'envelope', 'news':'bullhorn', 'about':'info-circle', 'homes':'home'}.get(page.section, 'file-alt') %}
   <div class="page-icon" aria-hidden="true"><i class="fas fa-{{ page_icon }}"></i></div>
   {% endif %}
 </div>
 {% if page.section == 'home' %}<svg class="hero-wave" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>{% endif %}</section>
-<main id="main" class="page-content" tabindex="-1"{% if page.section in ['papers', 'team'] and page.source.endswith('index.html') %} data-page-size="{{ 10 if page.section == 'papers' else 12 }}"{% endif %}>
+<main id="main" class="page-content" tabindex="-1"{% if page.section == 'papers' and page.source.endswith('index.html') %} data-page-size="10"{% endif %}>
 {% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %}
 <div class="container"><div class="filter-toolbar">
 <div><label for="search">{% if page.section == 'team' %}Search members{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>
-{% if page.section != 'team' %}<div><label for="year">Publication year</label><select id="year" data-year-filter><option value="">All years</option></select></div>{% endif %}
+<div><label for="year">{% if page.section == 'team' %}Student cohort{% else %}Publication year{% endif %}</label><select id="year" data-year-filter><option value="">{% if page.section == 'team' %}All cohorts{% else %}All years{% endif %}</option></select></div>
 {% if page.section == 'papers' %}
 <div><label for="publication-type">Publication type</label><select id="publication-type" data-type-filter><option value="">Journal & conference</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="unknown">Not yet classified</option></select></div>
 <div><label for="publication-venue">Venue</label><select id="publication-venue" data-venue-filter><option value="">All venues</option></select></div>
@@ -55,7 +58,9 @@
 </div></div>
 {% endif %}
 {% if page.section != 'home' %}<div class="subpage-content" role="region" aria-label="{{ page.title }} content" tabindex="0">{% endif %}
+{% if page.section == 'tutorials' %}<div class="container tutorials-container">{% endif %}
 {% block content %}{% endblock %}
+{% if page.section == 'tutorials' %}</div>{% endif %}
 {% if page.section != 'home' %}</div>{% endif %}
 </main>
 {% include 'partials/footer.html' %}

@@ -44,7 +44,7 @@
     });
 
     var vietnamese = document.documentElement.lang === 'vi';
-    function createPager(scope, allItems, size, onRender) {
+    function createPager(scope, allItems, size, onRender, groupBy) {
       var current = 1, matches = allItems.slice();
       var nav = document.createElement('nav');
       nav.className = 'list-pagination';
@@ -54,15 +54,23 @@
       info.setAttribute('role', 'status');
       var buttons = document.createElement('div');
       buttons.className = 'pagination-buttons';
-      nav.appendChild(info); nav.appendChild(buttons); scope.insertBefore(nav, scope.firstChild);
+      nav.appendChild(info); nav.appendChild(buttons); scope.appendChild(nav);
       function render(focusPage) {
-        var pages = Math.max(1, Math.ceil(matches.length / size));
+        var groups = new Map();
+        if (groupBy) matches.forEach(function (item) {
+          var key = item.getAttribute(groupBy) || (vietnamese ? 'Thành viên' : 'Members');
+          if (!groups.has(key)) groups.set(key, []);
+          groups.get(key).push(item);
+        });
+        var grouped = Array.from(groups.entries());
+        var pages = Math.max(1, groupBy ? grouped.length : Math.ceil(matches.length / size));
         current = Math.min(current, pages);
         allItems.forEach(function (item) { item.hidden = true; });
-        matches.slice((current - 1) * size, current * size).forEach(function (item) { item.hidden = false; });
+        var visible = groupBy ? (grouped[current - 1] ? grouped[current - 1][1] : []) : matches.slice((current - 1) * size, current * size);
+        visible.forEach(function (item) { item.hidden = false; });
         buttons.textContent = '';
-        nav.hidden = matches.length <= size;
-        info.textContent = (vietnamese ? 'Trang ' : 'Page ') + current + ' / ' + pages;
+        nav.hidden = pages <= 1;
+        info.textContent = (vietnamese ? 'Trang ' : 'Page ') + current + ' / ' + pages + (groupBy && grouped[current - 1] ? ' · ' + grouped[current - 1][0] : '');
         function button(label, page, disabled, active) {
           var element = document.createElement('button');
           element.type = 'button'; element.textContent = label; element.disabled = disabled;
@@ -86,6 +94,7 @@
         if (last < pages) button(String(pages), pages, false, false);
         button(vietnamese ? 'Sau' : 'Next', current + 1, current === pages, false);
         if (onRender) onRender();
+        if (focusPage) scope.scrollIntoView({behavior: 'instant', block: 'start'});
 
       }
       return {setItems:function (items) { matches = items; current = 1; render(false); }};
@@ -173,7 +182,8 @@
         });
       }
       var size = scope.getAttribute ? Number(scope.getAttribute('data-page-size')) : 0;
-      var pager = size ? createPager(scope, items, size, syncGroups) : null;
+      var groupBy = scope.getAttribute ? scope.getAttribute('data-page-by') : null;
+      var pager = size ? createPager(scope, items, size, syncGroups, groupBy) : null;
       function update() {
         var query = input ? normalize(input.value) : '';
         var year = select ? select.value : '';
@@ -251,8 +261,25 @@
         '.gallery-item, .homes-directory-link, .homes-introduction, .page-content h2, .page-content img';
       var targets = Array.from(document.querySelectorAll(selector)).filter(function (element) {
         // Animate a card as a unit rather than animating its image and heading twice.
-        return !element.parentElement.closest(selector);
+        return !element.closest('[data-member-chapter]') && !element.parentElement.closest(selector);
       });
+      // Capture document and nested-container scrolling; upward reveals are immediate.
+      var scrollPositions = new WeakMap();
+      if (document.scrollingElement) scrollPositions.set(document.scrollingElement, document.scrollingElement.scrollTop || 0);
+      var scrollingDown = true;
+      document.addEventListener('scroll', function (event) {
+        var scroller = event.target === document ? document.scrollingElement : event.target;
+        if (!scroller) return;
+        var current = scroller.scrollTop || 0;
+        var previous = scrollPositions.get(scroller) || 0;
+        if (current === previous) return;
+        scrollingDown = current > previous;
+        scrollPositions.set(scroller, current);
+        targets.forEach(function (element) {
+          if (scrollingDown) element.classList.remove('reveal-instant');
+          else element.classList.add('reveal-instant');
+        });
+      }, {capture: true, passive: true});
       var observer;
       function show(element) {
         element.classList.add('is-revealed');

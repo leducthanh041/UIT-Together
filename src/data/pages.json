@@ -1595,5 +1595,16 @@
       "Let’s connect through research.",
       "Contact UIT-Together for collaboration and student supervision."
     ]
+  },
+  {
+    "source": "conferences/index.html",
+    "url": "/conferences/",
+    "title": "Conferences",
+    "section": "conferences",
+    "hero": [
+      "Deadlines and Dates",
+      "Upcoming Conferences",
+      "Submission deadlines and conference dates for our research community"
+    ]
   }
 ]

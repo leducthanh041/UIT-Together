@@ -14,11 +14,18 @@ controls['[data-slide-pause]'].handlers.click();tick();assert(slides[1].classLis
 controls['[data-slide-next]'].handlers.click();assert(slides[2].classList.has('is-active'));
 controls['[data-slide-pause]'].handlers.click();motion.matches=true;tick();assert(slides[2].classList.has('is-active'));
 motion.matches=false;document.hidden=true;tick();assert(slides[2].classList.has('is-active'));
-let callback;const target={classList:classes(),parentElement:{closest:()=>null},contains:()=>false};
+const revealHandlers = {};
+let callback;const target={classList:classes(),closest:()=>null,parentElement:{closest:()=>null},contains:()=>false};
 const reveal=source.slice(source.indexOf('    // Viewport intersections'),source.lastIndexOf('\n  }\n'));
 function IntersectionObserver(fn){callback=fn;this.observe=()=>{};this.disconnect=()=>{};}
-vm.runInNewContext(reveal,{document:{querySelectorAll:()=>[target],addEventListener(){},activeElement:null},window:{IntersectionObserver,matchMedia:()=>({matches:false})},IntersectionObserver,Array});
+vm.runInNewContext(reveal,{document:{querySelectorAll:()=>[target],addEventListener(name, fn){revealHandlers[name]=fn;},activeElement:null},window:{IntersectionObserver,matchMedia:()=>({matches:false})},IntersectionObserver,Array});
 callback([{target,isIntersecting:true}]);assert(target.classList.has('is-revealed'));
 callback([{target,isIntersecting:false}]);assert(!target.classList.has('is-revealed'));
 callback([{target,isIntersecting:true}]);assert(target.classList.has('is-revealed'));
 console.log('PASS: slideshow rotation/pause/reduced motion and repeat scroll reveal.');
+
+const scroller={scrollTop:200};
+revealHandlers.scroll({target:scroller});assert(!target.classList.has('reveal-instant'));
+scroller.scrollTop=100;revealHandlers.scroll({target:scroller});assert(target.classList.has('reveal-instant'));
+callback([{target,isIntersecting:true}]);assert(target.classList.has('is-revealed'));
+scroller.scrollTop=150;revealHandlers.scroll({target:scroller});assert(!target.classList.has('reveal-instant'));

@@ -4,95 +4,201 @@
     "name": "Khang Nguyen",
     "image": "/assets/images/team/thay_khang.jpg",
     "url": "",
-    "section": "Leader",
+    "section": "Supervisor",
     "notes": [
       "Supervisor",
       "Research scientist",
       "University of Information Technology, Vietnam National University - Ho Chi Minh City",
       "Email: khangnttm@uit.edu.vn"
-    ]
+    ],
+    "role": "Leader"
   },
   {
     "id": "member-002",
     "name": "Tam Nguyen",
     "image": "/assets/images/team/thay_tam.jpg",
     "url": "https://vantam.github.io/",
-    "section": "Collaborators",
+    "section": "Supervisor",
     "notes": [
       "Supervisor",
       "Research scientist",
       "Assistant Professor at Department of Computer Science, University of Dayton (UD), USA",
       "Email: tamnguyen@udayton.edu"
-    ]
+    ],
+    "role": "Collaborator"
   },
   {
     "id": "member-003",
     "name": "Khanh Duy Nguyen",
     "image": "/assets/images/team/khanh_nguyen.jpg",
     "url": "/team/",
-    "section": "Current members",
+    "section": "Supervisor",
     "notes": [
       "PhD"
-    ]
+    ],
+    "role": "Supervisor",
+    "public_email": "khanhnd@uit.edu.vn"
+  },
+  {
+    "id": "member-010",
+    "name": "Doanh C. Bui",
+    "image": "/assets/images/team/DoanhCBui.png",
+    "url": "",
+    "section": "Supervisor",
+    "role": "Supervisor",
+    "notes": [
+      "PhD"
+    ],
+    "public_email": "doanhbc@uit.edu.vn"
   },
   {
     "id": "member-004",
     "name": "Tung Minh Tran",
     "image": "/assets/images/team/thay_tung.jpg",
-    "url": "/team/tungufm",
-    "section": "Current members",
+    "url": "/team/tungufm.html",
+    "section": "Supervisor",
     "notes": [
       "PhD Student"
-    ]
+    ],
+    "role": "Supervisor"
   },
   {
     "id": "member-005",
-    "name": "Nguyen D. Vo",
+    "name": "Nguyen Duy Vo",
     "image": "/assets/images/team/thay_nguyen.jpg",
     "url": "https://nguyenvd-uit.github.io/",
-    "section": "Current members",
+    "section": "Supervisor",
     "notes": [
       "PhD Student"
-    ]
+    ],
+    "role": "Supervisor"
   },
   {
     "id": "member-006",
     "name": "Hiep Nguyen",
     "image": "/assets/images/team/thay_hiep.jpg",
     "url": "#",
-    "section": "Current members",
+    "section": "Supervisor",
     "notes": [
       "PhD Student"
-    ]
-  },
-  {
-    "id": "member-007",
-    "name": "My Hoan Nguyen",
-    "image": "/assets/images/team/my_nguyen.jpg",
-    "url": "#",
-    "section": "Current members",
-    "notes": [
-      "MSc"
-    ]
-  },
-  {
-    "id": "member-008",
-    "name": "Long Duong",
-    "image": "/assets/images/team/long_duong.jpg",
-    "url": "#",
-    "section": "Current members",
-    "notes": [
-      "MSc"
-    ]
+    ],
+    "role": "Supervisor"
   },
   {
     "id": "member-009",
     "name": "Dung Truong",
     "image": "/assets/images/team/dung_truong.jpg",
     "url": "#",
-    "section": "Current members",
+    "section": "Supervisor",
     "notes": [
       "MSc"
-    ]
+    ],
+    "role": "Supervisor"
+  },
+  {
+    "id": "member-007",
+    "name": "My Hoan Nguyen",
+    "image": "/assets/images/team/my_nguyen.jpg",
+    "url": "#",
+    "section": "Supervisor",
+    "notes": [
+      "MSc"
+    ],
+    "role": "Supervisor"
+  },
+  {
+    "id": "member-008",
+    "name": "Long Duong",
+    "image": "/assets/images/team/long_duong.jpg",
+    "url": "#",
+    "section": "Supervisor",
+    "notes": [
+      "MSc"
+    ],
+    "role": "Supervisor"
+  },
+  {
+    "id": "member-011",
+    "name": "Lê Đức Thành",
+    "image": "/assets/images/team/k2023/Thanh.jpg",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "K2023",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
+  },
+  {
+    "id": "member-012",
+    "name": "Nguyễn Ngọc Thanh Phương",
+    "image": "/assets/images/team/k2023/Phuong.jpg",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "K2023",
+    "notes": [],
+    "bio_en": "listen to Nobody New before talking to me.",
+    "bio_vi": "listen to Nobody New before talking to me."
+  },
+  {
+    "id": "member-013",
+    "name": "Trần Minh Vũ",
+    "image": "/assets/images/team/k2023/Vu.jpg",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "K2023",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
+  },
+  {
+    "id": "member-014",
+    "name": "Huỳnh Diên Thục",
+    "image": "/assets/images/team/k2023/Thuc.jpg",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "K2023",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
+  },
+  {
+    "id": "member-015",
+    "name": "Phạm Trần Xuân Tiến",
+    "image": "",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
+  },
+  {
+    "id": "member-016",
+    "name": "Huỳnh Nhật Thanh",
+    "image": "",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
+  },
+  {
+    "id": "member-017",
+    "name": "Đỗ Minh Dũng",
+    "image": "",
+    "url": "",
+    "section": "Current Members",
+    "role": "Current Member",
+    "cohort": "",
+    "notes": [],
+    "bio_en": "",
+    "bio_vi": ""
   }
 ]

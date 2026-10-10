@@ -1,4 +1,10 @@
 <div class="container">
+<section class="home-impact" aria-label="{{ 'UIT Together qua các con số' if language == 'vi' else 'UIT Together in Numbers' }}" data-reveal>
+<div class="impact-stat"><i class="fas fa-users" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.participants }}</p><h2>{{ 'Người tham gia' if language == 'vi' else 'Participants' }}</h2></div>
+<div class="impact-stat"><i class="fas fa-book-open" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.papers }}</p><h2>{{ 'Bài báo nghiên cứu' if language == 'vi' else 'Research Papers' }}</h2></div>
+<div class="impact-stat"><i class="fas fa-globe" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.venues }}</p><h2>{{ 'Hội nghị và tạp chí' if language == 'vi' else 'Conferences & Journals' }}</h2></div>
+<div class="impact-stat"><i class="fas fa-database" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.datasets }}</p><h2>{{ 'Bộ dữ liệu công khai' if language == 'vi' else 'Public Datasets' }}</h2></div>
+</section>
 <section class="research-overview" aria-labelledby="research-overview-title">
 <div class="template-section-heading"><p class="eyebrow">Our research</p><h2 id="research-overview-title">Seeing further. Learning together.</h2><span class="heading-line" aria-hidden="true"></span><p>Computer vision and machine learning are at the heart of our work.</p></div>
 <div class="research-feature" data-reveal><div><p class="eyebrow">01 / Computer Vision</p><h3>Understanding the visual world.</h3><p>We study visual understanding through object detection, document analysis and aerial imagery.</p><a class="template-button secondary-button" href="/research/">Explore our research <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/vision.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
@@ -6,16 +12,16 @@
 </section>
 <section class="group-introduction group-story" data-reveal><div class="group-slideshow" data-slideshow role="region" aria-roledescription="{{ 'trình chiếu ảnh' if language == 'vi' else 'carousel' }}" aria-label="{{ 'Hoạt động của UIT Together' if language == 'vi' else 'UIT Together activities' }}">
 <div class="slideshow-stage">
-{% for image, en, vi in [('team0','Group meetings and collaboration','Gặp mặt và làm việc'),('team1','Group meetings and collaboration','Gặp mặt và làm việc'),('team2','Graduation of the 2015 cohort','Khóa 2015 tốt nghiệp'),('team16','Phan Vinh Long presenting at REV-ECIT 2020','Phan Vĩnh Long báo cáo tại REV-ECIT 2020'),('team5','Weekly progress meeting','Báo cáo tiến độ hàng tuần'),('team6','UIT Together group activities','Hoạt động của UIT Together'),('team14','UIT Together group activities','Hoạt động của UIT Together'),('team17','Student presentations at REV-ECIT 2020','Sinh viên báo cáo tại REV-ECIT 2020'),('team19','UIT Together group activities','Hoạt động của UIT Together')] %}
+{% for photo in group_gallery %}
 <figure class="slideshow-slide{% if loop.first %} is-active{% endif %}" data-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
-<img src="/assets/images/team/{{ image }}.jpg" alt="{{ vi if language == 'vi' else en }}" loading="lazy" decoding="async">
-<figcaption>{{ vi if language == 'vi' else en }}</figcaption>
+<img src="{{ photo.src }}" alt="{{ photo.caption_vi if language == 'vi' else photo.caption_en }}" loading="lazy" decoding="async">
+<figcaption>{{ photo.caption_vi if language == 'vi' else photo.caption_en }}</figcaption>
 </figure>
 {% endfor %}
 </div>
 <div class="slideshow-controls" hidden>
 <button type="button" data-slide-prev aria-label="{{ 'Ảnh trước' if language == 'vi' else 'Previous photo' }}"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-<span data-slide-status>1 / 9</span>
+<span data-slide-status>1 / {{ group_gallery | length }}</span>
 <button type="button" data-slide-next aria-label="{{ 'Ảnh tiếp theo' if language == 'vi' else 'Next photo' }}"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
 <button type="button" data-slide-pause aria-pressed="false">{{ 'Tạm dừng' if language == 'vi' else 'Pause' }}</button>
 </div>

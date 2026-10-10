@@ -2,7 +2,7 @@
 
 ## Thành viên và khóa
 
-`members.json` là danh sách object: id ổn định, name, image (URL /assets/images/...), url (có thể rỗng), section, notes (mảng chuỗi). Template Team hiện tham chiếu chỉ số danh sách; khi thêm hoặc đổi thứ tự, cập nhật `{% set member = members[n] %}` tại src/pages/team/index.html. Không đổi ID của hồ sơ cũ. `cohorts.json` gồm cohort và names; Team tham chiếu từng nhóm. Dữ liệu không có mốc tham gia/rời nhóm thì để thiếu, không suy đoán.
+`members.json` là danh sách object: id ổn định, name, image (URL /assets/images/...), url (có thể rỗng), section, notes (mảng chuỗi). Template Team lọc theo section và giữ thứ tự hồ sơ trong danh sách. Không đổi ID của hồ sơ cũ. `cohorts.json` gồm cohort và names; Team tham chiếu từng nhóm. Dữ liệu không có mốc tham gia/rời nhóm thì để thiếu, không suy đoán.
 
 ## Công bố
 
@@ -44,8 +44,22 @@ Trang Research dùng `src/partials/research-content.html`, nội dung EN/VI theo
 
 ## Phân trang và ảnh động
 
-Các danh sách có `data-paginate`/`data-page-item`; Publications và People dùng `data-page-size` kết hợp bộ lọc. Đổi bộ lọc trả về trang 1; nhóm venue/cohort trống được ẩn. Không JavaScript vẫn đọc được toàn bộ nội dung. Website dùng MP4 H.264 nén (tối đa 960px, 20fps, không tiếng); MKV là bản cùng codec cho tải/lưu trữ, không dùng làm video trình duyệt. Bản gốc nằm ngoài repo trong UIT-Together-backups.
+Các danh sách có `data-paginate`/`data-page-item`; Publications dùng `data-page-size` kết hợp bộ lọc; Member chỉ tìm/lọc, không phân trang. Đổi bộ lọc trả về trang 1; nhóm venue/cohort trống được ẩn. Không JavaScript vẫn đọc được toàn bộ nội dung. Website dùng MP4 H.264 nén (tối đa 960px, 20fps, không tiếng); MKV là bản cùng codec cho tải/lưu trữ, không dùng làm video trình duyệt. Bản gốc nằm ngoài repo trong UIT-Together-backups.
 
-Slideshow trang chủ dùng 9 ảnh từ gallery People, đổi ảnh mỗi 4,5 giây khi đang trong màn hình. Có trước/sau/tạm dừng; dừng tự chuyển khi hover, focus, tab ẩn hoặc reduced motion. Scroll reveal đặt lại trạng thái khi phần tử rời màn hình để xuất hiện lại khi cuộn quay lại. Tiêu đề UI được Title Case sau dịch và bỏ dấu chấm cuối; bảo vệ tên riêng, paper, venue, code và translate=no.
+Slideshow trang chủ dùng ảnh trong `src/data/group_gallery.json` từ gallery Member, đổi ảnh mỗi 4,5 giây khi đang trong màn hình. Có trước/sau/tạm dừng; dừng tự chuyển khi hover, focus, tab ẩn hoặc reduced motion. Scroll reveal xuất hiện chậm trong 1 giây khi cuộn xuống, kể cả khi quay lại; cuộn lên hiển thị ngay, không hiệu ứng. Phần tử rời màn hình được đặt lại tức thì, không fade-out. Tiêu đề UI được Title Case sau dịch và bỏ dấu chấm cuối; bảo vệ tên riêng, paper, venue, code và translate=no.
 
-Thanh phân trang nằm ở đầu mỗi danh sách và sticky dưới header; chuyển trang giữ focus nhưng không gọi scrollIntoView. Chú thích media dùng nền/viền xanh và chữ có tương phản cao; chú thích slideshow nền xanh đậm.
+Thanh phân trang nằm ở cuối mỗi danh sách; chuyển trang giữ focus và cuộn ngay lên đầu danh sách vừa cập nhật. Tutorials hiển thị tất cả hướng dẫn, không phân trang. Chú thích media dùng nền/viền xanh và chữ có tương phản cao; chú thích slideshow nền xanh đậm.
+
+Thêm ảnh slideshow vào group_gallery.json (src, caption_en, caption_vi). Hiện gồm 32 ảnh hoạt động team0–team20 và LeTN2022, dùng chung asset, không sao chép ảnh.
+
+Trang Member không phân trang. `members.json` chứa các hồ sơ `section: "Supervisor"` hoặc `"Current Members"`; giữ ID ổn định, thứ tự hồ sơ chính là thứ tự thẻ trên desktop hai cột. `role` chỉ hiển thị Leader/Collaborator trong thẻ đầu; `cohort` ghi K2023 trở đi nếu đã xác nhận. `bio_en`/`bio_vi` là giới thiệu ngắn cho Current Member; để trống thì hiện thông báo sẽ cập nhật. Không dùng học vị hoặc tiểu sử giả.
+
+`cohorts.json` giữ tên theo từng khóa: K2022 trở về trước hiển thị Former Members; K2023 trở đi hiển thị Current Members. Tên đã có thẻ không lặp lại trong danh sách cùng khóa. Thêm thành viên 2024/2025 bằng hồ sơ và cohort tương ứng. Ảnh trống dùng chữ viết tắt của tên. CSS/JS Member chỉ tải ở `/team/` và `/vi/team/`; trang dùng cuộn toàn tài liệu, không scroll snap, từng thẻ hiện dần 1 giây khi cuộn xuống và hiện ngay khi cuộn lên và điều hướng anchor theo ba nhóm. Tìm tên/khóa tiếp tục hoạt động nhưng không tạo pager. Reduced motion/print không ẩn nội dung.
+
+## Hội nghị và deadline
+
+`src/data/conferences.json` chứa kỳ hiện tại, địa điểm, khoảng ngày tổ chức và các deadline có nguồn chính thức. `at` chỉ ghi khi có giờ kèm múi giờ; `date`/`zone` giữ trường hợp chỉ công bố ngày. Không suy đoán địa điểm hoặc deadline cho kỳ mới. ICCV cách hai năm; `cadence` điều khiển đổi kỳ. `checked_at` ghi lần thử đồng bộ, `last_success_at` ghi lần đọc được bằng chứng. Website hiển thị theo `Asia/Ho_Chi_Minh`.
+
+Updater tự chuyển kỳ sau hết ngày kết thúc AoE, xóa lịch cũ và dò nguồn chính thức kỳ tiếp theo. TBA hoặc nguồn mâu thuẫn không có bộ đếm giờ giả. Thêm hội nghị/domain mới phải khai báo seed và allowlist trong updater rồi chạy test parser, test clock, build/check. Xem [conference-automation.md](conference-automation.md).
+
+Các `data-page-item` phải độc lập, không lồng vào nhau. Datasets có 13 mục, 3 mục/trang: 5 trang, trang cuối có 1 mục. Kiểm thử cấu trúc phân trang rà toàn bộ HTML đã build ở cả EN/VI.

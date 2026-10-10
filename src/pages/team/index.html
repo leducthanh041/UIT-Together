@@ -1,50 +1,40 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<div class="container">
-<section data-page-group><h2 class="display-4 text-center">Leader</h2>
-<div class="row mb-3">
-{% set member = members[0] %}{% include "partials/member.html" %}
+<div class="container member-directory">
+<nav class="member-section-nav" aria-label="{{ 'Nhóm thành viên' if language == 'vi' else 'Member Groups' }}" data-member-nav>
+<a href="#supervisors" aria-current="location"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> {{ 'Người hướng dẫn' if language == 'vi' else 'Supervisor' }}</a>
+<a href="#current-members"><i class="fas fa-user-graduate" aria-hidden="true"></i> {{ 'Thành viên hiện tại' if language == 'vi' else 'Current Members' }}</a>
+<a href="#former-members"><i class="fas fa-users" aria-hidden="true"></i> {{ 'Cựu thành viên' if language == 'vi' else 'Former Members' }}</a>
+</nav>
+<section id="supervisors" class="member-chapter supervisor-chapter" data-member-chapter data-page-group aria-labelledby="supervisors-title">
+<div class="member-chapter-heading" data-member-reveal><p class="eyebrow">UIT Together</p><h2 id="supervisors-title">{{ 'Người hướng dẫn' if language == 'vi' else 'Supervisor' }}</h2><p>{{ 'Đội ngũ hướng dẫn và cộng tác nghiên cứu của nhóm' if language == 'vi' else 'The people guiding and collaborating on our research' }}</p></div>
+<div class="members-grid supervisor-grid">
+{% for member in members if member.section in ['Supervisor', 'Leader', 'Collaborators', 'Current members'] %}{% include "partials/member.html" %}{% endfor %}
 </div>
+<a class="member-next-section" href="#current-members">{{ 'Khám phá thành viên hiện tại' if language == 'vi' else 'Meet Our Current Members' }} <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
 </section>
-<section data-page-group><h2 class="display-4 text-center">Collaborators</h2>
-<div class="row mb-3">
-{% set member = members[1] %}{% include "partials/member.html" %}
+<section id="current-members" class="member-chapter current-member-chapter" data-member-chapter data-page-group aria-labelledby="current-members-title">
+<div class="member-chapter-heading" data-member-reveal><p class="eyebrow">K2023 · K2024 · K2025</p><h2 id="current-members-title">{{ 'Thành viên hiện tại' if language == 'vi' else 'Current Members' }}</h2><p>{{ 'Các thành viên thuộc khóa K2023 trở đi' if language == 'vi' else 'Members from K2023 onward' }}</p></div>
+<div class="members-grid current-members-grid">
+{% for member in members if member.section == 'Current Members' %}{% include "partials/member.html" %}{% endfor %}
 </div>
+{% for cohort in cohorts if cohort.cohort[1:] | int >= 2023 %}
+{% set profiles = members | selectattr('cohort', 'defined') | selectattr('cohort', 'equalto', cohort.cohort) | map(attribute='name') | list %}
+{% set unprofiled = [] %}{% for name in cohort.names if name not in profiles %}{% set ignored = unprofiled.append(name) %}{% endfor %}
+{% if unprofiled %}<section class="current-cohort-list" data-page-group data-year="{{ cohort.cohort }}"><h3>{{ cohort.cohort }}</h3><ol class="cohort-list">{% for name in unprofiled %}<li data-member-reveal data-filter-item data-search-text="{{ name }} {{ cohort.cohort }}" translate="no">{{ name }}</li>{% endfor %}</ol></section>{% endif %}
+{% endfor %}
+<a class="member-next-section" href="#former-members">{{ 'Gặp các thế hệ trước' if language == 'vi' else 'Explore Earlier Generations' }} <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
 </section>
-<section data-page-group><h2 class="display-4 text-center">Current members</h2>
-<div class="row mb-3">
-{% set member = members[2] %}{% include "partials/member.html" %}
-{% set member = members[3] %}{% include "partials/member.html" %}
-</div>
-<div class="row mb-3">
-{% set member = members[4] %}{% include "partials/member.html" %}
-{% set member = members[5] %}{% include "partials/member.html" %}
-</div>
-<div class="row mb-3">
-{% set member = members[6] %}{% include "partials/member.html" %}
-{% set member = members[7] %}{% include "partials/member.html" %}
-</div>
-<div class="row mb-3">
-{% set member = members[8] %}{% include "partials/member.html" %}
-</div>
+<section id="former-members" class="member-chapter former-member-chapter student-directory" data-member-chapter data-page-group aria-labelledby="former-members-title">
+<div class="member-chapter-heading" data-member-reveal><p class="eyebrow">K2022 {{ 'trở về trước' if language == 'vi' else 'and Earlier' }}</p><h2 id="former-members-title">{{ 'Cựu thành viên' if language == 'vi' else 'Former Members' }}</h2><p>{{ 'Các thế hệ đã đóng góp vào hành trình của UIT Together' if language == 'vi' else 'The generations who have contributed to UIT Together' }}</p></div>
+{% for cohort in cohorts if cohort.cohort[1:] | int <= 2022 %}
+<section class="former-cohort" data-page-group data-cohort="{{ cohort.cohort }}" aria-labelledby="cohort-{{ cohort.cohort }}">
+<div class="cohort-heading" data-member-reveal><h3 id="cohort-{{ cohort.cohort }}" translate="no">{{ cohort.cohort }}</h3><span>{{ cohort.names | length }} {{ 'thành viên' if language == 'vi' else 'Members' }}</span></div>
+<ol class="cohort-list">
+{% for name in cohort.names %}<li data-member-reveal data-filter-item data-year="{{ cohort.cohort }}" data-search-text="{{ name }} {{ cohort.cohort }}" value="{{ loop.index }}" translate="no">{{ name }}</li>{% endfor %}
+</ol>
 </section>
-<h2 class="display-4 text-center">Students</h2>
-
-<section data-page-group><h3>K2022</h3>
-<ol class="cohort-list">{% for name in cohorts[0].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2021</h3>
-<ol class="cohort-list">{% for name in cohorts[1].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2020</h3>
-<ol class="cohort-list">{% for name in cohorts[2].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2019</h3>
-<ol class="cohort-list">{% for name in cohorts[3].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2018</h3>
-<ol class="cohort-list">{% for name in cohorts[4].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2017</h3>
-<ol class="cohort-list">{% for name in cohorts[5].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2016</h3>
-<ol class="cohort-list">{% for name in cohorts[6].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
-<section data-page-group><h3>K2015</h3>
-<ol class="cohort-list">{% for name in cohorts[7].names %}<li data-filter-item>{{ name }}</li>{% endfor %}</ol></section>
+{% endfor %}
+</section>
 </div>
 {% endblock %}
