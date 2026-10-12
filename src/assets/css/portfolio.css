@@ -122,7 +122,6 @@ body { background:var(--color-background); }
 .language-switch a:hover { box-shadow:inset 0 0 0 1px #fff; }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 html[lang="vi"] .site-menu a { font-size:.8rem; padding-inline:.55rem; }
-html[lang="vi"] .brand-caption { font-size:.52rem; letter-spacing:.04em; }
 @media(min-width:1024px) { .site-header .container { gap:1rem; } .brand-name { font-size:1.4rem; } }
 @media(max-width:1023px) { .site-brand { order:0; margin-right:auto; } .menu-toggle { order:2; } .language-switch { order:1; } .site-menu { order:3; } .site-header .container { gap:.75rem; } }
 @media(max-width:400px) { .brand-name { font-size:1.1rem; } .brand-caption { max-width:150px; font-size:.5rem; } .language-switch a { min-width:32px; } .menu-toggle { padding-inline:.5rem; } }

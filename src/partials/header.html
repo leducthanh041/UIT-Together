@@ -1,7 +1,11 @@
 <header class="site-header"><nav class="container site-nav" aria-label="Main navigation">
-<a class="site-brand" href="/" aria-label="UIT-Together home"><span class="brand-name">UIT Together<span class="brand-caption">Computer Vision · Machine Learning</span></span></a>
+<a class="site-brand" href="/" aria-label="UIT-Together home"><img src="/assets/themes/lab/images/logo/lab-logo.svg" alt="" width="52" height="52" decoding="async"><span class="brand-name">UIT Together</span></a>
 <button class="menu-toggle" type="button" aria-controls="site-menu" aria-expanded="false">Menu</button>
-<ul class="site-menu" id="site-menu">{% for link in site.nav %}<li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.label }}</a></li>{% endfor %}</ul>
+<ul class="site-menu" id="site-menu">
+{% for link in site.nav if link.group | default('') != 'resources' and link.url not in ['/news/', '/tutorials/', '/contact/'] %}<li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.label }}</a></li>{% endfor %}
+{% for link in site.nav if link.group | default('') == 'resources' and link.url in ['/datasets/', '/conferences/'] %}<li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.label }}</a></li>{% endfor %}
+{% for link in site.nav if link.url == '/contact/' %}<li><a href="{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.label }}</a></li>{% endfor %}
+</ul>
 <div class="language-switch" role="group" aria-label="Language">
 <a href="{{ page.url }}" data-language-link lang="en" hreflang="en"{% if language == 'en' %} aria-current="true"{% endif %}>EN<span class="sr-only"> English</span></a>
 <a href="/vi{{ page.url }}" data-language-link lang="vi" hreflang="vi"{% if language == 'vi' %} aria-current="true"{% endif %}>VI<span class="sr-only"> Tiếng Việt</span></a>

@@ -1,53 +1,85 @@
 {% set vi = language == 'vi' %}
+{% set research_directions = [
+  {
+    'id': 'medical-imaging',
+    'title_en': 'Sparse-View CT Reconstruction',
+    'title_vi': 'Tái tạo CT từ ít góc chiếu',
+    'paragraphs_en': [
+      'Starting from a sinogram measured at a limited number of projection angles, the goal is to reconstruct CT images with fewer noise and streak artifacts while preserving anatomical structure.',
+      'This direction combines the physics of image acquisition with deep learning, using local features and long-range dependencies to recover images from sparse projection data.'
+    ],
+    'paragraphs_vi': [
+      'Đầu vào là sinogram chứa các phép đo ở một số ít góc chiếu. Mục tiêu là tái tạo ảnh CT, giảm nhiễu và các vệt giả ảnh do thiếu dữ liệu, đồng thời giữ lại cấu trúc giải phẫu.',
+      'Hướng nghiên cứu kết hợp mô hình vật lý của quá trình thu nhận với học sâu, khai thác thông tin cục bộ và phụ thuộc dài hạn để khôi phục ảnh từ dữ liệu chiếu thưa.'
+    ],
+    'media_type': 'video',
+    'media_src': '/assets/images/research/AI_medical/CT-Reconstruction/Sinogram.mp4',
+    'media_alt_en': 'Animated sinogram demonstration',
+    'media_alt_vi': 'Video minh họa sinogram',
+    'caption_en': 'Sinogram · Projection data used as input for CT reconstruction',
+    'caption_vi': 'Sinogram · Dữ liệu chiếu đầu vào cho bài toán tái tạo CT'
+  },
+  {
+    'id': 'whole-slide-images',
+    'title_en': 'Whole-Slide Image Analysis',
+    'title_vi': 'Phân tích ảnh Whole-Slide Images',
+    'paragraphs_en': [
+      'WSIs are high-resolution digital scans of entire pathology slides. We study how to learn from small image patches and aggregate their information to classify cancer at the whole-slide level.',
+      'Another focus is estimating and ranking survival risk from pathology features. The goal is relative risk stratification rather than a definitive prediction of an individual patient’s survival time.',
+      'Attention maps help examine tissue regions contributing to predictions and model interpretability.'
+    ],
+    'paragraphs_vi': [
+      'WSI là ảnh số hóa toàn bộ lát cắt mô bệnh học, có độ phân giải rất lớn. Nhóm nghiên cứu cách học từ các vùng ảnh nhỏ (patch) và tổng hợp thông tin để phân loại ung thư ở cấp độ toàn lát cắt.',
+      'Một hướng khác là ước lượng và xếp hạng nguy cơ sống còn từ đặc trưng mô bệnh học. Mô hình hướng tới phân tầng nguy cơ tương đối, thay vì khẳng định thời gian sống của từng người bệnh.',
+      'Bản đồ chú ý giúp khảo sát những vùng mô đóng góp vào dự đoán và khả năng diễn giải của mô hình.'
+    ],
+    'media_type': 'image',
+    'media_src': '/assets/images/research/AI_medical/WSIs_classification.png',
+    'media_alt_en': 'Whole-slide pathology images and attention maps illustrating cancer classification',
+    'media_alt_vi': 'Ảnh WSI và bản đồ chú ý minh họa phân loại ung thư',
+    'caption_en': 'Whole-slide images and attention maps across tissue regions.',
+    'caption_vi': 'Ảnh toàn lát cắt và bản đồ chú ý ở các vùng mô.'
+  },
+  {
+    'id': 'anomaly-detection',
+    'title_en': 'Anomaly Detection',
+    'title_vi': 'Phát hiện bất thường',
+    'paragraphs_en': [
+      'We study how to recognize patterns and events that differ from normal activity in video and locate when anomalies occur. Challenges include diverse scenes and limited examples of anomalous events.'
+    ],
+    'paragraphs_vi': [
+      'Nhóm nghiên cứu cách nhận diện các mẫu và sự kiện khác với diễn biến thông thường trong video, đồng thời xác định thời điểm xuất hiện của bất thường. Những thách thức gồm sự đa dạng của bối cảnh và dữ liệu bất thường có hạn.'
+    ],
+    'media_type': 'video',
+    'media_src': '/assets/images/research/Anomoly_detection/anomaly-detection-web.mp4',
+    'media_alt_en': 'Anomaly detection demonstration video',
+    'media_alt_vi': 'Video minh họa phát hiện bất thường',
+    'caption_en': 'Video illustrating the anomaly detection research direction.',
+    'caption_vi': 'Video minh họa hướng nghiên cứu phát hiện bất thường.'
+  },
+  {
+    'id': 'object-detection',
+    'title_en': 'Object Detection',
+    'title_vi': 'Phát hiện đối tượng',
+    'paragraphs_en': [
+      'We study object detection in clean, fog, rain and snow conditions. The goal is to recognize and localize objects when weather changes image quality and visibility.',
+      'This direction focuses on model robustness under changing visual conditions, aiming to reduce missed detections and false positives in adverse weather.'
+    ],
+    'paragraphs_vi': [
+      'Nhóm nghiên cứu phát hiện đối tượng trong điều kiện rõ nét (clean), sương mù (fog), mưa (rain) và tuyết (snow). Mục tiêu là nhận diện và định vị đối tượng khi thời tiết làm thay đổi chất lượng ảnh và khả năng quan sát.',
+      'Hướng nghiên cứu tập trung vào độ bền vững của mô hình trước sự thay đổi điều kiện quan sát, nhằm giảm bỏ sót và phát hiện nhầm trong thời tiết bất lợi.'
+    ],
+    'media_type': 'video',
+    'media_src': '/assets/images/research/Object_detection/object_detection.mp4',
+    'media_alt_en': 'Object detection demonstration in clean, fog, rain and snow conditions',
+    'media_alt_vi': 'Video minh họa phát hiện đối tượng trong điều kiện clean, fog, rain và snow',
+    'caption_en': 'Object detection under different visual conditions: clean, fog, rain and snow.',
+    'caption_vi': 'Minh họa phát hiện đối tượng trong các điều kiện quan sát khác nhau: clean, fog, rain và snow.'
+  }
+] %}
 <div class="container research-directions">
 <nav class="research-jump" aria-label="{{ 'Hướng nghiên cứu' if vi else 'Research Directions' }}">
-<a href="#medical-imaging"><i class="fas fa-heartbeat" aria-hidden="true"></i> {{ 'Tái tạo CT' if vi else 'CT Reconstruction' }}</a>
-<a href="#whole-slide-images"><i class="fas fa-microscope" aria-hidden="true"></i> {{ 'Ảnh toàn lát cắt' if vi else 'Whole-Slide Images' }}</a>
-<a href="#anomaly-detection"><i class="fas fa-search" aria-hidden="true"></i> {{ 'Phát hiện bất thường' if vi else 'Anomaly Detection' }}</a>
-<a href="#object-detection"><i class="fas fa-vector-square" aria-hidden="true"></i> {{ 'Phát hiện đối tượng' if vi else 'Object Detection' }}</a>
+{% for direction in research_directions %}<a href="#{{ direction.id }}"><i class="fas {% if direction.media_type == 'image' %}fa-microscope{% elif loop.first %}fa-heartbeat{% elif loop.last %}fa-vector-square{% else %}fa-search{% endif %}" aria-hidden="true"></i> {{ direction.title_vi if vi else direction.title_en }}</a>{% endfor %}
 </nav>
-<section id="medical-imaging" class="research-direction" data-reveal>
-<h2>{{ 'Tái tạo CT từ ít góc chiếu' if vi else 'Sparse-View CT Reconstruction' }}</h2>
-<article class="research-topic">
-<div class="research-topic-copy">
-<p>{{ 'Đầu vào là sinogram chứa các phép đo ở một số ít góc chiếu. Mục tiêu là tái tạo ảnh CT, giảm nhiễu và các vệt giả ảnh do thiếu dữ liệu, đồng thời giữ lại cấu trúc giải phẫu.' if vi else 'Starting from a sinogram measured at a limited number of projection angles, the goal is to reconstruct CT images with fewer noise and streak artifacts while preserving anatomical structure.' }}</p>
-<p>{{ 'Hướng nghiên cứu kết hợp mô hình vật lý của quá trình thu nhận với học sâu, khai thác thông tin cục bộ và phụ thuộc dài hạn để khôi phục ảnh từ dữ liệu chiếu thưa.' if vi else 'This direction combines the physics of image acquisition with deep learning, using local features and long-range dependencies to recover images from sparse projection data.' }}</p>
-</div>
-<figure class="research-media sinogram-media">
-<video data-research-video autoplay muted loop playsinline preload="metadata" aria-label="{{ 'Video minh họa sinogram' if vi else 'Animated sinogram demonstration' }}"><source src="/assets/images/research/AI_medical/CT-Reconstruction/Sinogram.mp4" type="video/mp4"><a href="/assets/images/research/AI_medical/CT-Reconstruction/Sinogram.mp4">{{ 'Xem video sinogram' if vi else 'Watch the sinogram video' }}</a></video>
-<figcaption>{{ 'Sinogram · Dữ liệu chiếu đầu vào cho bài toán tái tạo CT' if vi else 'Sinogram · Projection data used as input for CT reconstruction' }}</figcaption>
-</figure>
-</article>
-</section>
-<section id="whole-slide-images" class="research-direction" data-reveal>
-<h2>{{ 'Phân tích ảnh Whole-Slide Images' if vi else 'Whole-Slide Image Analysis' }}</h2>
-<article class="research-topic">
-<div class="research-topic-copy">
-<p>{{ 'WSI là ảnh số hóa toàn bộ lát cắt mô bệnh học, có độ phân giải rất lớn. Nhóm nghiên cứu cách học từ các vùng ảnh nhỏ (patch) và tổng hợp thông tin để phân loại ung thư ở cấp độ toàn lát cắt.' if vi else 'WSIs are high-resolution digital scans of entire pathology slides. We study how to learn from small image patches and aggregate their information to classify cancer at the whole-slide level.' }}</p>
-<p>{{ 'Một hướng khác là ước lượng và xếp hạng nguy cơ sống còn từ đặc trưng mô bệnh học. Mô hình hướng tới phân tầng nguy cơ tương đối, thay vì khẳng định thời gian sống của từng người bệnh.' if vi else 'Another focus is estimating and ranking survival risk from pathology features. The goal is relative risk stratification rather than a definitive prediction of an individual patient’s survival time.' }}</p>
-<p>{{ 'Bản đồ chú ý giúp khảo sát những vùng mô đóng góp vào dự đoán và khả năng diễn giải của mô hình.' if vi else 'Attention maps help examine tissue regions contributing to predictions and model interpretability.' }}</p>
-</div>
-<figure class="research-media wsi-media">
-<img src="/assets/images/research/AI_medical/WSIs_classification.png" alt="{{ 'Ảnh WSI và bản đồ chú ý minh họa phân loại ung thư' if vi else 'Whole-slide pathology images and attention maps illustrating cancer classification' }}" loading="lazy" decoding="async">
-<figcaption>{{ 'Ảnh toàn lát cắt và bản đồ chú ý ở các vùng mô.' if vi else 'Whole-slide images and attention maps across tissue regions.' }}</figcaption>
-</figure>
-</article>
-</section>
-<section id="anomaly-detection" class="research-direction" data-reveal>
-<h2>{{ 'Phát hiện bất thường' if vi else 'Anomaly Detection' }}</h2>
-<p class="direction-intro">{{ 'Nhóm nghiên cứu cách nhận diện các mẫu và sự kiện khác với diễn biến thông thường trong video, đồng thời xác định thời điểm xuất hiện của bất thường. Những thách thức gồm sự đa dạng của bối cảnh và dữ liệu bất thường có hạn.' if vi else 'We study how to recognize patterns and events that differ from normal activity in video and locate when anomalies occur. Challenges include diverse scenes and limited examples of anomalous events.' }}</p>
-<figure class="research-media anomaly-media">
-<video data-research-video autoplay muted loop playsinline preload="metadata" aria-label="{{ 'Video minh họa phát hiện bất thường' if vi else 'Anomaly detection demonstration video' }}"><source src="/assets/images/research/Anomoly_detection/anomaly-detection-web.mp4" type="video/mp4"><a href="/assets/images/research/Anomoly_detection/anomaly-detection-web.mp4">{{ 'Xem video phát hiện bất thường' if vi else 'Watch the anomaly detection video' }}</a></video>
-<figcaption>{{ 'Video minh họa hướng nghiên cứu phát hiện bất thường.' if vi else 'Video illustrating the anomaly detection research direction.' }}</figcaption>
-</figure>
-</section>
-<section id="object-detection" class="research-direction" data-reveal>
-<h2>{{ 'Phát hiện đối tượng' if vi else 'Object Detection' }}</h2>
-<p class="direction-intro">{{ 'Nhóm nghiên cứu phát hiện đối tượng trong điều kiện rõ nét (clean), sương mù (fog), mưa (rain) và tuyết (snow). Mục tiêu là nhận diện và định vị đối tượng khi thời tiết làm thay đổi chất lượng ảnh và khả năng quan sát.' if vi else 'We study object detection in clean, fog, rain and snow conditions. The goal is to recognize and localize objects when weather changes image quality and visibility.' }}</p>
-<p class="direction-intro">{{ 'Hướng nghiên cứu tập trung vào độ bền vững của mô hình trước sự thay đổi điều kiện quan sát, nhằm giảm bỏ sót và phát hiện nhầm trong thời tiết bất lợi.' if vi else 'This direction focuses on model robustness under changing visual conditions, aiming to reduce missed detections and false positives in adverse weather.' }}</p>
-<figure class="research-media object-detection-media">
-<video data-research-video autoplay muted loop playsinline preload="metadata" aria-label="{{ 'Video minh họa phát hiện đối tượng trong điều kiện clean, fog, rain và snow' if vi else 'Object detection demonstration in clean, fog, rain and snow conditions' }}"><source src="/assets/images/research/Object_detection/object_detection.mp4" type="video/mp4"><a href="/assets/images/research/Object_detection/object_detection.mp4">{{ 'Xem video phát hiện đối tượng' if vi else 'Watch the object detection video' }}</a></video>
-<figcaption>{{ 'Minh họa phát hiện đối tượng trong các điều kiện quan sát khác nhau: clean, fog, rain và snow.' if vi else 'Object detection under different visual conditions: clean, fog, rain and snow.' }}</figcaption>
-</figure>
-</section>
+{% for direction in research_directions %}{% include 'partials/research-direction.html' %}{% endfor %}
 </div>

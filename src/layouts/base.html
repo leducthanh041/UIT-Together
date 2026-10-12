@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="/assets/themes/portfolio/css/fontawesome.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/site.css">
-  <link rel="stylesheet" href="/assets/css/portfolio.css">
   <script src="/js/site.js" defer></script>
   {% if page.section == 'team' and page.source.endswith('index.html') %}<link rel="stylesheet" href="/assets/css/members.css"><script src="/js/members.js" defer></script>{% endif %}
   {% if page.section == 'conferences' %}<link rel="stylesheet" href="/assets/css/conferences.css"><script src="/js/conference-clock.js" defer></script><script src="/js/conferences.js" defer></script>{% endif %}
@@ -22,30 +21,39 @@
 <body id="top" class="page-{{ page.section }}">
 <a class="skip-link" href="#main">Skip to content</a>
 {% include 'partials/header.html' %}
-<section class="page-hero"><div class="container{% if page.section == 'home' %} hero-grid{% else %} subpage-hero-grid{% endif %}">
+{% if page.section == 'home' %}<main id="main" class="page-content" tabindex="-1">{% endif %}
+<section class="{% if page.section == 'home' %}lab-hero{% else %}page-hero{% endif %}"{% if page.section == 'home' %} aria-labelledby="about-uit-together"{% endif %}><div class="container{% if page.section == 'home' %} lab-hero-grid{% else %} subpage-hero-grid{% endif %}">
   <div class="hero-copy">
   {% if page.section == 'home' %}
   <p class="home-affiliation">University of Information Technology · VNU-HCM</p>
-  <h1 class="home-wordmark"><span>UIT</span> Together</h1>
-  <p class="home-research-directions"><span>Computer Vision</span><span>Machine Learning</span></p>
-  <p class="home-hero-description">Understanding visual worlds. Learning from data. Researching together.</p>
+  <h1 class="home-wordmark" id="about-uit-together">UIT Together</h1>
+  <p class="lab-hero-fields">{{ 'Thị giác máy tính & Học máy' if language == 'vi' else 'Computer Vision & Machine Learning' }}</p>
+  <p class="home-hero-description">{{ 'Nhóm nghiên cứu về phân tích ảnh y khoa, phát hiện bất thường và phát hiện đối tượng. Các công bố và bộ dữ liệu của nhóm phục vụ nghiên cứu thị giác máy tính và học máy.' if language == 'vi' else 'We study medical image analysis, anomaly detection and object detection. Our publications and datasets support research in computer vision and machine learning.' }}</p>
   {% else %}
-  <p class="eyebrow">{{ page.hero[0] }}</p>
-  <h1>{{ page.hero[1] }}</h1><p>{{ page.hero[2] }}</p>
+  {% set editorial_headers = {
+    'research': ['Nghiên cứu' if language == 'vi' else 'Research', 'Ảnh y khoa, phát hiện bất thường và phát hiện đối tượng.' if language == 'vi' else 'Medical image analysis, anomaly detection and object detection.'],
+    'team': ['Thành viên' if language == 'vi' else 'Members', 'Đội ngũ hướng dẫn, cộng tác viên và sinh viên qua các khóa.' if language == 'vi' else 'Researchers, collaborators and student cohorts.'],
+    'papers': ['Công bố' if language == 'vi' else 'Publications', 'Tìm bài báo theo năm, loại công bố và tạp chí hoặc hội nghị.' if language == 'vi' else 'Find papers by year, publication type and venue.'],
+    'datasets': ['Bộ dữ liệu' if language == 'vi' else 'Datasets', 'Các bộ dữ liệu được nhóm chia sẻ cho nghiên cứu.' if language == 'vi' else 'Datasets shared by the group for research.'],
+    'contact': ['Liên hệ' if language == 'vi' else 'Contact', 'Thông tin liên hệ về hợp tác nghiên cứu và hướng dẫn sinh viên.' if language == 'vi' else 'Contacts for research collaboration and student supervision.'],
+    'tutorials': ['Hướng dẫn' if language == 'vi' else 'Tutorials', 'Tài liệu và hướng dẫn do nhóm tổng hợp.' if language == 'vi' else 'Guides and learning materials collected by the group.'],
+    'news': ['Tin tức' if language == 'vi' else 'News', 'Thông báo của nhóm, giữ nguyên ngày đăng gốc.' if language == 'vi' else 'Group announcements with their original publication dates.']
+  } %}
+  {% set editorial = editorial_headers.get(page.section) if page.source.endswith('index.html') else none %}
+  {% if not editorial and page.hero[0] != page.hero[1] %}<p class="eyebrow">{{ page.hero[0] }}</p>{% endif %}
+  <h1>{{ editorial[0] if editorial else page.hero[1] }}</h1>
+  {% if editorial or page.hero[2] %}<p>{{ editorial[1] if editorial else page.hero[2] }}</p>{% endif %}
   {% endif %}
-  {% if page.section == 'home' %}<div class="hero-actions"><a class="template-button" href="/papers/">Explore publications <span aria-hidden="true">→</span></a><a class="hero-secondary" href="/team/">Meet our members <span aria-hidden="true">↗</span></a></div>{% endif %}
+  {% if page.section == 'home' %}<nav class="lab-hero-actions" aria-label="{{ 'Tìm hiểu về nhóm' if language == 'vi' else 'About the group' }}"><a class="lab-primary-link" href="/about.html">{{ 'Thông tin nhóm' if language == 'vi' else 'About the group' }}</a><a href="/research/">{{ 'Nghiên cứu' if language == 'vi' else 'Research' }}</a></nav>{% endif %}
   </div>
   {% if page.section == 'home' %}
-  <figure class="hero-visual group-logo">
-    <img src="/assets/themes/lab/images/logo/lab-logo.svg" alt="UIT Together logo" width="400" height="400" fetchpriority="high" decoding="async">
+  <figure class="lab-hero-photo">
+    <img src="/assets/images/team/team0.jpg" alt="{{ 'Thành viên UIT Together trao đổi trong một buổi làm việc nhóm' if language == 'vi' else 'UIT Together members discussing their work at a group meeting' }}" width="1303" height="582" fetchpriority="high" decoding="async">
   </figure>
-  {% else %}
-  {% set page_icon = {'research':'microscope', 'projects':'microscope', 'team':'users', 'papers':'newspaper', 'PapersByYear':'newspaper', 'datasets':'database', 'tutorials':'book-open', 'conferences':'calendar-alt', 'contact':'envelope', 'news':'bullhorn', 'about':'info-circle', 'homes':'home'}.get(page.section, 'file-alt') %}
-  <div class="page-icon" aria-hidden="true"><i class="fas fa-{{ page_icon }}"></i></div>
   {% endif %}
 </div>
-{% if page.section == 'home' %}<svg class="hero-wave" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>{% endif %}</section>
-<main id="main" class="page-content" tabindex="-1"{% if page.section == 'papers' and page.source.endswith('index.html') %} data-page-size="10"{% endif %}>
+</section>
+{% if page.section != 'home' %}<main id="main" class="page-content{% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %} page-content-filtered{% endif %}" tabindex="-1"{% if page.section == 'papers' and page.source.endswith('index.html') %} data-page-size="10"{% endif %}>{% endif %}
 {% if page.section in ['papers', 'PapersByYear', 'team'] and page.source.endswith('index.html') %}
 <div class="container"><div class="filter-toolbar">
 <div><label for="search">{% if page.section == 'team' %}Search members{% else %}Search publications{% endif %}</label><input id="search" type="search" data-filter-input placeholder="{% if page.section == 'team' %}Name or role{% else %}Title, author or venue{% endif %}"></div>

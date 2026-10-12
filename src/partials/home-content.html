@@ -1,46 +1,35 @@
+{% set vi = language == 'vi' %}
 <div class="container">
-<section class="home-impact" aria-label="{{ 'UIT Together qua các con số' if language == 'vi' else 'UIT Together in Numbers' }}" data-reveal>
-<div class="impact-stat"><i class="fas fa-users" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.participants }}</p><h2>{{ 'Người tham gia' if language == 'vi' else 'Participants' }}</h2></div>
-<div class="impact-stat"><i class="fas fa-book-open" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.papers }}</p><h2>{{ 'Bài báo nghiên cứu' if language == 'vi' else 'Research Papers' }}</h2></div>
-<div class="impact-stat"><i class="fas fa-globe" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.venues }}</p><h2>{{ 'Hội nghị và tạp chí' if language == 'vi' else 'Conferences & Journals' }}</h2></div>
-<div class="impact-stat"><i class="fas fa-database" aria-hidden="true"></i><p class="impact-number" translate="no">{{ group_stats.datasets }}</p><h2>{{ 'Bộ dữ liệu công khai' if language == 'vi' else 'Public Datasets' }}</h2></div>
+<section class="lab-statistics" aria-labelledby="group-statistics-title">
+<h2 class="sr-only" id="group-statistics-title">{{ 'UIT Together qua các con số' if vi else 'UIT Together in numbers' }}</h2>
+{% for key, label_en, label_vi, icon in [('participants', 'Participants', 'Người tham gia', 'users'), ('papers', 'Research Papers', 'Bài báo nghiên cứu', 'book-open'), ('venues', 'Conferences & Journals', 'Hội nghị và tạp chí', 'globe'), ('datasets', 'Public Datasets', 'Bộ dữ liệu công khai', 'database')] %}
+<div class="lab-stat"><div class="lab-stat-value"><i class="fas fa-{{ icon }}" aria-hidden="true"></i><p class="lab-stat-number" translate="no">{{ group_stats[key] }}</p></div><h3>{{ label_vi if vi else label_en }}</h3></div>
+{% endfor %}
 </section>
-<section class="research-overview" aria-labelledby="research-overview-title">
-<div class="template-section-heading"><p class="eyebrow">Our research</p><h2 id="research-overview-title">Seeing further. Learning together.</h2><span class="heading-line" aria-hidden="true"></span><p>Computer vision and machine learning are at the heart of our work.</p></div>
-<div class="research-feature" data-reveal><div><p class="eyebrow">01 / Computer Vision</p><h3>Understanding the visual world.</h3><p>We study visual understanding through object detection, document analysis and aerial imagery.</p><a class="template-button secondary-button" href="/research/">Explore our research <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/vision.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
-<div class="research-feature research-feature-reverse" data-reveal><div><p class="eyebrow">02 / Machine Learning</p><h3>Turning data into understanding.</h3><p>Our publications explore learning methods and their applications to challenging visual data.</p><a class="template-button secondary-button" href="/papers/">Discover publications <span aria-hidden="true">→</span></a></div><img class="template-art" src="/assets/images/portfolio-template/learning.png" alt="" width="500" height="500" loading="lazy" decoding="async"></div>
+<section class="lab-news" aria-labelledby="latest-news-title">
+<div class="lab-home-heading"><h2 id="latest-news-title">{{ 'Tin tức mới nhất' if vi else 'Latest news' }}</h2></div>
+{% include 'partials/news-note.html' %}
+<div class="lab-news-layout">
+{% for item in latest_news %}
+<article class="lab-news-entry{% if loop.first %} lab-news-lead{% endif %}" data-news-id="{{ item.id }}">
+<time datetime="{{ item.date }}">{{ item.date }}</time>
+<h3{% if vi and not item.title_vi | default('') %} lang="en"{% endif %}><a href="/news/#{{ item.id }}">{{ item.title_vi if vi and item.title_vi | default('') else item.title }}</a></h3>
+<p{% if vi and not item.summary_vi | default('') %} lang="en"{% endif %}>{{ item.summary_vi if vi and item.summary_vi | default('') else item.summary_en | default(item.description, true) }}</p>
+</article>
+{% else %}<p class="lab-empty">{{ 'Chưa có tin tức được xác minh để hiển thị.' if vi else 'No reviewed group announcements are available yet.' }}</p>{% endfor %}
+</div>
 </section>
-<section class="group-introduction group-story" data-reveal><div class="group-slideshow" data-slideshow role="region" aria-roledescription="{{ 'trình chiếu ảnh' if language == 'vi' else 'carousel' }}" aria-label="{{ 'Hoạt động của UIT Together' if language == 'vi' else 'UIT Together activities' }}">
-<div class="slideshow-stage">
-{% for photo in group_gallery %}
-<figure class="slideshow-slide{% if loop.first %} is-active{% endif %}" data-slide{% if not loop.first %} aria-hidden="true"{% endif %}>
-<img src="{{ photo.src }}" alt="{{ photo.caption_vi if language == 'vi' else photo.caption_en }}" loading="lazy" decoding="async">
-<figcaption>{{ photo.caption_vi if language == 'vi' else photo.caption_en }}</figcaption>
-</figure>
+<section class="lab-publications" aria-labelledby="research-highlights-title">
+<div class="lab-section-intro"><p class="lab-section-label">{{ 'Công bố được lựa chọn' if vi else 'Selected publications' }}</p><h2 id="research-highlights-title">{{ 'Nghiên cứu nổi bật' if vi else 'Research highlights' }}</h2><p>{{ 'Một số bài báo của nhóm về hiểu hình ảnh, phân tích tài liệu và ảnh y khoa.' if vi else 'Selected journal papers on visual understanding, document analysis and medical imaging.' }}</p><a href="/papers/">{{ 'Xem tất cả công bố' if vi else 'View all publications' }}</a></div>
+<div class="lab-paper-list">
+{% for item in research_highlights %}
+<article class="lab-paper" data-publication-id="{{ item.id }}">
+<p class="lab-paper-meta" translate="no">{{ item.venue_name }} · {{ item.year }}</p>
+<h3 translate="no"><a href="{% if item.doi %}https://doi.org/{{ item.doi }}{% elif item.paper_url | default('') %}{{ item.paper_url }}{% else %}{{ item.links[0] }}{% endif %}">{{ item.display_title }}</a></h3>
+{% if item.authors | default('') %}<p class="lab-paper-authors" translate="no">{{ item.authors }}</p>{% else %}<p><a href="/papers/">{{ 'Trích dẫn và tác giả trong danh sách công bố' if vi else 'Citation and authors in the publication directory' }}</a></p>{% endif %}
+{% if item.doi %}<a class="lab-paper-source" href="https://doi.org/{{ item.doi }}">DOI: <span translate="no">{{ item.doi }}</span></a>{% elif item.paper_url | default('') %}<a class="lab-paper-source" href="{{ item.paper_url }}">{{ 'Xem bài báo' if vi else 'Read paper' }}<span class="sr-only" translate="no">: {{ item.display_title }}</span></a>{% else %}<a class="lab-paper-source" href="{{ item.links[0] }}">{{ 'Xem bài báo' if vi else 'Read paper' }}<span class="sr-only" translate="no">: {{ item.display_title }}</span></a>{% endif %}
+</article>
 {% endfor %}
 </div>
-<div class="slideshow-controls" hidden>
-<button type="button" data-slide-prev aria-label="{{ 'Ảnh trước' if language == 'vi' else 'Previous photo' }}"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-<span data-slide-status>1 / {{ group_gallery | length }}</span>
-<button type="button" data-slide-next aria-label="{{ 'Ảnh tiếp theo' if language == 'vi' else 'Next photo' }}"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-<button type="button" data-slide-pause aria-pressed="false">{{ 'Tạm dừng' if language == 'vi' else 'Pause' }}</button>
+</section>
 </div>
-</div><div><p class="eyebrow">Together at UIT</p><h2>Research grows through collaboration.</h2><p>We bring researchers and students together through shared projects, mentorship and international collaboration.</p><a href="/team/">Meet our members →</a></div></section>
-<nav class="homes-directory home-directory" aria-label="Explore UIT Together">
-{% for label, description, url, icon in [
- ('Research', 'Explore our research directions and projects.', '/research/', 'microscope'),
- ('Datasets', 'Discover resources shared with the research community.', '/datasets/', 'database'),
- ('Tutorials', 'Learn through practical guides and materials.', '/tutorials/', 'book-open'),
- ('Contact', 'Connect with our research group.', '/contact/', 'envelope')
-] %}
-<a class="homes-directory-link" href="{{ url }}"><span class="directory-icon" aria-hidden="true"><i class="fas fa-{{ icon }}"></i></span><div class="directory-copy"><h3>{{ label }}</h3><p>{{ description }}</p></div><span class="homes-arrow" aria-hidden="true">↗</span></a>
-{% endfor %}
-</nav>
-<div class="home-columns">
-<section><div class="section-heading"><h2 id="group-updates-title">Group updates</h2><a href="/datasets/">Explore datasets →</a></div>
-<div class="home-paginated-feed" data-paginate data-page-size="3" role="region" aria-labelledby="group-updates-title" tabindex="0">
-{% for item in news %}<article class="news-entry" data-page-item><p class="note">{{ item.date_label }}</p><h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3><p>{{ item.description }}</p>{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a> {% endfor %}</article>{% endfor %}</div></section>
-<section><div class="section-heading"><h2 id="publication-highlights-title">Publication highlights</h2><a href="/papers/">All publications →</a></div>
-<div class="home-paginated-feed" data-paginate data-page-size="3" role="region" aria-labelledby="publication-highlights-title" tabindex="0">
-{% for id in featured_publications %}{% set item = publications[id] %}<article class="news-entry" data-page-item><p class="note">{{ item.homepage_date_label }}</p><h3 translate="no">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.display_title }}</a>{% elif item.links %}<a href="{{ item.links[0] }}">{{ item.display_title }}</a>{% else %}{{ item.display_title }}{% endif %}</h3><p>{{ item.venue_name }}</p>{% if item.doi %}<a class="doi-link" href="https://doi.org/{{ item.doi }}">DOI: {{ item.doi }}</a>{% endif %}</article>{% endfor %}</div></section>
-</div></div>

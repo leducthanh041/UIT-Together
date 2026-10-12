@@ -14,7 +14,7 @@ Trang Papers dựng tự động từ JSON; không thêm bài trực tiếp vào
 
 Thêm template src/pages và mục trong pages.json gồm source, url, title, section, hero (3 chuỗi). Tên file mới dùng kebab-case; giữ tên/URL cũ khi đã có link. Dùng UTF-8, JSON hợp lệ, URL nội bộ bắt đầu `/`. Ảnh/PDF đặt trong src/assets; không đưa cấu hình hoặc bí mật vào src/static.
 
-Home, research, datasets và news có HTML partial riêng. Home dùng news.json và featured_publications.json (danh sách ID trong publications.json). Các ghi chú lịch sử homepage_reference/homepage_date_label được giữ nguyên, không suy ra ngày tháng. Chỉ chỉnh nội dung xác minh được. Website có hai bản tĩnh: tiếng Anh mặc định ở `/`, tiếng Việt ở `/vi/`. Các nút EN / VI chuyển sang cùng trang ở ngôn ngữ còn lại.
+Home, research, datasets và news có HTML partial riêng. Home dùng news.json và selected_achievements.json (2–3 ID trong publications.json); featured_publications.json được giữ nguyên nhưng không còn điều khiển Home. Các ghi chú lịch sử homepage_reference/homepage_date_label được giữ nguyên, không suy ra ngày tháng. Chỉ chỉnh nội dung xác minh được. Website có hai bản tĩnh: tiếng Anh mặc định ở `/`, tiếng Việt ở `/vi/`. Các nút EN / VI chuyển sang cùng trang ở ngôn ngữ còn lại.
 
 Sau sửa: build, check_site; mở local và kiểm tra trang liên quan. Báo cáo missing links phân biệt baseline và regression.
 
@@ -46,11 +46,28 @@ Trang Research dùng `src/partials/research-content.html`, nội dung EN/VI theo
 
 Các danh sách có `data-paginate`/`data-page-item`; Publications dùng `data-page-size` kết hợp bộ lọc; Member chỉ tìm/lọc, không phân trang. Đổi bộ lọc trả về trang 1; nhóm venue/cohort trống được ẩn. Không JavaScript vẫn đọc được toàn bộ nội dung. Website dùng MP4 H.264 nén (tối đa 960px, 20fps, không tiếng); MKV là bản cùng codec cho tải/lưu trữ, không dùng làm video trình duyệt. Bản gốc nằm ngoài repo trong UIT-Together-backups.
 
-Slideshow trang chủ dùng ảnh trong `src/data/group_gallery.json` từ gallery Member, đổi ảnh mỗi 4,5 giây khi đang trong màn hình. Có trước/sau/tạm dừng; dừng tự chuyển khi hover, focus, tab ẩn hoặc reduced motion. Scroll reveal xuất hiện chậm trong 1 giây khi cuộn xuống, kể cả khi quay lại; cuộn lên hiển thị ngay, không hiệu ứng. Phần tử rời màn hình được đặt lại tức thì, không fade-out. Tiêu đề UI được Title Case sau dịch và bỏ dấu chấm cuối; bảo vệ tên riêng, paper, venue, code và translate=no.
+Home dùng ảnh team0 tĩnh; slideshow không còn được hiển thị trên Home. Dữ liệu group_gallery.json và ảnh gốc giữ nguyên. Style chung hiển thị nội dung ngay, không làm mờ page header khi tải. Members giữ chuyển động riêng của hồ sơ; reduced motion/print không ẩn nội dung. Video nghiên cứu có native controls để dừng/phát, giữ logic reduced-motion. Tiêu đề UI được Title Case sau dịch và bỏ dấu chấm cuối; bảo vệ tên riêng, paper, venue, code và translate=no.
 
-Thanh phân trang nằm ở cuối mỗi danh sách; chuyển trang giữ focus và cuộn ngay lên đầu danh sách vừa cập nhật. Tutorials hiển thị tất cả hướng dẫn, không phân trang. Chú thích media dùng nền/viền xanh và chữ có tương phản cao; chú thích slideshow nền xanh đậm.
+Thanh phân trang nằm ở cuối mỗi danh sách; chuyển trang giữ focus và cuộn ngay lên đầu danh sách vừa cập nhật. Tutorials hiển thị tất cả hướng dẫn, không phân trang; mục chưa có URL hiện nhãn Link pending/Chưa có liên kết. Caption nghiên cứu dùng chữ muted trên nền trắng, ngăn bằng viền mảnh; caption ảnh Home nằm trong khung navy.
 
-Thêm ảnh slideshow vào group_gallery.json (src, caption_en, caption_vi). Hiện gồm 32 ảnh hoạt động team0–team20 và LeTN2022, dùng chung asset, không sao chép ảnh.
+Kho ảnh group_gallery.json gồm src, caption_en, caption_vi; giữ 32 ảnh hoạt động team0–team20 và LeTN2022, dùng chung asset, không sao chép ảnh. Thêm ảnh vào kho không tự tạo section mới trên Home.
+
+## Tin tức và research highlights trên Home
+
+Sửa `src/data/news.json` để thêm tin, không chỉnh HTML. Mỗi record có ID duy nhất; `title`, `description` và `date` ISO YYYY-MM-DD bắt buộc. `date` phải là ngày đăng có bằng chứng, không phải ngày migration hoặc ngày build. Các ngày năm 2021–2022 hiện tại đã đối chiếu thông báo trên https://uit-together.github.io/ và khớp date_label gốc.
+
+- `verified: true` cho phép hiển thị sau khi người biên tập xác minh nội dung và ngày.
+- `date_source` ghi nguồn và bằng chứng ngày đăng; `source_url` là HTTPS URL nguồn chính thức được mở từ News.
+- `title_vi`, `summary_en`, `summary_vi` cung cấp tiêu đề Việt và mô tả ngắn song ngữ. Nếu thiếu bản Việt, giao diện dùng nội dung EN có lang=en, không tự dịch hoặc tạo thông tin.
+- Các trường `date_label`, `url`, `description`, `links` gốc giữ nguyên để đối chiếu. URL UIT-VinaFruit20 gốc đang trỏ nhầm UIT-DODV; UI dùng source_url thông báo của nhóm, không tự sửa link nghiên cứu chưa kiểm duyệt.
+- `scripts/home_content.py` kiểm tra ngày/IDs/provenance; sắp xếp giảm dần, Home lấy ba tin đầu, `/news/` lấy tất cả tin verified. Khi thêm record hợp lệ và build lại, thứ tự cập nhật tự động.
+- Không có tin được xác minh thì hiển thị empty state. Nếu tin mới nhất đã hơn một năm so với ngày build, UI nêu ngày gốc của tin gần nhất; không giả vờ đó là cập nhật hiện tại.
+
+Thay danh sách 2–3 ID trong `src/data/selected_achievements.json` để chọn Research Highlights theo thứ tự hiển thị. ID phải tồn tại, không trùng cùng một paper, có title/venue/year và DOI/paper link. Metadata và tác giả đọc trực tiếp từ publications.json, không sửa hoặc rút gọn dữ liệu gốc. Nếu thiếu authors, UI dẫn đến citation trong Publications.
+
+Home hiện không hiển thị quartile/impact factor từ citation hoặc homepage_reference. Muốn thêm Q1 phải có bằng chứng quartile, hệ thống xếp hạng, năm và category tương ứng, được biên tập xác minh riêng; không dùng danh tiếng venue hoặc nhãn Q1 lịch sử làm chứng cứ.
+
+`src/partials/news-content.html` cũ được giữ nguyên để đối chiếu; danh sách News dùng news-directory.html và news.json. Các URL `/news/*.html` lịch sử vẫn còn, nhưng không dùng nội dung Niemeyer làm tin UIT.
 
 Trang Member không phân trang. `members.json` chứa các hồ sơ `section: "Supervisor"` hoặc `"Current Members"`; giữ ID ổn định, thứ tự hồ sơ chính là thứ tự thẻ trên desktop hai cột. `role` chỉ hiển thị Leader/Collaborator trong thẻ đầu; `cohort` ghi K2023 trở đi nếu đã xác nhận. `bio_en`/`bio_vi` là giới thiệu ngắn cho Current Member; để trống thì hiện thông báo sẽ cập nhật. Không dùng học vị hoặc tiểu sử giả.
 
