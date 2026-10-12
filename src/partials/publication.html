@@ -1,8 +1,9 @@
 <article class="publication-row" data-filter-item data-year="{{ publication.year }}" data-publication-type="{{ publication.publication_type }}" data-venue="{{ publication.venue_id }}" data-venue-name="{{ publication.venue_name }}" data-search-text="{{ publication.search_text }}">
   <div class="publication-summary">
-    <span class="publication-year">{{ publication.year or '—' }}</span>
+    <span class="publication-year">{{ publication.year or ('Chưa rõ năm' if language == 'vi' else 'Year pending') }}</span>
     <div class="publication-copy">
       <h3 translate="no">{% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}">{{ publication.display_title }}</a>{% elif publication.paper_url %}<a href="{{ publication.paper_url }}">{{ publication.display_title }}</a>{% elif publication.links %}<a href="{{ publication.links[0] }}">{{ publication.display_title }}</a>{% else %}{{ publication.display_title }}{% endif %}</h3>
+      {% if publication.authors %}<p class="publication-authors" translate="no">{{ publication.authors }}</p>{% endif %}
       <div class="publication-links">
       {% if publication.doi %}<a class="doi-link" href="https://doi.org/{{ publication.doi }}">DOI: {{ publication.doi }}</a>
       {% else %}<span class="metadata-pending">DOI not yet verified</span>{% if publication.paper_url %}<a href="{{ publication.paper_url }}">View paper ↗</a>{% elif publication.links %}<a href="{{ publication.links[0] }}">Publication link ↗</a>{% endif %}{% endif %}

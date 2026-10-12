@@ -1,0 +1,13 @@
+{% set vi = language == 'vi' %}
+<div class="container lab-news-directory">
+<p class="lab-news-intro">{{ 'Thông báo về các công bố và bộ dữ liệu của UIT Together.' if vi else 'Announcements about UIT Together publications and datasets.' }}</p>
+{% include 'partials/news-note.html' %}
+{% for item in group_news %}
+<article class="lab-news-entry" id="{{ item.id }}" data-news-id="{{ item.id }}">
+<time datetime="{{ item.date }}">{{ item.date }}</time>
+<div><h2{% if vi and not item.title_vi | default('') %} lang="en"{% endif %}>{{ item.title_vi if vi and item.title_vi | default('') else item.title }}</h2>
+<p{% if vi and not item.summary_vi | default('') %} lang="en"{% endif %}>{{ item.summary_vi if vi and item.summary_vi | default('') else item.summary_en | default(item.description, true) }}</p>
+<a class="lab-news-source" href="{{ item.source_url }}">{{ 'Nguồn thông báo của nhóm' if vi else 'Group announcement source' }}<span class="sr-only">: {{ item.title_vi if vi and item.title_vi | default('') else item.title }}</span></a>
+</div></article>
+{% else %}<p class="lab-empty">{{ 'Chưa có tin tức được xác minh để hiển thị.' if vi else 'No reviewed group announcements are available yet.' }}</p>{% endfor %}
+</div>

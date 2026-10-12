@@ -1,0 +1,17 @@
+<section id="{{ direction.id }}" class="research-direction" data-reveal aria-labelledby="{{ direction.id }}-title">
+<h2 id="{{ direction.id }}-title">{{ direction.title_vi if vi else direction.title_en }}</h2>
+<article class="research-topic">
+<div class="research-topic-copy">
+{% set paragraphs = direction.paragraphs_vi if vi else direction.paragraphs_en %}
+{% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+</div>
+<figure class="research-media">
+{% if direction.media_type == 'image' %}
+<img src="{{ direction.media_src }}" alt="{{ direction.media_alt_vi if vi else direction.media_alt_en }}" loading="lazy" decoding="async">
+{% else %}
+<video data-research-video controls autoplay muted loop playsinline preload="metadata" aria-label="{{ direction.media_alt_vi if vi else direction.media_alt_en }}"><source src="{{ direction.media_src }}" type="video/mp4"><a href="{{ direction.media_src }}">{{ 'Xem video minh họa' if vi else 'Watch the research video' }}</a></video>
+{% endif %}
+<figcaption>{{ direction.caption_vi if vi else direction.caption_en }}</figcaption>
+</figure>
+</article>
+</section>

@@ -25,7 +25,7 @@
           button.focus();
         }
       });
-      var desktop = window.matchMedia('(min-width: 1024px)');
+      var desktop = window.matchMedia('(min-width: 1200px)');
       function resetMenu() { if (desktop.matches) setOpen(false); }
       if (desktop.addEventListener) desktop.addEventListener('change', resetMenu);
     });
@@ -240,7 +240,7 @@
       }
       carousel.querySelector('[data-slide-prev]').addEventListener('click', function () { showSlide(index - 1); });
       carousel.querySelector('[data-slide-next]').addEventListener('click', function () { showSlide(index + 1); });
-      pause.addEventListener('click', function () {
+      if (pause) pause.addEventListener('click', function () {
         paused = !paused;
         pause.setAttribute('aria-pressed', String(paused));
         pause.textContent = paused ? (vietnamese ? 'Tiếp tục' : 'Play') : (vietnamese ? 'Tạm dừng' : 'Pause');
@@ -249,7 +249,7 @@
       carousel.addEventListener('mouseleave', function () { hovering = false; });
       window.setInterval(function () {
         var rect = carousel.getBoundingClientRect();
-        if (!paused && !hovering && !motion.matches && !document.hidden && !carousel.contains(document.activeElement) && rect.bottom > 0 && rect.top < window.innerHeight) showSlide(index + 1);
+        if (pause && !paused && !hovering && !motion.matches && !document.hidden && !carousel.contains(document.activeElement) && rect.bottom > 0 && rect.top < window.innerHeight) showSlide(index + 1);
       }, 4500);
     });
 
@@ -260,6 +260,7 @@
         '.news-entry, .memberbox, .paperbox, .publication-citation, .publication-row, .contact-card, .cohort-list, ' +
         '.gallery-item, .homes-directory-link, .homes-introduction, .page-content h2, .page-content img';
       var targets = Array.from(document.querySelectorAll(selector)).filter(function (element) {
+        if (element.closest('.page-home')) return false;
         // Animate a card as a unit rather than animating its image and heading twice.
         return !element.closest('[data-member-chapter]') && !element.parentElement.closest(selector);
       });

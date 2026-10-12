@@ -1,5 +1,6 @@
 """Member roster, grouping, public templates and future-cohort regressions."""
 import copy
+from datetime import date
 import json
 from pathlib import Path
 import re
@@ -13,6 +14,7 @@ class MemberLayoutTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.data = {p.stem: json.loads(p.read_text()) for p in (ROOT / 'src/data').glob('*.json')}
+        cls.data['copyright_year'] = date.today().year
         cls.env = Environment(loader=FileSystemLoader(ROOT / 'src'), undefined=StrictUndefined, autoescape=select_autoescape(['html']))
         cls.page = next(p for p in cls.data['pages'] if p['url'] == '/team/')
 

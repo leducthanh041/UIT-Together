@@ -15,13 +15,17 @@ class GroupStatisticsTests(unittest.TestCase):
         result = group_statistics(data, (ROOT / 'src/partials/datasets-content.html').read_text())
         self.assertEqual(result, dict(participants=140, papers=105, venues=42, datasets=13))
 
-    def test_home_displays_counts_and_has_no_upcoming_conference_widget(self):
+    def test_home_uses_computed_statistics_without_conference_widget(self):
+        data = {p.stem: json.loads(p.read_text()) for p in (ROOT / 'src/data').glob('*.json')}
+        data['publication_groups'] = publication_groups(data)
+        counts = group_statistics(data, (ROOT / 'src/partials/datasets-content.html').read_text())
         for language in ['', 'vi/']:
             html = (ROOT / f'dist/{language}index.html').read_text()
             self.assertNotIn('data-conference-app', html)
             self.assertNotIn('/js/conferences.js', html)
-            for count in [140, 105, 42, 13]:
-                self.assertIn(f'class="impact-number" translate="no">{count}</p>', html)
+            for count in counts.values():
+                self.assertIn(f'class="lab-stat-number" translate="no">{count}</p>', html)
+            self.assertNotIn('class="home-impact"', html)
         css = (ROOT / 'src/assets/css/portfolio.css').read_text()
         self.assertNotIn('.site-menu li:last-child a', css)
 

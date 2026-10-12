@@ -8,6 +8,7 @@ import re
 import unicodedata
 from i18n import localize_html, localized_url, normalize
 from group_statistics import group_statistics
+from home_content import home_context
 from site_paths import normalize_base_path, prefix_html, prefix_css
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
 ROOT = Path(__file__).resolve().parent.parent
@@ -54,6 +55,7 @@ def build(base_path=""):
                     venue['image'] = f'/assets/images/venues/{image.name}'
                     break
     data['publication_groups'] = publication_groups(data)
+    data.update(home_context(data))
     data['group_stats'] = group_statistics(data, (source / 'partials/datasets-content.html').read_text(encoding='utf-8'))
     env = Environment(loader=FileSystemLoader(str(source)), autoescape=select_autoescape(["html"]), undefined=StrictUndefined)
     output = Path(tempfile.mkdtemp(prefix=".uit-build-", dir=destination_root.parent))

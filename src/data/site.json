@@ -20,15 +20,22 @@
     },
     {
       "label": "Datasets",
-      "url": "/datasets/"
+      "url": "/datasets/",
+      "group": "resources"
     },
     {
       "label": "Tutorials",
-      "url": "/tutorials/"
+      "url": "/tutorials/",
+      "group": "resources"
     },
     {
       "label": "Conferences",
-      "url": "/conferences/"
+      "url": "/conferences/",
+      "group": "resources"
+    },
+    {
+      "label": "News",
+      "url": "/news/"
     },
     {
       "label": "Contact",
