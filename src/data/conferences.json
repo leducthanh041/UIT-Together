@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T04:56:20+00:00",
+  "updated_at": "2026-10-14T11:55:32+00:00",
   "timezone": "Asia/Ho_Chi_Minh",
   "live_url": "https://raw.githubusercontent.com/leducthanh041/UIT-Together/refs/heads/main/src/data/conferences.json",
   "conferences": [
@@ -32,8 +32,8 @@
           "source": "https://cvpr.thecvf.com/Conferences/2027/Dates"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "Workshops June 20–21; main sessions June 22–25.",
       "notes_vi": "Workshop ngày 20–21/6; phiên chính ngày 22–25/6.",
@@ -77,8 +77,8 @@
           "source": "https://www.icmr2027.org/date"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "",
       "notes_vi": "",
@@ -112,8 +112,8 @@
           "label": "Main Paper"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "ok",
       "notes_en": "The full-paper CFP labels these submission dates as proposed.",
       "notes_vi": "CFP bài dài hiện đánh dấu hạn nộp là lịch dự kiến."
@@ -147,8 +147,8 @@
           "source": "https://2026.acmmm.org/site/important-dates.html"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "",
       "notes_vi": "",
@@ -181,8 +181,8 @@
           "label": "Main Paper"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "Multi-location edition. Dates include tutorials, main sessions and workshops; local schedules differ.",
       "notes_vi": "Hội nghị tổ chức tại nhiều địa điểm. Lịch gồm tutorial, phiên chính và workshop; lịch địa phương khác nhau.",
@@ -216,7 +216,7 @@
           "source": "https://aaai.org/conference/aaai/aaai-27/"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
       "last_success_at": "2026-10-10T08:00:00Z",
       "sync_status": "stale",
       "notes_en": "",
@@ -252,8 +252,8 @@
           "source": "https://iclr.cc/Conferences/2027/CallForPapers"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "",
       "notes_vi": "",
@@ -295,8 +295,8 @@
           "label": "Main Paper (Round 2)"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "",
       "notes_vi": "",
@@ -330,7 +330,7 @@
           "source": "https://mmm2027.net/"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
       "last_success_at": "2026-10-10T08:00:00Z",
       "sync_status": "stale",
       "notes_en": "",
@@ -363,8 +363,8 @@
           "label": "Main Paper"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "ok",
       "notes_en": "",
       "notes_vi": "",
@@ -388,7 +388,7 @@
       "ends_on": "2027-10-01",
       "date_status": "confirmed",
       "deadlines": [],
-      "checked_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
       "last_success_at": "2026-10-10T08:00:00Z",
       "sync_status": "stale",
       "notes_en": "Paper submission deadline has not been announced.",
@@ -414,8 +414,8 @@
       "ends_on": "2027-10-08",
       "date_status": "confirmed",
       "deadlines": [],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "Official homepage says October 2–8; Dates page says October 19–23. Dates are being confirmed.",
       "notes_vi": "Trang chủ ghi 2–8/10; trang Dates ghi 19–23/10. Lịch đang được xác nhận.",
@@ -449,8 +449,8 @@
           "label": "Main Paper"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
-      "last_success_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
+      "last_success_at": "2026-10-14T11:55:32+00:00",
       "sync_status": "partial",
       "notes_en": "The official program page still contains a 2025 schedule. Event dates are not confirmed here.",
       "notes_vi": "Trang chương trình chính thức còn chứa lịch năm 2025. Ngày tổ chức chưa được xác nhận ở đây.",
@@ -492,7 +492,7 @@
           "source": "https://www.ecir2027.co.uk/call-for-short-papers"
         }
       ],
-      "checked_at": "2026-10-14T04:56:20+00:00",
+      "checked_at": "2026-10-14T11:55:32+00:00",
       "last_success_at": "2026-10-10T08:00:00Z",
       "sync_status": "stale",
       "notes_en": "",
